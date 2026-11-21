@@ -1,0 +1,5 @@
+:HL["/skillpack/_next/static/chunks/1myk98lcxqv45.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"jq_4tAbfm12-99p4lsA-I","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
