@@ -466,6 +466,12 @@ footer { font-size: 13px; color: var(--muted); padding: 4px 4px 0; }
 .files { margin-top: 14px; }
 .files summary { cursor: pointer; color: var(--ink); font-weight: 600; font-size: 14px; }
 .files pre { margin-top: 8px; font-size: 12px; }
+body.embed .topbar, body.embed main > :not(#detail) { display: none; }
+body.embed { background: var(--surface); }
+body.embed #detail { position: static; width: 100%; max-width: none; max-height: none; margin: 0; border: 0; padding: 0; }
+body.embed .detail-dialog .detail { max-height: none; overflow: visible; }
+body.embed .dlg-close { display: none; }
+body.embed .crumbs { display: none; }
 </style>
 </head>
 <body>
@@ -492,7 +498,7 @@ footer { font-size: 13px; color: var(--muted); padding: 4px 4px 0; }
     <section class="card hero" id="overview" aria-labelledby="ov-title">
       <p class="eyebrow">Skill Atlas · <span id="count"></span></p>
       <h1 id="ov-title">Every skill has a starting point. Find yours.</h1>
-      <p class="lede">The skills installed in this project, grouped by family and graded A+ to D. Search or filter, then open a skill to read its steps, grade and folder.</p>
+      <p class="lede">The skills in this project, grouped by family and graded A+ to D. Search or filter, then open a skill to read its steps, grade and folder.</p>
       <p class="trust" id="trust"></p>
       <div class="browse-bar">
         <label class="search"><span hidden>Search skills</span>
@@ -5942,7 +5948,7 @@ const STEP_SEC = 5; // seconds per step
 const COL = { todo: 0x64748b, ok: 0x1f9d6b, bad: 0xd6456a, warn: 0xd9962b, hit: 0x2f6fd6 };
 const BINS = [0x7c5ce0, 0x13a3a3, 0xe0702a, 0x2f6fd6, 0xd9962b, 0x1f9d6b];
 const CATS = ['Overview', 'Analysis', 'Engineering', 'Security', 'Web', 'Domain', 'Operations', 'Compliance', 'Memory', 'Efficiency', 'Installed'];
-const CAT_NAME = { Overview: 'Start here', Analysis: 'Analysis (chunked)', Engineering: 'Engineering review', Security: 'Security and risk', Web: 'Web platform', Domain: 'Domain review' };
+const CAT_NAME = { Installed: 'Skills', Overview: 'Start here', Analysis: 'Analysis (chunked)', Engineering: 'Engineering review', Security: 'Security and risk', Web: 'Web platform', Domain: 'Domain review' };
 const TIERS = ['All tiers', 'premium', 'pro', 'essentials'];
 const CRIT = ['Support strength', 'Importance', 'Severity', 'Usage', 'Presence'];
 const WEIGHT = [0.35, 0.2, 0.2, 0.15, 0.1];
@@ -5964,10 +5970,10 @@ const HOWTO = {
 };
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// The skills are input data: they come from the JSON block, from ?data=<url>, or from the installed skills index.
+// The skills are input data: they come from the JSON block, from ?data=<url>, or from the skills index.
 const params = new URLSearchParams(location.search);
 const EMBEDDED = JSON.parse(document.getElementById('skill-data').textContent);
-// Lists the installed skills. A curated entry with the same id replaces the plain one. The pack overview stays first.
+// Lists the skills in the index. A curated entry with the same id replaces the plain one. The pack overview stays first.
 function mergeIndex(index) {
   const curated = new Map(EMBEDDED.skills.map((s) => [s.id, s]));
   // A curated entry keeps its walkthrough, outcome and text, but its grade comes from the index, which applies the same rules to every skill.
@@ -6424,7 +6430,7 @@ function renderTabs() {
   $('#count').textContent = `${SKILLS.filter((s) => tierOf(s)).length} skills`;
   const walk = SKILLS.filter((s) => tierOf(s) && s.steps && s.steps.length).length;
   const scored = SKILLS.filter((s) => tierOf(s) && s.grade && s.grade.scores).length;
-  $('#trust').textContent = `${SKILLS.filter((s) => tierOf(s)).length} skills installed in this project. ${walk} have a walkthrough, ${scored} have criteria scores. Every grade is a design grade, not validated against a model.`;
+  $('#trust').textContent = `${SKILLS.filter((s) => tierOf(s)).length} skills in this project. ${walk} have a walkthrough, ${scored} have criteria scores. Every grade is a design grade, not validated against a model.`;
 }
 
 function renderCats() {
@@ -6493,7 +6499,7 @@ function landTip(id) {
 function ring(s) {
   const r = 38, c = 2 * Math.PI * r;
   if (!s.grade) {
-    return `<svg viewBox="0 0 92 92" role="img" aria-label="${s.cat === 'Installed' ? 'Installed skill' : 'Pack overview'}"><circle class="rt" cx="46" cy="46" r="${r}"/>
+    return `<svg viewBox="0 0 92 92" role="img" aria-label="${s.cat === 'Installed' ? 'Skill' : 'Pack overview'}"><circle class="rt" cx="46" cy="46" r="${r}"/>
       <text class="rg" x="46" y="52">◎</text></svg>`;
   }
   const g = s.grade;
@@ -7652,6 +7658,8 @@ renderGallery();
 renderInfo();
 renderSteps();
 select(current);
+// Embed mode (used by the marketplace detail pages): show only this skill's detail, with no atlas header or list.
+if (params.get('embed')) { document.body.classList.add('embed'); detail.show(); }
 setView('simple');
 requestAnimationFrame(frame);
 init3D();
