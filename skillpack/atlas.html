@@ -7562,6 +7562,12 @@ $('#theme').addEventListener('click', () => {
   try { localStorage.setItem('atlas-theme', root.dataset.theme); } catch (e) { /* storage blocked */ }
   if (view === '3d' && T && stepIdx >= 0) applyStep(stepIdx);
 });
+// A skill page's site sends its light or dark choice here, so the embed matches the site.
+window.addEventListener('message', (e) => {
+  if (e.origin !== location.origin || e.data?.type !== 'skill-atlas-theme') return;
+  root.dataset.theme = e.data.value;
+  if (view === '3d' && T && stepIdx >= 0) applyStep(stepIdx);
+});
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (view === '3d' && T && stepIdx >= 0) applyStep(stepIdx); });
 
 $('#runs').addEventListener('click', (e) => {
