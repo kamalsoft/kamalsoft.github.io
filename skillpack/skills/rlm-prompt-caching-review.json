@@ -1,0 +1,119 @@
+{
+ "id": "rlm-prompt-caching-review",
+ "goal": "Prompt caching review: whether stable prompt parts are placed and marked so they can be reused.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Prompt caching review: whether stable prompt parts are placed and marked so they can be reused. Use when a model provider's caching is used or could be.",
+ "prompt": "Use the rlm-prompt-caching-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the stable parts. System text, tool definitions and reference material."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the order. Stable parts come before anything that changes per call.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the markers. Confirm the cache breakpoints are where the stable part ends.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the cache hit rate. Note how often a cached prefix is actually reused."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each prompt with its stable part, the ordering problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the stable parts",
+   "text": "System text, tool definitions and reference material."
+  },
+  {
+   "title": "Check the order",
+   "text": "Stable parts come before anything that changes per call."
+  },
+  {
+   "title": "Check the markers",
+   "text": "Confirm the cache breakpoints are where the stable part ends."
+  },
+  {
+   "title": "Check the cache hit rate",
+   "text": "Note how often a cached prefix is actually reused."
+  },
+  {
+   "title": "Report",
+   "text": "Each prompt with its stable part, the ordering problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-prompt-caching-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 143
+ },
+ "skillMd": "skill-md/rlm-prompt-caching-review.md",
+ "zip": "downloads/rlm-prompt-caching-review.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-migration-data-check",
+ "goal": "Migration data check: row counts, totals and samples compared before and after a data migration.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Migration data check: row counts, totals and samples compared before and after a data migration. Use when a data migration moves or converts records.",
+ "prompt": "Use the rlm-migration-data-check skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Record the baseline. Row counts, key totals and a sample before the migration."
+  },
+  {
+   "layout": "chunks",
+   "note": "Compare after. Check the same counts and totals in the new place.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the conversions. Flag values that change type or meaning, such as dates and codes.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the rejects. Every rejected row needs a recorded reason."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The comparison, the differences and the decision to proceed or roll back.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Record the baseline",
+   "text": "Row counts, key totals and a sample before the migration."
+  },
+  {
+   "title": "Compare after",
+   "text": "Check the same counts and totals in the new place."
+  },
+  {
+   "title": "Check the conversions",
+   "text": "Flag values that change type or meaning, such as dates and codes."
+  },
+  {
+   "title": "Check the rejects",
+   "text": "Every rejected row needs a recorded reason."
+  },
+  {
+   "title": "Report",
+   "text": "The comparison, the differences and the decision to proceed or roll back."
+  }
+ ],
+ "path": ".github/skills/rlm-migration-data-check",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 86
+ },
+ "skillMd": "skill-md/rlm-migration-data-check.md",
+ "zip": "downloads/rlm-migration-data-check.zip"
+}

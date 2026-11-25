@@ -1,0 +1,119 @@
+{
+ "id": "rlm-token-context-review",
+ "goal": "Context size review: what is sent to the model on each call, and what could be left out.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Context size review: what is sent to the model on each call, and what could be left out. Use when an agent or model call builds its own context.",
+ "prompt": "Use the rlm-token-context-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the inputs. Each part of the prompt, its source and its typical size."
+  },
+  {
+   "layout": "chunks",
+   "note": "Find the waste. Flag repeated text, full files where a section is enough, and logs pasted whole.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the order. Keep stable content first so it can be cached.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the limit. Note what happens when the input is over the model's limit."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each input with its size, the waste found and the change that saves most.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the inputs",
+   "text": "Each part of the prompt, its source and its typical size."
+  },
+  {
+   "title": "Find the waste",
+   "text": "Flag repeated text, full files where a section is enough, and logs pasted whole."
+  },
+  {
+   "title": "Check the order",
+   "text": "Keep stable content first so it can be cached."
+  },
+  {
+   "title": "Check the limit",
+   "text": "Note what happens when the input is over the model's limit."
+  },
+  {
+   "title": "Report",
+   "text": "Each input with its size, the waste found and the change that saves most."
+  }
+ ],
+ "path": ".github/skills/rlm-token-context-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 150
+ },
+ "skillMd": "skill-md/rlm-token-context-review.md",
+ "zip": "downloads/rlm-token-context-review.zip"
+}

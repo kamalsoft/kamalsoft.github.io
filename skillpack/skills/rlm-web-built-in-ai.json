@@ -185,7 +185,7 @@
    1
   ],
   "design": true,
-  "rank": 197
+  "rank": 217
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] ai-summary.ts:12  AI API used without feature detection.\n       Fix: Check the API exists before calling it.\n[medium] agent-tools.ts:19  Agent action with no confirmation step.\n       Fix: Ask the user before the action.\n[low] ui-prompt.tsx:26  Unavailable state not handled.\n       Fix: Show a message for the unavailable state.\nNot checked: Model behaviour and output quality, availability on specific devices, and draft specifications that changed after the date checked.",
  "skillMd": "skill-md/rlm-web-built-in-ai.md",

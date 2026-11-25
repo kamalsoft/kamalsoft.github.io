@@ -1,0 +1,119 @@
+{
+ "id": "rlm-data-lineage-review",
+ "goal": "Data lineage review: where each dataset comes from, what it is derived from, and who uses it.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Data lineage review: where each dataset comes from, what it is derived from, and who uses it. Use when a report, model or dataset is used for a decision.",
+ "prompt": "Use the rlm-data-lineage-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the datasets in scope and their sources."
+  },
+  {
+   "layout": "chunks",
+   "note": "Trace each one back to its source, step by step.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the owners. Each dataset and each source has a named owner.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the consumers. Note every report and model that uses it."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The lineage map, the gaps and the datasets with no owner.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the datasets in scope and their sources",
+   "text": ""
+  },
+  {
+   "title": "Trace each one back to its source, step by step",
+   "text": ""
+  },
+  {
+   "title": "Check the owners",
+   "text": "Each dataset and each source has a named owner."
+  },
+  {
+   "title": "Check the consumers",
+   "text": "Note every report and model that uses it."
+  },
+  {
+   "title": "Report",
+   "text": "The lineage map, the gaps and the datasets with no owner."
+  }
+ ],
+ "path": ".github/skills/rlm-data-lineage-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 129
+ },
+ "skillMd": "skill-md/rlm-data-lineage-review.md",
+ "zip": "downloads/rlm-data-lineage-review.zip"
+}

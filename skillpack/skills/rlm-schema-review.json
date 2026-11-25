@@ -1,0 +1,119 @@
+{
+ "id": "rlm-schema-review",
+ "goal": "Data schema review: column types, nullability, keys and changes that break readers.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Data schema review: column types, nullability, keys and changes that break readers. Use when a table or message schema is created or changed.",
+ "prompt": "Use the rlm-schema-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the schema. Each field with its type, nullability and key."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the types. Flag money stored as floating point and dates stored as text.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the keys. Flag tables with no key or a key that is not unique.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check changes. Flag renamed, removed or retyped fields that break existing readers."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with its field, the problem and the safe change.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the schema",
+   "text": "Each field with its type, nullability and key."
+  },
+  {
+   "title": "Check the types",
+   "text": "Flag money stored as floating point and dates stored as text."
+  },
+  {
+   "title": "Check the keys",
+   "text": "Flag tables with no key or a key that is not unique."
+  },
+  {
+   "title": "Check changes",
+   "text": "Flag renamed, removed or retyped fields that break existing readers."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with its field, the problem and the safe change."
+  }
+ ],
+ "path": ".github/skills/rlm-schema-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 97
+ },
+ "skillMd": "skill-md/rlm-schema-review.md",
+ "zip": "downloads/rlm-schema-review.zip"
+}

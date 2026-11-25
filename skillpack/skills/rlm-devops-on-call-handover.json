@@ -161,7 +161,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 186
+  "rank": 206
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] alert-disk.md:12  Open alert with no next step.\n       Fix: Write the next step and its owner.\n[high] deploy-pending-web.md:19  Pending deploy with no approval.\n       Fix: Get the approval before the handover.\n[medium] risk-vendor.md:26  Risk with no owner role.\n       Fix: Assign an owner role.\nNot checked: Alerts not in the log.",
  "skillMd": "skill-md/rlm-devops-on-call-handover.md",

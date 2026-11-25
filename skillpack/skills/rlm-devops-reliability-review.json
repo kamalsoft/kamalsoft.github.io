@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 188
+  "rank": 208
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-billing.slo:12  Over its error budget with no action.\n       Fix: Record the action and its owner.\n[medium] svc-search.slo:19  Objective has no definition.\n       Fix: Define the objective and how it is measured.\n[low] svc-worker.slo:26  Attainment does not follow from the counts.\n       Fix: Recompute attainment from the counts.\nNot checked: Customer impact beyond the measured SLO.",
  "skillMd": "skill-md/rlm-devops-reliability-review.md",

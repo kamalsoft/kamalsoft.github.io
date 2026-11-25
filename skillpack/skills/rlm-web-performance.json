@@ -185,7 +185,7 @@
    4
   ],
   "design": true,
-  "rank": 161
+  "rank": 180
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] hero.jpg:12  LCP image is lazy-loaded.\n       Fix: Load the hero image eagerly with high priority.\n[medium] analytics.js:19  Third-party script blocks rendering.\n       Fix: Load it with defer or async.\n[low] app.js:26  Script loaded without defer.\n       Fix: Add defer.\nNot checked: Real-user data if none was given, server response time and CDN configuration, low-end devices and slow networks unless tested, and features whose support was not confirmed for the targets.",
  "skillMd": "skill-md/rlm-web-performance.md",

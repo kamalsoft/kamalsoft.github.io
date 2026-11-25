@@ -1,0 +1,119 @@
+{
+ "id": "rlm-token-cost-review",
+ "goal": "Token cost review: which calls cost the most, how often they run, and where the budget goes.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Token cost review: which calls cost the most, how often they run, and where the budget goes. Use when a feature uses a model in production.",
+ "prompt": "Use the rlm-token-cost-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the calls. Each feature, model and how often it runs."
+  },
+  {
+   "layout": "chunks",
+   "note": "Estimate the cost. Input and output tokens per call, times the frequency.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Find the largest. Rank calls by total cost.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check for retries. Flag loops and retries that multiply the cost."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. A ranked table with cost per call, the causes and the cheapest fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the calls",
+   "text": "Each feature, model and how often it runs."
+  },
+  {
+   "title": "Estimate the cost",
+   "text": "Input and output tokens per call, times the frequency."
+  },
+  {
+   "title": "Find the largest",
+   "text": "Rank calls by total cost."
+  },
+  {
+   "title": "Check for retries",
+   "text": "Flag loops and retries that multiply the cost."
+  },
+  {
+   "title": "Report",
+   "text": "A ranked table with cost per call, the causes and the cheapest fix."
+  }
+ ],
+ "path": ".github/skills/rlm-token-cost-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 103
+ },
+ "skillMd": "skill-md/rlm-token-cost-review.md",
+ "zip": "downloads/rlm-token-cost-review.zip"
+}

@@ -183,7 +183,7 @@
    4
   ],
   "design": true,
-  "rank": 168
+  "rank": 188
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 medium, 2 low).\n[medium] cards.css:12  Viewport query on a component that adapts to its container.\n       Fix: Use a container query.\n[low] theme.css:19  Dark-mode colours hardcoded.\n       Fix: Use colour tokens.\n[low] nav.css:26  Fixed pixel width breaks at narrow widths.\n       Fix: Use a fluid width.\nNot checked: Rendering in real browsers and devices, styles generated at run time, third-party widget styles, and visual design quality beyond these checks.",
  "skillMd": "skill-md/rlm-web-css-layout.md",

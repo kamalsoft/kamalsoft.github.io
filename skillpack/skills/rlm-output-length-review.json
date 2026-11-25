@@ -1,0 +1,119 @@
+{
+ "id": "rlm-output-length-review",
+ "goal": "Output length review: limits on what the model may produce, and what happens when it reaches them.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Output length review: limits on what the model may produce, and what happens when it reaches them. Use when a feature asks a model for open-ended or long output.",
+ "prompt": "Use the rlm-output-length-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the outputs. Each call, its expected length and who reads it."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the limit. Confirm a maximum output size is set.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the cut-off. Flag output that is cut mid-sentence or mid-structure without a sign.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the format. Structured output should be validated after it is produced."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each output with its limit, its failure when cut, and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the outputs",
+   "text": "Each call, its expected length and who reads it."
+  },
+  {
+   "title": "Check the limit",
+   "text": "Confirm a maximum output size is set."
+  },
+  {
+   "title": "Check the cut-off",
+   "text": "Flag output that is cut mid-sentence or mid-structure without a sign."
+  },
+  {
+   "title": "Check the format",
+   "text": "Structured output should be validated after it is produced."
+  },
+  {
+   "title": "Report",
+   "text": "Each output with its limit, its failure when cut, and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-output-length-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 88
+ },
+ "skillMd": "skill-md/rlm-output-length-review.md",
+ "zip": "downloads/rlm-output-length-review.zip"
+}

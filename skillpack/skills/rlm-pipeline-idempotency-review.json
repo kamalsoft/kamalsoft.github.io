@@ -1,0 +1,119 @@
+{
+ "id": "rlm-pipeline-idempotency-review",
+ "goal": "Pipeline idempotency review: a data job that runs twice produces the same result, not duplicates.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Pipeline idempotency review: a data job that runs twice produces the same result, not duplicates. Use when a job is retried, re-run or scheduled.",
+ "prompt": "Use the rlm-pipeline-idempotency-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the jobs. Each input, output and how it is triggered."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the writes. Flag inserts with no key, appends with no deduplication, and counters that add up twice.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the retries. Confirm a failed run can be repeated safely.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the partial runs. Flag jobs that leave half-written output."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each job with its risk of duplicates and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the jobs",
+   "text": "Each input, output and how it is triggered."
+  },
+  {
+   "title": "Check the writes",
+   "text": "Flag inserts with no key, appends with no deduplication, and counters that add up twice."
+  },
+  {
+   "title": "Check the retries",
+   "text": "Confirm a failed run can be repeated safely."
+  },
+  {
+   "title": "Check the partial runs",
+   "text": "Flag jobs that leave half-written output."
+  },
+  {
+   "title": "Report",
+   "text": "Each job with its risk of duplicates and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-pipeline-idempotency-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 91
+ },
+ "skillMd": "skill-md/rlm-pipeline-idempotency-review.md",
+ "zip": "downloads/rlm-pipeline-idempotency-review.zip"
+}

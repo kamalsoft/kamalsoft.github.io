@@ -114,7 +114,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 96
+    "rank": 106
    }
   },
   {
@@ -231,7 +231,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 46
+    "rank": 48
    }
   },
   {
@@ -371,6 +371,123 @@ window.SKILL_INDEX = {
    }
   },
   {
+   "id": "rlm-analytics-event-review",
+   "goal": "Analytics event review: which events are tracked, what they carry, and whether they can identify a person.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Analytics event review: which events are tracked, what they carry, and whether they can identify a person. Use when a feature adds or changes analytics events.",
+   "prompt": "Use the rlm-analytics-event-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the events. Each name, when it fires and the properties it sends."
+    },
+    {
+     "layout": "chunks",
+     "note": "Flag identifiers. User names, emails or open text sent as properties.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the purpose. Each event has a use that someone named.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the consent. Events that need consent are gated by it."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each event with its properties, the identifiers found and the change.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the events",
+     "text": "Each name, when it fires and the properties it sends."
+    },
+    {
+     "title": "Flag identifiers",
+     "text": "User names, emails or open text sent as properties."
+    },
+    {
+     "title": "Check the purpose",
+     "text": "Each event has a use that someone named."
+    },
+    {
+     "title": "Check the consent",
+     "text": "Events that need consent are gated by it."
+    },
+    {
+     "title": "Report",
+     "text": "Each event with its properties, the identifiers found and the change."
+    }
+   ],
+   "path": ".github/skills/rlm-analytics-event-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "compliance",
+   "grade": {
+    "grade": "B",
+    "score": "3.65",
+    "scores": [
+     4,
+     4,
+     3,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 165
+   }
+  },
+  {
    "id": "rlm-api-contract-review",
    "goal": "Review API contract changes (OpenAPI, protobuf, GraphQL schemas and their route handlers) for breaking change…",
    "cat": "Installed",
@@ -499,7 +616,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 116
+    "rank": 127
    }
   },
   {
@@ -625,7 +742,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 47
+    "rank": 49
    }
   },
   {
@@ -876,7 +993,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 97
+    "rank": 107
    }
   },
   {
@@ -993,7 +1110,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 48
+    "rank": 50
    }
   },
   {
@@ -1110,7 +1227,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 134
+    "rank": 151
    }
   },
   {
@@ -1240,7 +1357,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 135
+    "rank": 152
    }
   },
   {
@@ -1372,7 +1489,7 @@ window.SKILL_INDEX = {
      2
     ],
     "design": true,
-    "rank": 192
+    "rank": 212
    }
   },
   {
@@ -1489,7 +1606,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 98
+    "rank": 108
    }
   },
   {
@@ -1606,7 +1723,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 49
+    "rank": 51
    }
   },
   {
@@ -1975,7 +2092,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 162
+    "rank": 181
    }
   },
   {
@@ -2101,7 +2218,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 170
+    "rank": 190
    }
   },
   {
@@ -2233,7 +2350,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 33
+    "rank": 35
    }
   },
   {
@@ -2350,7 +2467,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 34
+    "rank": 36
    }
   },
   {
@@ -2467,7 +2584,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 50
+    "rank": 52
    }
   },
   {
@@ -2593,7 +2710,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 147
+    "rank": 166
    }
   },
   {
@@ -2719,7 +2836,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 51
+    "rank": 53
    }
   },
   {
@@ -2851,7 +2968,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 42
+    "rank": 44
    }
   },
   {
@@ -2981,7 +3098,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 99
+    "rank": 109
    }
   },
   {
@@ -3230,7 +3347,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 174
+    "rank": 194
    }
   },
   {
@@ -3362,7 +3479,7 @@ window.SKILL_INDEX = {
      2
     ],
     "design": true,
-    "rank": 194
+    "rank": 214
    }
   },
   {
@@ -3479,7 +3596,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 163
+    "rank": 182
    }
   },
   {
@@ -3596,7 +3713,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 136
+    "rank": 153
    }
   },
   {
@@ -3713,7 +3830,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 164
+    "rank": 183
    }
   },
   {
@@ -3839,7 +3956,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 35
+    "rank": 37
    }
   },
   {
@@ -3956,7 +4073,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 52
+    "rank": 54
    }
   },
   {
@@ -4082,7 +4199,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 148
+    "rank": 167
    }
   },
   {
@@ -4208,7 +4325,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 165
+    "rank": 184
    }
   },
   {
@@ -4334,7 +4451,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 100
+    "rank": 110
    }
   },
   {
@@ -4451,7 +4568,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 53
+    "rank": 55
    }
   },
   {
@@ -4568,7 +4685,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 54
+    "rank": 56
    }
   },
   {
@@ -4685,7 +4802,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 36
+    "rank": 38
    }
   },
   {
@@ -4811,7 +4928,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 101
+    "rank": 111
    }
   },
   {
@@ -4945,7 +5062,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 55
+    "rank": 57
    }
   },
   {
@@ -5062,7 +5179,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 56
+    "rank": 58
    }
   },
   {
@@ -5179,7 +5296,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 57
+    "rank": 59
    }
   },
   {
@@ -5422,7 +5539,475 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 102
+    "rank": 112
+   }
+  },
+  {
+   "id": "rlm-data-contract-review",
+   "goal": "Data contract review: the shape, meaning and change rules agreed between the producer and its readers.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Data contract review: the shape, meaning and change rules agreed between the producer and its readers. Use when a team publishes data that others read.",
+   "prompt": "Use the rlm-data-contract-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the producer and the readers, and the data they share."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the shape. Confirm each field is written down with its type and meaning.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the change rules. Confirm how and when changes are announced.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the guarantees. Freshness, completeness and what happens on failure."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each agreement with its gaps and the missing rule.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the producer and the readers, and the data they share",
+     "text": ""
+    },
+    {
+     "title": "Check the shape",
+     "text": "Confirm each field is written down with its type and meaning."
+    },
+    {
+     "title": "Check the change rules",
+     "text": "Confirm how and when changes are announced."
+    },
+    {
+     "title": "Check the guarantees",
+     "text": "Freshness, completeness and what happens on failure."
+    },
+    {
+     "title": "Report",
+     "text": "Each agreement with its gaps and the missing rule."
+    }
+   ],
+   "path": ".github/skills/rlm-data-contract-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 128
+   }
+  },
+  {
+   "id": "rlm-data-lineage-review",
+   "goal": "Data lineage review: where each dataset comes from, what it is derived from, and who uses it.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Data lineage review: where each dataset comes from, what it is derived from, and who uses it. Use when a report, model or dataset is used for a decision.",
+   "prompt": "Use the rlm-data-lineage-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the datasets in scope and their sources."
+    },
+    {
+     "layout": "chunks",
+     "note": "Trace each one back to its source, step by step.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the owners. Each dataset and each source has a named owner.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the consumers. Note every report and model that uses it."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. The lineage map, the gaps and the datasets with no owner.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the datasets in scope and their sources",
+     "text": ""
+    },
+    {
+     "title": "Trace each one back to its source, step by step",
+     "text": ""
+    },
+    {
+     "title": "Check the owners",
+     "text": "Each dataset and each source has a named owner."
+    },
+    {
+     "title": "Check the consumers",
+     "text": "Note every report and model that uses it."
+    },
+    {
+     "title": "Report",
+     "text": "The lineage map, the gaps and the datasets with no owner."
+    }
+   ],
+   "path": ".github/skills/rlm-data-lineage-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "compliance",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 129
+   }
+  },
+  {
+   "id": "rlm-data-quality-review",
+   "goal": "Data quality checks review: completeness, validity, uniqueness and freshness are tested where data is loaded.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Data quality checks review: completeness, validity, uniqueness and freshness are tested where data is loaded. Use when a pipeline or service loads or transforms data.",
+   "prompt": "Use the rlm-data-quality-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the datasets. Each table or file, its source and its consumers."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the rules. Confirm checks exist for completeness, validity, uniqueness and freshness.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the failure. Flag loads that pass bad data without a stop or an alert.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the thresholds. Each check needs a stated limit."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each dataset with its checks, the gaps and the action when a check fails.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the datasets",
+     "text": "Each table or file, its source and its consumers."
+    },
+    {
+     "title": "Check the rules",
+     "text": "Confirm checks exist for completeness, validity, uniqueness and freshness."
+    },
+    {
+     "title": "Check the failure",
+     "text": "Flag loads that pass bad data without a stop or an alert."
+    },
+    {
+     "title": "Check the thresholds",
+     "text": "Each check needs a stated limit."
+    },
+    {
+     "title": "Report",
+     "text": "Each dataset with its checks, the gaps and the action when a check fails."
+    }
+   ],
+   "path": ".github/skills/rlm-data-quality-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 60
+   }
+  },
+  {
+   "id": "rlm-data-retention-check",
+   "goal": "Data retention check: each store's keep period, its deletion job and whether backups follow the same rule.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Data retention check: each store's keep period, its deletion job and whether backups follow the same rule. Use when a store holds data that has a retention rule.",
+   "prompt": "Use the rlm-data-retention-check skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the stores and the retention rule for each."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the deletion job. Confirm it runs, and what it deletes.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the backups. Confirm deleted data is removed from backups on a stated cycle.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the evidence. Each run should leave a record."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each store with its rule, the job, the backup position and the gap.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the stores and the retention rule for each",
+     "text": ""
+    },
+    {
+     "title": "Check the deletion job",
+     "text": "Confirm it runs, and what it deletes."
+    },
+    {
+     "title": "Check the backups",
+     "text": "Confirm deleted data is removed from backups on a stated cycle."
+    },
+    {
+     "title": "Check the evidence",
+     "text": "Each run should leave a record."
+    },
+    {
+     "title": "Report",
+     "text": "Each store with its rule, the job, the backup position and the gap."
+    }
+   ],
+   "path": ".github/skills/rlm-data-retention-check",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "compliance",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 61
    }
   },
   {
@@ -5539,7 +6124,124 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 117
+    "rank": 130
+   }
+  },
+  {
+   "id": "rlm-dataset-pii-check",
+   "goal": "Dataset personal data check: personal data found in datasets, samples and exports, and where it is kept.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Dataset personal data check: personal data found in datasets, samples and exports, and where it is kept. Use when a dataset, sample or export is shared or kept.",
+   "prompt": "Use the rlm-dataset-pii-check skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the datasets, samples and exports in scope."
+    },
+    {
+     "layout": "chunks",
+     "note": "Find personal data. Names, contact details, identifiers and location in each field.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the copies. Flag personal data in test data, samples and exports shared outside the team.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the controls. Each copy needs a purpose, a restriction and a deletion path."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each dataset with its personal data, the copies and the gaps.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the datasets, samples and exports in scope",
+     "text": ""
+    },
+    {
+     "title": "Find personal data",
+     "text": "Names, contact details, identifiers and location in each field."
+    },
+    {
+     "title": "Check the copies",
+     "text": "Flag personal data in test data, samples and exports shared outside the team."
+    },
+    {
+     "title": "Check the controls",
+     "text": "Each copy needs a purpose, a restriction and a deletion path."
+    },
+    {
+     "title": "Report",
+     "text": "Each dataset with its personal data, the copies and the gaps. This is a map for review, not a legal opinion."
+    }
+   ],
+   "path": ".github/skills/rlm-dataset-pii-check",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "compliance",
+   "grade": {
+    "grade": "B",
+    "score": "3.60",
+    "scores": [
+     4,
+     4,
+     4,
+     2,
+     3
+    ],
+    "design": true,
+    "rank": 185
    }
   },
   {
@@ -5788,7 +6490,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 190
+    "rank": 210
    }
   },
   {
@@ -5918,7 +6620,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 58
+    "rank": 62
    }
   },
   {
@@ -6167,7 +6869,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 149
+    "rank": 168
    }
   },
   {
@@ -6284,7 +6986,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 37
+    "rank": 39
    }
   },
   {
@@ -6468,7 +7170,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 142
+    "rank": 160
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] grant-4.yaml:12  Deploy grant with no roster match.\n       Fix: Remove the grant or add the holder to the roster.\n[high] grant-3.yaml:19  Production grant with no approver reference.\n       Fix: Record the approver or revoke the grant.\n[medium] grant-6.yaml:26  Staging role not needed for this team.\n       Fix: Confirm the need with the team lead.\nNot checked: Access granted outside the list."
   },
@@ -6653,7 +7355,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 185
+    "rank": 205
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-batch.csv:12  Spend with no owner team.\n       Fix: Assign an owning team.\n[medium] svc-dev-env.csv:19  Resource at 3% utilisation for 30 days.\n       Fix: Stop or resize the environment.\n[low] svc-logs.csv:26  Spend total differs from the billing lines.\n       Fix: Recompute from the billing export.\nNot checked: Whether the resource is needed for a future event."
   },
@@ -6828,7 +7530,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 143
+    "rank": 161
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] deploy-search.log:12  Failed production deploy with no cause.\n       Fix: Record the cause and the fix.\n[high] deploy-billing.log:19  Production deploy with no approval reference.\n       Fix: Attach the approval or record the exception.\n[medium] deploy-worker.log:26  Rollback with no record.\n       Fix: Write the rollback entry.\nNot checked: What happened in production after the deploy."
   },
@@ -6996,7 +7698,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 31
+    "rank": 33
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] scenario-cache.md:12  Restore time not measured.\n       Fix: Measure the restore and record the time.\n[medium] scenario-queue.md:19  Passed, but measured time is over the target.\n       Fix: Change the result or the target.\n[medium] scenario-dns.md:26  Gap with no action.\n       Fix: Name the action and its owner.\nNot checked: Whether the recovery works for real data at scale."
   },
@@ -7190,7 +7892,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 144
+    "rank": 162
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] alerts.tf:12  No alert for the error rate.\n       Fix: Add an alert on the error rate.\n[medium] logging.ts:19  Request path logs are not structured.\n       Fix: Use structured logging on the request path.\n[low] pipeline.yml:26  Deploy path has no rollback step.\n       Fix: Add a rollback step to the pipeline.\nNot checked: The runtime behaviour; the alert thresholds' suitability."
   },
@@ -7357,7 +8059,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 186
+    "rank": 206
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] alert-disk.md:12  Open alert with no next step.\n       Fix: Write the next step and its owner.\n[high] deploy-pending-web.md:19  Pending deploy with no approval.\n       Fix: Get the approval before the handover.\n[medium] risk-vendor.md:26  Risk with no owner role.\n       Fix: Assign an owner role.\nNot checked: Alerts not in the log."
   },
@@ -7542,7 +8244,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 187
+    "rank": 207
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] pipeline-web.json:12  Failure rate 18 percent today.\n       Fix: Fix the failing stage.\n[medium] pipeline-worker.json:19  Queue time 14 minutes against a target of 5.\n       Fix: Add runners or split the job.\n[low] pipeline-e2e.json:26  Test passes and fails on the same commit.\n       Fix: Quarantine the test and fix it.\nNot checked: Failures outside the export."
   },
@@ -7715,7 +8417,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 32
+    "rank": 34
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] migrations/0042.sql:12  Migration with no rollback note.\n       Fix: Write the reverse migration and its note.\n[medium] package.json:19  Version 2.3.0 in the package, 2.2.0 in the notes.\n       Fix: Make the two versions match.\n[high] signoff.md:26  Security gate has no sign-off.\n       Fix: Record the sign-off before release.\nNot checked: Whether the gates were run; the runtime behaviour."
   },
@@ -7900,7 +8602,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 188
+    "rank": 208
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-billing.slo:12  Over its error budget with no action.\n       Fix: Record the action and its owner.\n[medium] svc-search.slo:19  Objective has no definition.\n       Fix: Define the objective and how it is measured.\n[low] svc-worker.slo:26  Attainment does not follow from the counts.\n       Fix: Recompute attainment from the counts.\nNot checked: Customer impact beyond the measured SLO."
   },
@@ -8094,7 +8796,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 145
+    "rank": 163
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] step-03-db.md:12  Database change with no reverse step.\n       Fix: Write the reverse migration.\n[medium] step-04-cache.md:19  Cache step has no verification.\n       Fix: Add a check that the cache is cleared.\n[low] step-06-notify.md:26  Notify step depends on a step not listed.\n       Fix: List the step it depends on.\nNot checked: Whether the rollback works in production."
   },
@@ -8279,7 +8981,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 195
+    "rank": 215
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] req-1044.md:12  Urgent request with no reason.\n       Fix: Give the reason or lower the priority.\n[medium] req-1046.md:19  Request with no owner.\n       Fix: Assign an owner role and a deadline.\n[low] req-1047.md:26  No ask recorded.\n       Fix: Write the ask in one sentence.\nNot checked: Whether the request is worth doing."
   },
@@ -8464,7 +9166,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 146
+    "rank": 164
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] cve-jwt.json:12  Reachable from a public service.\n       Fix: Patch this week.\n[medium] cve-libxml.json:19  High severity, unreachable, ranked above a reachable one.\n       Fix: Re-rank by reachability.\n[low] cve-zlib.json:26  Finding with no identifier.\n       Fix: Record the identifier from the scanner.\nNot checked: Exploitability beyond the stated reachability."
   },
@@ -8636,7 +9338,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 189
+    "rank": 209
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] week-44.csv:12  Week with missing records.\n       Fix: Add the missing records and recompute.\n[medium] week-42.csv:19  Failure with no restore time.\n       Fix: Record the restore time.\n[low] week-45.csv:26  Measure with no source records.\n       Fix: Name the source of the measure.\nNot checked: Whether the metrics reflect real customer value."
   },
@@ -8773,7 +9475,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 191
+    "rank": 211
    }
   },
   {
@@ -8890,7 +9592,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 175
+    "rank": 195
    }
   },
   {
@@ -9007,7 +9709,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 59
+    "rank": 63
    }
   },
   {
@@ -9124,7 +9826,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 60
+    "rank": 64
    }
   },
   {
@@ -9241,7 +9943,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 103
+    "rank": 113
    }
   },
   {
@@ -9371,7 +10073,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 61
+    "rank": 65
    }
   },
   {
@@ -9488,7 +10190,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 62
+    "rank": 66
    }
   },
   {
@@ -9605,7 +10307,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 104
+    "rank": 114
    }
   },
   {
@@ -9722,7 +10424,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 105
+    "rank": 115
    }
   },
   {
@@ -9839,7 +10541,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 63
+    "rank": 67
    }
   },
   {
@@ -9956,7 +10658,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 150
+    "rank": 169
    }
   },
   {
@@ -10082,7 +10784,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 38
+    "rank": 40
    }
   },
   {
@@ -10208,7 +10910,124 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 106
+    "rank": 116
+   }
+  },
+  {
+   "id": "rlm-etl-review",
+   "goal": "ETL review: extract, transform and load steps checked for ordering, late data, errors and reruns.",
+   "cat": "Installed",
+   "on": false,
+   "use": "ETL review: extract, transform and load steps checked for ordering, late data, errors and reruns. Use when a data extract, transform and load step is built or changed.",
+   "prompt": "Use the rlm-etl-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the steps. Each extract, transform and load, in order."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the errors. Flag rows that fail silently or are dropped without a record.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the late data. Confirm the job copes with records that arrive after their window.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the reruns. Confirm a rerun for one day does not disturb other days."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each step with its risk and the fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the steps",
+     "text": "Each extract, transform and load, in order."
+    },
+    {
+     "title": "Check the errors",
+     "text": "Flag rows that fail silently or are dropped without a record."
+    },
+    {
+     "title": "Check the late data",
+     "text": "Confirm the job copes with records that arrive after their window."
+    },
+    {
+     "title": "Check the reruns",
+     "text": "Confirm a rerun for one day does not disturb other days."
+    },
+    {
+     "title": "Report",
+     "text": "Each step with its risk and the fix."
+    }
+   ],
+   "path": ".github/skills/rlm-etl-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 68
    }
   },
   {
@@ -10325,7 +11144,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 118
+    "rank": 131
    }
   },
   {
@@ -10442,7 +11261,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 64
+    "rank": 69
    }
   },
   {
@@ -10559,7 +11378,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 65
+    "rank": 70
    }
   },
   {
@@ -10676,7 +11495,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 66
+    "rank": 71
    }
   },
   {
@@ -10793,7 +11612,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 107
+    "rank": 117
    }
   },
   {
@@ -10910,7 +11729,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 30
+    "rank": 32
    }
   },
   {
@@ -11027,7 +11846,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 67
+    "rank": 72
    }
   },
   {
@@ -11144,7 +11963,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 108
+    "rank": 118
    }
   },
   {
@@ -11261,7 +12080,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 68
+    "rank": 73
    }
   },
   {
@@ -11378,7 +12197,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 69
+    "rank": 74
    }
   },
   {
@@ -11495,7 +12314,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 119
+    "rank": 132
    }
   },
   {
@@ -11612,7 +12431,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 70
+    "rank": 75
    }
   },
   {
@@ -11729,7 +12548,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 71
+    "rank": 76
    }
   },
   {
@@ -11846,7 +12665,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 109
+    "rank": 119
    }
   },
   {
@@ -11963,7 +12782,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 72
+    "rank": 77
    }
   },
   {
@@ -12080,7 +12899,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 151
+    "rank": 170
    }
   },
   {
@@ -12197,7 +13016,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 120
+    "rank": 133
    }
   },
   {
@@ -12314,7 +13133,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 73
+    "rank": 78
    }
   },
   {
@@ -12431,7 +13250,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 137
+    "rank": 154
    }
   },
   {
@@ -12548,7 +13367,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 26
+    "rank": 28
    }
   },
   {
@@ -12665,7 +13484,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 152
+    "rank": 171
    }
   },
   {
@@ -12782,7 +13601,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 74
+    "rank": 79
    }
   },
   {
@@ -12908,7 +13727,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 166
+    "rank": 186
    }
   },
   {
@@ -13038,7 +13857,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 121
+    "rank": 134
    }
   },
   {
@@ -13164,7 +13983,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 122
+    "rank": 135
    }
   },
   {
@@ -13281,7 +14100,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 123
+    "rank": 136
    }
   },
   {
@@ -13398,7 +14217,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 153
+    "rank": 172
    }
   },
   {
@@ -13515,7 +14334,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 75
+    "rank": 80
    }
   },
   {
@@ -13632,7 +14451,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 76
+    "rank": 81
    }
   },
   {
@@ -13764,7 +14583,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 193
+    "rank": 213
    }
   },
   {
@@ -13998,7 +14817,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 27
+    "rank": 29
    }
   },
   {
@@ -14115,7 +14934,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 176
+    "rank": 196
    }
   },
   {
@@ -14241,7 +15060,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 77
+    "rank": 82
    }
   },
   {
@@ -14358,7 +15177,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 20
+    "rank": 22
    }
   },
   {
@@ -14484,7 +15303,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 167
+    "rank": 187
    }
   },
   {
@@ -14601,7 +15420,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 78
+    "rank": 83
    }
   },
   {
@@ -14727,7 +15546,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 21
+    "rank": 23
    }
   },
   {
@@ -14844,7 +15663,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 154
+    "rank": 173
    }
   },
   {
@@ -14976,7 +15795,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 173
+    "rank": 193
    }
   },
   {
@@ -15093,7 +15912,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 177
+    "rank": 197
    }
   },
   {
@@ -15369,7 +16188,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 138
+    "rank": 155
    }
   },
   {
@@ -15486,7 +16305,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 110
+    "rank": 120
    }
   },
   {
@@ -15603,7 +16422,592 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 124
+    "rank": 137
+   }
+  },
+  {
+   "id": "rlm-memory-design-review",
+   "goal": "Agent memory design review: what the agent stores, where, and how it is read back.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Agent memory design review: what the agent stores, where, and how it is read back. Use when an agent keeps notes or facts between sessions.",
+   "prompt": "Use the rlm-memory-design-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the memory. Each kind of thing stored, its source and its purpose."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the store. Confirm where it lives and what format it uses.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the reads. Note how memory enters a new session and how much of it.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the growth. Flag memory that only grows and never shrinks."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. The memory kinds, their store, the read path and the growth problem.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the memory",
+     "text": "Each kind of thing stored, its source and its purpose."
+    },
+    {
+     "title": "Check the store",
+     "text": "Confirm where it lives and what format it uses."
+    },
+    {
+     "title": "Check the reads",
+     "text": "Note how memory enters a new session and how much of it."
+    },
+    {
+     "title": "Check the growth",
+     "text": "Flag memory that only grows and never shrinks."
+    },
+    {
+     "title": "Report",
+     "text": "The memory kinds, their store, the read path and the growth problem."
+    }
+   ],
+   "path": ".github/skills/rlm-memory-design-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 138
+   }
+  },
+  {
+   "id": "rlm-memory-privacy-review",
+   "goal": "Agent memory privacy review: personal and secret data kept out of what the agent remembers.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Agent memory privacy review: personal and secret data kept out of what the agent remembers. Use when an agent stores anything a user or a tool provides.",
+   "prompt": "Use the rlm-memory-privacy-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List what can enter memory. User messages, tool results and files."
+    },
+    {
+     "layout": "chunks",
+     "note": "Flag personal data. Names, contact details, identifiers and health or financial details.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Flag secrets. Keys, tokens and passwords that a tool may return.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the filter. Confirm something removes these before they are stored."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each entry path, what it can store, and the filter that is missing.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List what can enter memory",
+     "text": "User messages, tool results and files."
+    },
+    {
+     "title": "Flag personal data",
+     "text": "Names, contact details, identifiers and health or financial details."
+    },
+    {
+     "title": "Flag secrets",
+     "text": "Keys, tokens and passwords that a tool may return."
+    },
+    {
+     "title": "Check the filter",
+     "text": "Confirm something removes these before they are stored."
+    },
+    {
+     "title": "Report",
+     "text": "Each entry path, what it can store, and the filter that is missing."
+    }
+   ],
+   "path": ".github/skills/rlm-memory-privacy-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "security",
+   "grade": {
+    "grade": "A-",
+    "score": "4.20",
+    "scores": [
+     5,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 16
+   }
+  },
+  {
+   "id": "rlm-memory-recall-review",
+   "goal": "Memory recall accuracy review: whether the right memory comes back, and stale facts do not.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Memory recall accuracy review: whether the right memory comes back, and stale facts do not. Use when an agent retrieves stored memory for a new task.",
+   "prompt": "Use the rlm-memory-recall-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "Pick test questions. Write questions whose answers are in memory."
+    },
+    {
+     "layout": "chunks",
+     "note": "Run recall. Check whether each answer comes back.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check stale facts. Flag memories that were true once and are no longer.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check conflicts. Flag two memories that disagree and which one wins."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Recall rate, the misses, the stale items and the fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "Pick test questions",
+     "text": "Write questions whose answers are in memory."
+    },
+    {
+     "title": "Run recall",
+     "text": "Check whether each answer comes back."
+    },
+    {
+     "title": "Check stale facts",
+     "text": "Flag memories that were true once and are no longer."
+    },
+    {
+     "title": "Check conflicts",
+     "text": "Flag two memories that disagree and which one wins."
+    },
+    {
+     "title": "Report",
+     "text": "Recall rate, the misses, the stale items and the fix."
+    }
+   ],
+   "path": ".github/skills/rlm-memory-recall-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 139
+   }
+  },
+  {
+   "id": "rlm-memory-retention-review",
+   "goal": "Agent memory retention review: how long memory is kept, and how it is deleted on request.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Agent memory retention review: how long memory is kept, and how it is deleted on request. Use when memory is kept across sessions or users.",
+   "prompt": "Use the rlm-memory-retention-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the retention rules. Each kind of memory and how long it is kept."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the deletion. Confirm a user's memories can be found and removed.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the copies. Flag memory copied into logs, backups or analytics.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the expiry. Flag memory with no expiry at all."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each kind with its retention, the deletion path and the gap.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the retention rules",
+     "text": "Each kind of memory and how long it is kept."
+    },
+    {
+     "title": "Check the deletion",
+     "text": "Confirm a user's memories can be found and removed."
+    },
+    {
+     "title": "Check the copies",
+     "text": "Flag memory copied into logs, backups or analytics."
+    },
+    {
+     "title": "Check the expiry",
+     "text": "Flag memory with no expiry at all."
+    },
+    {
+     "title": "Report",
+     "text": "Each kind with its retention, the deletion path and the gap."
+    }
+   ],
+   "path": ".github/skills/rlm-memory-retention-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.70",
+    "scores": [
+     4,
+     4,
+     4,
+     2,
+     4
+    ],
+    "design": true,
+    "rank": 156
+   }
+  },
+  {
+   "id": "rlm-memory-write-policy-review",
+   "goal": "Agent memory write policy review: who or what may write to memory, and whether injected text can change it.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Agent memory write policy review: who or what may write to memory, and whether injected text can change it. Use when untrusted content can reach the agent's memory.",
+   "prompt": "Use the rlm-memory-write-policy-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the writers. Which users, tools and documents can add to memory."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the trust. Flag writes from untrusted sources, such as web pages or emails.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check for injected instructions. Flag stored text that tells the agent how to behave.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the review. Confirm a person or a rule approves sensitive writes."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each writer, its trust level, the risk and the control.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the writers",
+     "text": "Which users, tools and documents can add to memory."
+    },
+    {
+     "title": "Check the trust",
+     "text": "Flag writes from untrusted sources, such as web pages or emails."
+    },
+    {
+     "title": "Check for injected instructions",
+     "text": "Flag stored text that tells the agent how to behave."
+    },
+    {
+     "title": "Check the review",
+     "text": "Confirm a person or a rule approves sensitive writes."
+    },
+    {
+     "title": "Report",
+     "text": "Each writer, its trust level, the risk and the control."
+    }
+   ],
+   "path": ".github/skills/rlm-memory-write-policy-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "security",
+   "grade": {
+    "grade": "A-",
+    "score": "4.20",
+    "scores": [
+     5,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 17
    }
   },
   {
@@ -15720,7 +17124,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 79
+    "rank": 84
    }
   },
   {
@@ -15837,7 +17241,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 80
+    "rank": 85
    }
   },
   {
@@ -15954,7 +17358,124 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 125
+    "rank": 140
+   }
+  },
+  {
+   "id": "rlm-migration-data-check",
+   "goal": "Migration data check: row counts, totals and samples compared before and after a data migration.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Migration data check: row counts, totals and samples compared before and after a data migration. Use when a data migration moves or converts records.",
+   "prompt": "Use the rlm-migration-data-check skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "Record the baseline. Row counts, key totals and a sample before the migration."
+    },
+    {
+     "layout": "chunks",
+     "note": "Compare after. Check the same counts and totals in the new place.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the conversions. Flag values that change type or meaning, such as dates and codes.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the rejects. Every rejected row needs a recorded reason."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. The comparison, the differences and the decision to proceed or roll back.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "Record the baseline",
+     "text": "Row counts, key totals and a sample before the migration."
+    },
+    {
+     "title": "Compare after",
+     "text": "Check the same counts and totals in the new place."
+    },
+    {
+     "title": "Check the conversions",
+     "text": "Flag values that change type or meaning, such as dates and codes."
+    },
+    {
+     "title": "Check the rejects",
+     "text": "Every rejected row needs a recorded reason."
+    },
+    {
+     "title": "Report",
+     "text": "The comparison, the differences and the decision to proceed or roll back."
+    }
+   ],
+   "path": ".github/skills/rlm-migration-data-check",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 86
    }
   },
   {
@@ -16094,7 +17615,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 139
+    "rank": 157
    }
   },
   {
@@ -16211,7 +17732,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 81
+    "rank": 87
    }
   },
   {
@@ -16328,7 +17849,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 111
+    "rank": 121
    }
   },
   {
@@ -16458,7 +17979,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 155
+    "rank": 174
    }
   },
   {
@@ -16575,7 +18096,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 22
+    "rank": 24
    }
   },
   {
@@ -16692,7 +18213,124 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 16
+    "rank": 18
+   }
+  },
+  {
+   "id": "rlm-output-length-review",
+   "goal": "Output length review: limits on what the model may produce, and what happens when it reaches them.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Output length review: limits on what the model may produce, and what happens when it reaches them. Use when a feature asks a model for open-ended or long output.",
+   "prompt": "Use the rlm-output-length-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the outputs. Each call, its expected length and who reads it."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the limit. Confirm a maximum output size is set.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the cut-off. Flag output that is cut mid-sentence or mid-structure without a sign.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the format. Structured output should be validated after it is produced."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each output with its limit, its failure when cut, and the fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the outputs",
+     "text": "Each call, its expected length and who reads it."
+    },
+    {
+     "title": "Check the limit",
+     "text": "Confirm a maximum output size is set."
+    },
+    {
+     "title": "Check the cut-off",
+     "text": "Flag output that is cut mid-sentence or mid-structure without a sign."
+    },
+    {
+     "title": "Check the format",
+     "text": "Structured output should be validated after it is produced."
+    },
+    {
+     "title": "Report",
+     "text": "Each output with its limit, its failure when cut, and the fix."
+    }
+   ],
+   "path": ".github/skills/rlm-output-length-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 88
    }
   },
   {
@@ -16809,7 +18447,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 28
+    "rank": 30
    }
   },
   {
@@ -16926,7 +18564,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 17
+    "rank": 19
    }
   },
   {
@@ -17043,7 +18681,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 18
+    "rank": 20
    }
   },
   {
@@ -17175,7 +18813,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 39
+    "rank": 41
    }
   },
   {
@@ -17292,7 +18930,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 126
+    "rank": 141
    }
   },
   {
@@ -17409,7 +19047,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 82
+    "rank": 89
    }
   },
   {
@@ -17535,7 +19173,124 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 83
+    "rank": 90
+   }
+  },
+  {
+   "id": "rlm-pipeline-idempotency-review",
+   "goal": "Pipeline idempotency review: a data job that runs twice produces the same result, not duplicates.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Pipeline idempotency review: a data job that runs twice produces the same result, not duplicates. Use when a job is retried, re-run or scheduled.",
+   "prompt": "Use the rlm-pipeline-idempotency-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the jobs. Each input, output and how it is triggered."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the writes. Flag inserts with no key, appends with no deduplication, and counters that add up twice.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the retries. Confirm a failed run can be repeated safely.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the partial runs. Flag jobs that leave half-written output."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each job with its risk of duplicates and the fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the jobs",
+     "text": "Each input, output and how it is triggered."
+    },
+    {
+     "title": "Check the writes",
+     "text": "Flag inserts with no key, appends with no deduplication, and counters that add up twice."
+    },
+    {
+     "title": "Check the retries",
+     "text": "Confirm a failed run can be repeated safely."
+    },
+    {
+     "title": "Check the partial runs",
+     "text": "Flag jobs that leave half-written output."
+    },
+    {
+     "title": "Report",
+     "text": "Each job with its risk of duplicates and the fix."
+    }
+   ],
+   "path": ".github/skills/rlm-pipeline-idempotency-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 91
    }
   },
   {
@@ -17652,7 +19407,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 112
+    "rank": 122
    }
   },
   {
@@ -17769,7 +19524,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 127
+    "rank": 142
    }
   },
   {
@@ -17905,7 +19660,241 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 43
+    "rank": 45
+   }
+  },
+  {
+   "id": "rlm-prompt-caching-review",
+   "goal": "Prompt caching review: whether stable prompt parts are placed and marked so they can be reused.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Prompt caching review: whether stable prompt parts are placed and marked so they can be reused. Use when a model provider's caching is used or could be.",
+   "prompt": "Use the rlm-prompt-caching-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the stable parts. System text, tool definitions and reference material."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the order. Stable parts come before anything that changes per call.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the markers. Confirm the cache breakpoints are where the stable part ends.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the cache hit rate. Note how often a cached prefix is actually reused."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each prompt with its stable part, the ordering problem and the fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the stable parts",
+     "text": "System text, tool definitions and reference material."
+    },
+    {
+     "title": "Check the order",
+     "text": "Stable parts come before anything that changes per call."
+    },
+    {
+     "title": "Check the markers",
+     "text": "Confirm the cache breakpoints are where the stable part ends."
+    },
+    {
+     "title": "Check the cache hit rate",
+     "text": "Note how often a cached prefix is actually reused."
+    },
+    {
+     "title": "Report",
+     "text": "Each prompt with its stable part, the ordering problem and the fix."
+    }
+   ],
+   "path": ".github/skills/rlm-prompt-caching-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 143
+   }
+  },
+  {
+   "id": "rlm-prompt-length-review",
+   "goal": "Prompt length review: prompts that repeat rules, examples or boilerplate across calls.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Prompt length review: prompts that repeat rules, examples or boilerplate across calls. Use when a prompt template is written or changed.",
+   "prompt": "Use the rlm-prompt-length-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "Read the template. List each section and what it says."
+    },
+    {
+     "layout": "chunks",
+     "note": "Find repetition. Flag rules repeated in several places and examples that teach nothing new.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the examples. Keep the fewest that show the format.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the variables. Flag fields filled with more text than the call needs."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each section with its length, the repetition and the shorter wording.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "Read the template",
+     "text": "List each section and what it says."
+    },
+    {
+     "title": "Find repetition",
+     "text": "Flag rules repeated in several places and examples that teach nothing new."
+    },
+    {
+     "title": "Check the examples",
+     "text": "Keep the fewest that show the format."
+    },
+    {
+     "title": "Check the variables",
+     "text": "Flag fields filled with more text than the call needs."
+    },
+    {
+     "title": "Report",
+     "text": "Each section with its length, the repetition and the shorter wording."
+    }
+   ],
+   "path": ".github/skills/rlm-prompt-length-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.80",
+    "scores": [
+     4,
+     4,
+     3,
+     4,
+     4
+    ],
+    "design": true,
+    "rank": 123
    }
   },
   {
@@ -18022,7 +20011,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 84
+    "rank": 92
    }
   },
   {
@@ -18148,7 +20137,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 44
+    "rank": 46
    }
   },
   {
@@ -18278,7 +20267,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 85
+    "rank": 93
    }
   },
   {
@@ -18395,7 +20384,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 178
+    "rank": 198
    }
   },
   {
@@ -18531,7 +20520,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 23
+    "rank": 25
    }
   },
   {
@@ -18657,7 +20646,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 113
+    "rank": 124
    }
   },
   {
@@ -18789,7 +20778,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 196
+    "rank": 216
    }
   },
   {
@@ -18906,7 +20895,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 86
+    "rank": 94
    }
   },
   {
@@ -19032,7 +21021,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 128
+    "rank": 144
    }
   },
   {
@@ -19149,7 +21138,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 87
+    "rank": 95
    }
   },
   {
@@ -19266,7 +21255,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 88
+    "rank": 96
    }
   },
   {
@@ -19392,7 +21381,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 179
+    "rank": 199
    }
   },
   {
@@ -19509,7 +21498,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 129
+    "rank": 145
    }
   },
   {
@@ -19635,7 +21624,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 40
+    "rank": 42
    }
   },
   {
@@ -19761,7 +21750,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 140
+    "rank": 158
    }
   },
   {
@@ -19878,7 +21867,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 156
+    "rank": 175
    }
   },
   {
@@ -19995,7 +21984,124 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 130
+    "rank": 146
+   }
+  },
+  {
+   "id": "rlm-schema-review",
+   "goal": "Data schema review: column types, nullability, keys and changes that break readers.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Data schema review: column types, nullability, keys and changes that break readers. Use when a table or message schema is created or changed.",
+   "prompt": "Use the rlm-schema-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the schema. Each field with its type, nullability and key."
+    },
+    {
+     "layout": "chunks",
+     "note": "Check the types. Flag money stored as floating point and dates stored as text.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the keys. Flag tables with no key or a key that is not unique.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check changes. Flag renamed, removed or retyped fields that break existing readers."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each finding with its field, the problem and the safe change.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the schema",
+     "text": "Each field with its type, nullability and key."
+    },
+    {
+     "title": "Check the types",
+     "text": "Flag money stored as floating point and dates stored as text."
+    },
+    {
+     "title": "Check the keys",
+     "text": "Flag tables with no key or a key that is not unique."
+    },
+    {
+     "title": "Check changes",
+     "text": "Flag renamed, removed or retyped fields that break existing readers."
+    },
+    {
+     "title": "Report",
+     "text": "Each finding with its field, the problem and the safe change."
+    }
+   ],
+   "path": ".github/skills/rlm-schema-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 97
    }
   },
   {
@@ -20121,7 +22227,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 29
+    "rank": 31
    }
   },
   {
@@ -20379,7 +22485,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 41
+    "rank": 43
    }
   },
   {
@@ -20496,7 +22602,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 89
+    "rank": 98
    }
   },
   {
@@ -20613,7 +22719,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 171
+    "rank": 191
    }
   },
   {
@@ -20730,7 +22836,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 90
+    "rank": 99
    }
   },
   {
@@ -20847,7 +22953,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 91
+    "rank": 100
    }
   },
   {
@@ -20964,7 +23070,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 131
+    "rank": 147
    }
   },
   {
@@ -21090,7 +23196,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 141
+    "rank": 159
    }
   },
   {
@@ -21216,7 +23322,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 157
+    "rank": 176
    }
   },
   {
@@ -21333,7 +23439,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 92
+    "rank": 101
    }
   },
   {
@@ -21450,7 +23556,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 24
+    "rank": 26
    }
   },
   {
@@ -21582,7 +23688,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 158
+    "rank": 177
    }
   },
   {
@@ -21699,7 +23805,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 93
+    "rank": 102
    }
   },
   {
@@ -21816,7 +23922,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 180
+    "rank": 200
    }
   },
   {
@@ -21942,7 +24048,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 132
+    "rank": 148
    }
   },
   {
@@ -22204,7 +24310,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 159
+    "rank": 178
    }
   },
   {
@@ -22321,7 +24427,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 133
+    "rank": 149
    }
   },
   {
@@ -22457,6 +24563,240 @@ window.SKILL_INDEX = {
    }
   },
   {
+   "id": "rlm-token-context-review",
+   "goal": "Context size review: what is sent to the model on each call, and what could be left out.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Context size review: what is sent to the model on each call, and what could be left out. Use when an agent or model call builds its own context.",
+   "prompt": "Use the rlm-token-context-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the inputs. Each part of the prompt, its source and its typical size."
+    },
+    {
+     "layout": "chunks",
+     "note": "Find the waste. Flag repeated text, full files where a section is enough, and logs pasted whole.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Check the order. Keep stable content first so it can be cached.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check the limit. Note what happens when the input is over the model's limit."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. Each input with its size, the waste found and the change that saves most.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the inputs",
+     "text": "Each part of the prompt, its source and its typical size."
+    },
+    {
+     "title": "Find the waste",
+     "text": "Flag repeated text, full files where a section is enough, and logs pasted whole."
+    },
+    {
+     "title": "Check the order",
+     "text": "Keep stable content first so it can be cached."
+    },
+    {
+     "title": "Check the limit",
+     "text": "Note what happens when the input is over the model's limit."
+    },
+    {
+     "title": "Report",
+     "text": "Each input with its size, the waste found and the change that saves most."
+    }
+   ],
+   "path": ".github/skills/rlm-token-context-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.75",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     3
+    ],
+    "design": true,
+    "rank": 150
+   }
+  },
+  {
+   "id": "rlm-token-cost-review",
+   "goal": "Token cost review: which calls cost the most, how often they run, and where the budget goes.",
+   "cat": "Installed",
+   "on": false,
+   "use": "Token cost review: which calls cost the most, how often they run, and where the budget goes. Use when a feature uses a model in production.",
+   "prompt": "Use the rlm-token-cost-review skill.",
+   "input": "",
+   "output": "",
+   "pros": [],
+   "cons": [],
+   "items": [
+    "input-1",
+    "input-2",
+    "input-3",
+    "input-4",
+    "input-5",
+    "input-6"
+   ],
+   "steps": [
+    {
+     "layout": "row",
+     "note": "List the calls. Each feature, model and how often it runs."
+    },
+    {
+     "layout": "chunks",
+     "note": "Estimate the cost. Input and output tokens per call, times the frequency.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "layout": "parallel",
+     "note": "Find the largest. Rank calls by total cost.",
+     "groups": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+     ],
+     "state": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+     ]
+    },
+    {
+     "layout": "funnel",
+     "note": "Check for retries. Flag loops and retries that multiply the cost."
+    },
+    {
+     "layout": "gate",
+     "note": "Report. A ranked table with cost per call, the causes and the cheapest fix.",
+     "pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    }
+   ],
+   "outcome": null,
+   "idea": "",
+   "why": "",
+   "protocol": [
+    {
+     "title": "List the calls",
+     "text": "Each feature, model and how often it runs."
+    },
+    {
+     "title": "Estimate the cost",
+     "text": "Input and output tokens per call, times the frequency."
+    },
+    {
+     "title": "Find the largest",
+     "text": "Rank calls by total cost."
+    },
+    {
+     "title": "Check for retries",
+     "text": "Flag loops and retries that multiply the cost."
+    },
+    {
+     "title": "Report",
+     "text": "A ranked table with cost per call, the causes and the cheapest fix."
+    }
+   ],
+   "path": ".github/skills/rlm-token-cost-review",
+   "files": [],
+   "helperScripts": 0,
+   "notChecked": true,
+   "group": "engineering",
+   "grade": {
+    "grade": "B+",
+    "score": "3.85",
+    "scores": [
+     4,
+     4,
+     4,
+     3,
+     4
+    ],
+    "design": true,
+    "rank": 103
+   }
+  },
+  {
    "id": "rlm-traceability-review",
    "goal": "Traceability review: each requirement links to its code, its tests and its approval.",
    "cat": "Installed",
@@ -22570,7 +24910,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 94
+    "rank": 104
    }
   },
   {
@@ -22702,7 +25042,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 181
+    "rank": 201
    }
   },
   {
@@ -22832,7 +25172,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 45
+    "rank": 47
    }
   },
   {
@@ -22949,7 +25289,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 182
+    "rank": 202
    }
   },
   {
@@ -23079,7 +25419,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 19
+    "rank": 21
    }
   },
   {
@@ -23196,7 +25536,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 160
+    "rank": 179
    }
   },
   {
@@ -23313,7 +25653,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 183
+    "rank": 203
    }
   },
   {
@@ -23430,7 +25770,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 95
+    "rank": 105
    }
   },
   {
@@ -23620,7 +25960,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 184
+    "rank": 204
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] manifest.json:12  Manifest missing the 512 pixel icon.\n       Fix: Add the 512 pixel icon with its purpose.\n[medium] sw.js:19  Cache holds a stale page.\n       Fix: Version the cache and remove the old entry.\n[low] locale.ts:26  Date shown in the server time zone.\n       Fix: Format the date in the user's time zone.\nNot checked: Behaviour on each platform's install flow unless tested, server-side date handling outside the scope, and time zone database updates on the server."
   },
@@ -23755,7 +26095,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 114
+    "rank": 125
    }
   },
   {
@@ -23945,7 +26285,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 197
+    "rank": 217
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] ai-summary.ts:12  AI API used without feature detection.\n       Fix: Check the API exists before calling it.\n[medium] agent-tools.ts:19  Agent action with no confirmation step.\n       Fix: Ask the user before the action.\n[low] ui-prompt.tsx:26  Unavailable state not handled.\n       Fix: Show a message for the unavailable state.\nNot checked: Model behaviour and output quality, availability on specific devices, and draft specifications that changed after the date checked."
   },
@@ -24315,7 +26655,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 168
+    "rank": 188
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 medium, 2 low).\n[medium] cards.css:12  Viewport query on a component that adapts to its container.\n       Fix: Use a container query.\n[low] theme.css:19  Dark-mode colours hardcoded.\n       Fix: Use colour tokens.\n[low] nav.css:26  Fixed pixel width breaks at narrow widths.\n       Fix: Use a fluid width.\nNot checked: Rendering in real browsers and devices, styles generated at run time, third-party widget styles, and visual design quality beyond these checks."
   },
@@ -24690,7 +27030,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 161
+    "rank": 180
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] hero.jpg:12  LCP image is lazy-loaded.\n       Fix: Load the hero image eagerly with high priority.\n[medium] analytics.js:19  Third-party script blocks rendering.\n       Fix: Load it with defer or async.\n[low] app.js:26  Script loaded without defer.\n       Fix: Add defer.\nNot checked: Real-user data if none was given, server response time and CDN configuration, low-end devices and slow networks unless tested, and features whose support was not confirmed for the targets."
   },
@@ -24879,7 +27219,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 169
+    "rank": 189
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] dialog-confirm.tsx:12  Focus not returned to the opener on close.\n       Fix: Return focus to the button that opened it.\n[medium] tabs-settings.tsx:19  Arrow keys not supported in the tabs.\n       Fix: Add arrow-key navigation.\n[low] toast-save.tsx:26  Toast rebuilt in custom code.\n       Fix: Use the platform's popover.\nNot checked: Behaviour in real assistive technology and browsers, third-party component internals, and visual design quality."
   },
@@ -25006,7 +27346,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 172
+    "rank": 192
    }
   },
   {
@@ -25123,7 +27463,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 115
+    "rank": 126
    }
   },
   {
@@ -25240,7 +27580,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 25
+    "rank": 27
    }
   }
  ]

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-data-contract-review",
+ "goal": "Data contract review: the shape, meaning and change rules agreed between the producer and its readers.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Data contract review: the shape, meaning and change rules agreed between the producer and its readers. Use when a team publishes data that others read.",
+ "prompt": "Use the rlm-data-contract-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the producer and the readers, and the data they share."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the shape. Confirm each field is written down with its type and meaning.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the change rules. Confirm how and when changes are announced.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the guarantees. Freshness, completeness and what happens on failure."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each agreement with its gaps and the missing rule.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the producer and the readers, and the data they share",
+   "text": ""
+  },
+  {
+   "title": "Check the shape",
+   "text": "Confirm each field is written down with its type and meaning."
+  },
+  {
+   "title": "Check the change rules",
+   "text": "Confirm how and when changes are announced."
+  },
+  {
+   "title": "Check the guarantees",
+   "text": "Freshness, completeness and what happens on failure."
+  },
+  {
+   "title": "Report",
+   "text": "Each agreement with its gaps and the missing rule."
+  }
+ ],
+ "path": ".github/skills/rlm-data-contract-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 128
+ },
+ "skillMd": "skill-md/rlm-data-contract-review.md",
+ "zip": "downloads/rlm-data-contract-review.zip"
+}

@@ -7,14 +7,14 @@
 <title>Agent Skills Hub</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cstyle%3E.t%7Bfill%3A%231c6d75%7D.f%7Bfill%3A%23fff%7D.k%7Bstroke%3A%23fff%7D%40media%20%28prefers-color-scheme%3Adark%29%7B.t%7Bfill%3A%235fcbd5%7D.f%7Bfill%3A%230e1318%7D.k%7Bstroke%3A%230e1318%7D%7D%3C/style%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20class%3D%22t%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2236%22%20text-anchor%3D%22middle%22%20class%3D%22f%22%20style%3D%22font%3A700%2021px%20%27IBM%20Plex%20Sans%27%2C%27Segoe%20UI%27%2CHelvetica%2CArial%2Csans-serif%3Bletter-spacing%3A.02em%22%3ERLM%3C/text%3E%3Cpath%20d%3D%22M17%2047%20H47%22%20class%3D%22k%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3Ccircle%20cx%3D%2247%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3C/svg%3E">
 <meta name="description" content="Pick the RLM agent skill you need. A 3D pipeline for each of the 33 skills, with its grade, with install steps for the VS Code extension.">
-<meta name="theme-color" content="#13808a">
+<meta name="theme-color" content="#1d4ed8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
 /* App shell: sticky top bar, skill rail on the left, a dashboard and a tabbed detail pane on the right. */
 :root {
   --bg: #f4f6f9; --surface: #ffffff; --surface-2: #f8f9fb; --ink: #131a23; --muted: #5a6574;
-  --line: #e2e6ec; --accent: #13808a; --accent-ink: #ffffff; --chip: #edf0f4; --stage: #eef1f5;
-  --premium: #6d4fd8; --pro: #13808a; --essentials: #a8680f;
+  --line: #e2e6ec; --accent: #1d4ed8; --accent-ink: #ffffff; --chip: #edf0f4; --stage: #eef1f5;
+  --premium: #1d4ed8; --pro: #3b82f6; --essentials: #1e3a8a;
   --shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 10px 28px -14px rgba(16, 24, 40, .18);
   --top: 60px;
   color-scheme: light;
@@ -22,16 +22,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0a0e13; --surface: #11171f; --surface-2: #151c26; --ink: #e6ebf1; --muted: #94a0ae;
-    --line: #222b37; --accent: #5fcbd5; --accent-ink: #0a0e13; --chip: #1a2230; --stage: #0d131a;
-    --premium: #a896ff; --pro: #5fcbd5; --essentials: #e7aa50;
+    --line: #222b37; --accent: #60a5fa; --accent-ink: #0a0e13; --chip: #1a2230; --stage: #0d131a;
+    --premium: #60a5fa; --pro: #93c5fd; --essentials: #3b82f6;
     --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px -16px rgba(0, 0, 0, .7);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0a0e13; --surface: #11171f; --surface-2: #151c26; --ink: #e6ebf1; --muted: #94a0ae;
-  --line: #222b37; --accent: #5fcbd5; --accent-ink: #0a0e13; --chip: #1a2230; --stage: #0d131a;
-  --premium: #a896ff; --pro: #5fcbd5; --essentials: #e7aa50;
+  --line: #222b37; --accent: #60a5fa; --accent-ink: #0a0e13; --chip: #1a2230; --stage: #0d131a;
+  --premium: #60a5fa; --pro: #93c5fd; --essentials: #3b82f6;
   --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px -16px rgba(0, 0, 0, .7);
   color-scheme: dark;
 }
@@ -285,7 +285,7 @@ button:disabled { opacity: .5; cursor: default; }
 .chip.gone { opacity: 0; }
 .chip.hot { box-shadow: 0 0 0 3px var(--accent), 0 4px 14px rgba(0,0,0,.28); }
 .chip[data-s="ok"] { background: #1f9d6b; } .chip[data-s="bad"] { background: #d6456a; } .chip[data-s="warn"] { background: #b7791f; }
-.chip[data-s="hit"] { background: #2f6fd6; } .chip[data-s="b0"] { background: #7c5ce0; } .chip[data-s="b1"] { background: #13a3a3; }
+.chip[data-s="hit"] { background: #2f6fd6; } .chip[data-s="b0"] { background: #7c5ce0; } .chip[data-s="b1"] { background: #3b82f6; }
 .chip[data-s="b2"] { background: #e0702a; } .chip[data-s="b3"] { background: #2f6fd6; } .chip[data-s="b4"] { background: #b7791f; } .chip[data-s="b5"] { background: #1f9d6b; }
 .chip.target { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-left: 5px solid #64748b; }
 .chip.target.a-ok { border-left-color: #1f9d6b; } .chip.target.a-bad { border-left-color: #d6456a; } .chip.target.a-warn { border-left-color: #b7791f; }
@@ -293,7 +293,7 @@ button:disabled { opacity: .5; cursor: default; }
 .fl-frame { border: 1.5px solid var(--line); background: color-mix(in srgb, var(--surface) 85%, transparent); }
 .fl-boundary { border: 2px dashed var(--accent); }
 .fl-panel { border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
-.fl-store { border-radius: 40px / 18px; border-color: #13a3a3; }
+.fl-store { border-radius: 40px / 18px; border-color: #3b82f6; }
 .fl-funnel { background: var(--line); opacity: .55; clip-path: polygon(0 0, 100% 0, 62% 100%, 38% 100%); border-radius: 0; }
 .fl-frame span, .fl-boundary span, .fl-panel span { position: absolute; top: -10px; left: 10px; background: var(--surface); padding: 0 6px; font: 600 11px/20px "IBM Plex Sans", system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); border-radius: 4px; }
 .fl-label { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; font: 600 12px "IBM Plex Sans", system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--surface); padding: 2px 8px; border-radius: 6px; border: 1px solid var(--line); }
@@ -618,7 +618,7 @@ body.embed .crumbs { display: none; }
             <li><span class="sw" style="background:#2f6fd6"></span>Blue: the first or a recalled item</li>
             <li><span class="sw" style="background:#7c5ce0"></span>Coloured: its group</li>
             <li><span class="sw" style="background:#e0702a"></span>Orange loop: a cycle</li>
-            <li><span class="sw" style="background:#13a3a3"></span>Teal cylinder: memory</li>
+            <li><span class="sw" style="background:#3b82f6"></span>Blue cylinder: memory</li>
           </ul>
           <p class="hint">Click any block to see what happened to it at this step. Use the tools at the top right to zoom, pan, fit or go full screen. In the 3D view, drag to turn it and click a gem to open its finding. Click a step to jump to it. The blocks are the items; follow one through the skill. A frame marks a chunk, a dashed line a boundary.</p>
         </details>
@@ -6904,7 +6904,7 @@ function buildDecor(o) {
     const rim = add(new T.Mesh(new T.TorusGeometry(1.2, 0.04, 8, 48), new T.MeshStandardMaterial({ color: 0x13a3a3 })));
     rim.rotation.x = Math.PI / 2;
     rim.position.set(s.x, s.y + s.h / 2, -0.1);
-    tag(s.label, s.x, s.y + s.h / 2 + 0.45, { h: 0.4, fg: '#0e7c7c' });
+    tag(s.label, s.x, s.y + s.h / 2 + 0.45, { h: 0.4, fg: '#1e3a8a' });
   }
   // The report: a sheet of paper with a title bar.
   if (o.doc) {

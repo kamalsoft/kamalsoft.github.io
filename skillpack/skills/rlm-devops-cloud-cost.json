@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 185
+  "rank": 205
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-batch.csv:12  Spend with no owner team.\n       Fix: Assign an owning team.\n[medium] svc-dev-env.csv:19  Resource at 3% utilisation for 30 days.\n       Fix: Stop or resize the environment.\n[low] svc-logs.csv:26  Spend total differs from the billing lines.\n       Fix: Recompute from the billing export.\nNot checked: Whether the resource is needed for a future event.",
  "skillMd": "skill-md/rlm-devops-cloud-cost.md",

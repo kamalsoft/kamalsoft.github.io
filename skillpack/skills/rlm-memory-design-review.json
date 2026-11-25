@@ -1,0 +1,119 @@
+{
+ "id": "rlm-memory-design-review",
+ "goal": "Agent memory design review: what the agent stores, where, and how it is read back.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Agent memory design review: what the agent stores, where, and how it is read back. Use when an agent keeps notes or facts between sessions.",
+ "prompt": "Use the rlm-memory-design-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the memory. Each kind of thing stored, its source and its purpose."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the store. Confirm where it lives and what format it uses.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the reads. Note how memory enters a new session and how much of it.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the growth. Flag memory that only grows and never shrinks."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The memory kinds, their store, the read path and the growth problem.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the memory",
+   "text": "Each kind of thing stored, its source and its purpose."
+  },
+  {
+   "title": "Check the store",
+   "text": "Confirm where it lives and what format it uses."
+  },
+  {
+   "title": "Check the reads",
+   "text": "Note how memory enters a new session and how much of it."
+  },
+  {
+   "title": "Check the growth",
+   "text": "Flag memory that only grows and never shrinks."
+  },
+  {
+   "title": "Report",
+   "text": "The memory kinds, their store, the read path and the growth problem."
+  }
+ ],
+ "path": ".github/skills/rlm-memory-design-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 138
+ },
+ "skillMd": "skill-md/rlm-memory-design-review.md",
+ "zip": "downloads/rlm-memory-design-review.zip"
+}

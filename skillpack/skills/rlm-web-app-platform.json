@@ -185,7 +185,7 @@
    3
   ],
   "design": true,
-  "rank": 184
+  "rank": 204
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] manifest.json:12  Manifest missing the 512 pixel icon.\n       Fix: Add the 512 pixel icon with its purpose.\n[medium] sw.js:19  Cache holds a stale page.\n       Fix: Version the cache and remove the old entry.\n[low] locale.ts:26  Date shown in the server time zone.\n       Fix: Format the date in the user's time zone.\nNot checked: Behaviour on each platform's install flow unless tested, server-side date handling outside the scope, and time zone database updates on the server.",
  "skillMd": "skill-md/rlm-web-app-platform.md",

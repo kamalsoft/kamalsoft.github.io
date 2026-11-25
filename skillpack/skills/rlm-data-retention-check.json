@@ -1,0 +1,119 @@
+{
+ "id": "rlm-data-retention-check",
+ "goal": "Data retention check: each store's keep period, its deletion job and whether backups follow the same rule.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Data retention check: each store's keep period, its deletion job and whether backups follow the same rule. Use when a store holds data that has a retention rule.",
+ "prompt": "Use the rlm-data-retention-check skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the stores and the retention rule for each."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the deletion job. Confirm it runs, and what it deletes.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the backups. Confirm deleted data is removed from backups on a stated cycle.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the evidence. Each run should leave a record."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each store with its rule, the job, the backup position and the gap.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the stores and the retention rule for each",
+   "text": ""
+  },
+  {
+   "title": "Check the deletion job",
+   "text": "Confirm it runs, and what it deletes."
+  },
+  {
+   "title": "Check the backups",
+   "text": "Confirm deleted data is removed from backups on a stated cycle."
+  },
+  {
+   "title": "Check the evidence",
+   "text": "Each run should leave a record."
+  },
+  {
+   "title": "Report",
+   "text": "Each store with its rule, the job, the backup position and the gap."
+  }
+ ],
+ "path": ".github/skills/rlm-data-retention-check",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 61
+ },
+ "skillMd": "skill-md/rlm-data-retention-check.md",
+ "zip": "downloads/rlm-data-retention-check.zip"
+}

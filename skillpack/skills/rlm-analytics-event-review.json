@@ -1,0 +1,119 @@
+{
+ "id": "rlm-analytics-event-review",
+ "goal": "Analytics event review: which events are tracked, what they carry, and whether they can identify a person.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Analytics event review: which events are tracked, what they carry, and whether they can identify a person. Use when a feature adds or changes analytics events.",
+ "prompt": "Use the rlm-analytics-event-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the events. Each name, when it fires and the properties it sends."
+  },
+  {
+   "layout": "chunks",
+   "note": "Flag identifiers. User names, emails or open text sent as properties.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the purpose. Each event has a use that someone named.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the consent. Events that need consent are gated by it."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each event with its properties, the identifiers found and the change.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the events",
+   "text": "Each name, when it fires and the properties it sends."
+  },
+  {
+   "title": "Flag identifiers",
+   "text": "User names, emails or open text sent as properties."
+  },
+  {
+   "title": "Check the purpose",
+   "text": "Each event has a use that someone named."
+  },
+  {
+   "title": "Check the consent",
+   "text": "Events that need consent are gated by it."
+  },
+  {
+   "title": "Report",
+   "text": "Each event with its properties, the identifiers found and the change."
+  }
+ ],
+ "path": ".github/skills/rlm-analytics-event-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.65",
+  "scores": [
+   4,
+   4,
+   3,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 165
+ },
+ "skillMd": "skill-md/rlm-analytics-event-review.md",
+ "zip": "downloads/rlm-analytics-event-review.zip"
+}
