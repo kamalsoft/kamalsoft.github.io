@@ -183,7 +183,7 @@
    4
   ],
   "design": true,
-  "rank": 179
+  "rank": 169
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] dialog-confirm.tsx:12  Focus not returned to the opener on close.\n       Fix: Return focus to the button that opened it.\n[medium] tabs-settings.tsx:19  Arrow keys not supported in the tabs.\n       Fix: Add arrow-key navigation.\n[low] toast-save.tsx:26  Toast rebuilt in custom code.\n       Fix: Use the platform's popover.\nNot checked: Behaviour in real assistive technology and browsers, third-party component internals, and visual design quality.",
  "skillMd": "skill-md/rlm-web-ui-components.md",

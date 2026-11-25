@@ -114,7 +114,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 100
+    "rank": 96
    }
   },
   {
@@ -231,7 +231,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 50
+    "rank": 46
    }
   },
   {
@@ -499,7 +499,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 120
+    "rank": 116
    }
   },
   {
@@ -625,7 +625,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 51
+    "rank": 47
    }
   },
   {
@@ -742,7 +742,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 14
+    "rank": 13
    }
   },
   {
@@ -876,7 +876,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 101
+    "rank": 97
    }
   },
   {
@@ -993,7 +993,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 52
+    "rank": 48
    }
   },
   {
@@ -1110,7 +1110,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 138
+    "rank": 134
    }
   },
   {
@@ -1240,7 +1240,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 139
+    "rank": 135
    }
   },
   {
@@ -1372,7 +1372,7 @@ window.SKILL_INDEX = {
      2
     ],
     "design": true,
-    "rank": 215
+    "rank": 192
    }
   },
   {
@@ -1489,7 +1489,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 102
+    "rank": 98
    }
   },
   {
@@ -1606,7 +1606,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 53
+    "rank": 49
    }
   },
   {
@@ -1975,7 +1975,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 172
+    "rank": 162
    }
   },
   {
@@ -2101,7 +2101,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 180
+    "rank": 170
    }
   },
   {
@@ -2233,7 +2233,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 37
+    "rank": 33
    }
   },
   {
@@ -2350,7 +2350,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 38
+    "rank": 34
    }
   },
   {
@@ -2467,7 +2467,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 54
+    "rank": 50
    }
   },
   {
@@ -2593,7 +2593,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 157
+    "rank": 147
    }
   },
   {
@@ -2719,7 +2719,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 55
+    "rank": 51
    }
   },
   {
@@ -2851,7 +2851,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 46
+    "rank": 42
    }
   },
   {
@@ -2981,7 +2981,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 103
+    "rank": 99
    }
   },
   {
@@ -3230,7 +3230,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 184
+    "rank": 174
    }
   },
   {
@@ -3362,7 +3362,7 @@ window.SKILL_INDEX = {
      2
     ],
     "design": true,
-    "rank": 217
+    "rank": 194
    }
   },
   {
@@ -3479,7 +3479,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 173
+    "rank": 163
    }
   },
   {
@@ -3596,7 +3596,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 140
+    "rank": 136
    }
   },
   {
@@ -3713,7 +3713,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 174
+    "rank": 164
    }
   },
   {
@@ -3839,7 +3839,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 39
+    "rank": 35
    }
   },
   {
@@ -3956,7 +3956,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 56
+    "rank": 52
    }
   },
   {
@@ -4082,7 +4082,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 158
+    "rank": 148
    }
   },
   {
@@ -4208,7 +4208,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 175
+    "rank": 165
    }
   },
   {
@@ -4334,7 +4334,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 104
+    "rank": 100
    }
   },
   {
@@ -4451,7 +4451,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 57
+    "rank": 53
    }
   },
   {
@@ -4568,7 +4568,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 58
+    "rank": 54
    }
   },
   {
@@ -4685,7 +4685,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 40
+    "rank": 36
    }
   },
   {
@@ -4811,7 +4811,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 105
+    "rank": 101
    }
   },
   {
@@ -4945,7 +4945,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 59
+    "rank": 55
    }
   },
   {
@@ -5062,7 +5062,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 60
+    "rank": 56
    }
   },
   {
@@ -5179,7 +5179,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 61
+    "rank": 57
    }
   },
   {
@@ -5305,7 +5305,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 15
+    "rank": 14
    }
   },
   {
@@ -5422,7 +5422,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 106
+    "rank": 102
    }
   },
   {
@@ -5539,7 +5539,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 121
+    "rank": 117
    }
   },
   {
@@ -5671,7 +5671,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 12
+    "rank": 11
    }
   },
   {
@@ -5788,7 +5788,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 205
+    "rank": 190
    }
   },
   {
@@ -5918,7 +5918,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 62
+    "rank": 58
    }
   },
   {
@@ -6167,7 +6167,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 159
+    "rank": 149
    }
   },
   {
@@ -6284,7 +6284,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 41
+    "rank": 37
    }
   },
   {
@@ -6468,7 +6468,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 146
+    "rank": 142
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] grant-4.yaml:12  Deploy grant with no roster match.\n       Fix: Remove the grant or add the holder to the roster.\n[high] grant-3.yaml:19  Production grant with no approver reference.\n       Fix: Record the approver or revoke the grant.\n[medium] grant-6.yaml:26  Staging role not needed for this team.\n       Fix: Confirm the need with the team lead.\nNot checked: Access granted outside the list."
   },
@@ -6653,7 +6653,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 195
+    "rank": 185
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-batch.csv:12  Spend with no owner team.\n       Fix: Assign an owning team.\n[medium] svc-dev-env.csv:19  Resource at 3% utilisation for 30 days.\n       Fix: Stop or resize the environment.\n[low] svc-logs.csv:26  Spend total differs from the billing lines.\n       Fix: Recompute from the billing export.\nNot checked: Whether the resource is needed for a future event."
   },
@@ -6828,7 +6828,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 147
+    "rank": 143
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] deploy-search.log:12  Failed production deploy with no cause.\n       Fix: Record the cause and the fix.\n[high] deploy-billing.log:19  Production deploy with no approval reference.\n       Fix: Attach the approval or record the exception.\n[medium] deploy-worker.log:26  Rollback with no record.\n       Fix: Write the rollback entry.\nNot checked: What happened in production after the deploy."
   },
@@ -6996,7 +6996,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 32
+    "rank": 31
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] scenario-cache.md:12  Restore time not measured.\n       Fix: Measure the restore and record the time.\n[medium] scenario-queue.md:19  Passed, but measured time is over the target.\n       Fix: Change the result or the target.\n[medium] scenario-dns.md:26  Gap with no action.\n       Fix: Name the action and its owner.\nNot checked: Whether the recovery works for real data at scale."
   },
@@ -7190,7 +7190,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 148
+    "rank": 144
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] alerts.tf:12  No alert for the error rate.\n       Fix: Add an alert on the error rate.\n[medium] logging.ts:19  Request path logs are not structured.\n       Fix: Use structured logging on the request path.\n[low] pipeline.yml:26  Deploy path has no rollback step.\n       Fix: Add a rollback step to the pipeline.\nNot checked: The runtime behaviour; the alert thresholds' suitability."
   },
@@ -7357,7 +7357,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 196
+    "rank": 186
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] alert-disk.md:12  Open alert with no next step.\n       Fix: Write the next step and its owner.\n[high] deploy-pending-web.md:19  Pending deploy with no approval.\n       Fix: Get the approval before the handover.\n[medium] risk-vendor.md:26  Risk with no owner role.\n       Fix: Assign an owner role.\nNot checked: Alerts not in the log."
   },
@@ -7542,7 +7542,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 197
+    "rank": 187
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] pipeline-web.json:12  Failure rate 18 percent today.\n       Fix: Fix the failing stage.\n[medium] pipeline-worker.json:19  Queue time 14 minutes against a target of 5.\n       Fix: Add runners or split the job.\n[low] pipeline-e2e.json:26  Test passes and fails on the same commit.\n       Fix: Quarantine the test and fix it.\nNot checked: Failures outside the export."
   },
@@ -7715,7 +7715,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 33
+    "rank": 32
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] migrations/0042.sql:12  Migration with no rollback note.\n       Fix: Write the reverse migration and its note.\n[medium] package.json:19  Version 2.3.0 in the package, 2.2.0 in the notes.\n       Fix: Make the two versions match.\n[high] signoff.md:26  Security gate has no sign-off.\n       Fix: Record the sign-off before release.\nNot checked: Whether the gates were run; the runtime behaviour."
   },
@@ -7900,7 +7900,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 198
+    "rank": 188
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-billing.slo:12  Over its error budget with no action.\n       Fix: Record the action and its owner.\n[medium] svc-search.slo:19  Objective has no definition.\n       Fix: Define the objective and how it is measured.\n[low] svc-worker.slo:26  Attainment does not follow from the counts.\n       Fix: Recompute attainment from the counts.\nNot checked: Customer impact beyond the measured SLO."
   },
@@ -8094,7 +8094,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 149
+    "rank": 145
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] step-03-db.md:12  Database change with no reverse step.\n       Fix: Write the reverse migration.\n[medium] step-04-cache.md:19  Cache step has no verification.\n       Fix: Add a check that the cache is cleared.\n[low] step-06-notify.md:26  Notify step depends on a step not listed.\n       Fix: List the step it depends on.\nNot checked: Whether the rollback works in production."
   },
@@ -8279,7 +8279,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 218
+    "rank": 195
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] req-1044.md:12  Urgent request with no reason.\n       Fix: Give the reason or lower the priority.\n[medium] req-1046.md:19  Request with no owner.\n       Fix: Assign an owner role and a deadline.\n[low] req-1047.md:26  No ask recorded.\n       Fix: Write the ask in one sentence.\nNot checked: Whether the request is worth doing."
   },
@@ -8464,7 +8464,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 150
+    "rank": 146
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] cve-jwt.json:12  Reachable from a public service.\n       Fix: Patch this week.\n[medium] cve-libxml.json:19  High severity, unreachable, ranked above a reachable one.\n       Fix: Re-rank by reachability.\n[low] cve-zlib.json:26  Finding with no identifier.\n       Fix: Record the identifier from the scanner.\nNot checked: Exploitability beyond the stated reachability."
   },
@@ -8636,7 +8636,7 @@ window.SKILL_INDEX = {
     "score": null,
     "scores": null,
     "design": true,
-    "rank": 199
+    "rank": 189
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] week-44.csv:12  Week with missing records.\n       Fix: Add the missing records and recompute.\n[medium] week-42.csv:19  Failure with no restore time.\n       Fix: Record the restore time.\n[low] week-45.csv:26  Measure with no source records.\n       Fix: Name the source of the measure.\nNot checked: Whether the metrics reflect real customer value."
   },
@@ -8773,7 +8773,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 214
+    "rank": 191
    }
   },
   {
@@ -8890,7 +8890,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 185
+    "rank": 175
    }
   },
   {
@@ -9007,7 +9007,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 63
+    "rank": 59
    }
   },
   {
@@ -9124,7 +9124,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 64
+    "rank": 60
    }
   },
   {
@@ -9241,7 +9241,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 107
+    "rank": 103
    }
   },
   {
@@ -9371,7 +9371,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 65
+    "rank": 61
    }
   },
   {
@@ -9488,7 +9488,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 66
+    "rank": 62
    }
   },
   {
@@ -9605,7 +9605,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 108
+    "rank": 104
    }
   },
   {
@@ -9722,7 +9722,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 109
+    "rank": 105
    }
   },
   {
@@ -9839,7 +9839,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 67
+    "rank": 63
    }
   },
   {
@@ -9956,7 +9956,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 160
+    "rank": 150
    }
   },
   {
@@ -10082,7 +10082,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 42
+    "rank": 38
    }
   },
   {
@@ -10208,7 +10208,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 110
+    "rank": 106
    }
   },
   {
@@ -10325,7 +10325,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 122
+    "rank": 118
    }
   },
   {
@@ -10442,7 +10442,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 68
+    "rank": 64
    }
   },
   {
@@ -10559,7 +10559,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 69
+    "rank": 65
    }
   },
   {
@@ -10676,7 +10676,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 70
+    "rank": 66
    }
   },
   {
@@ -10793,7 +10793,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 111
+    "rank": 107
    }
   },
   {
@@ -10910,7 +10910,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 31
+    "rank": 30
    }
   },
   {
@@ -11027,7 +11027,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 71
+    "rank": 67
    }
   },
   {
@@ -11144,7 +11144,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 112
+    "rank": 108
    }
   },
   {
@@ -11261,7 +11261,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 72
+    "rank": 68
    }
   },
   {
@@ -11378,7 +11378,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 73
+    "rank": 69
    }
   },
   {
@@ -11495,7 +11495,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 123
+    "rank": 119
    }
   },
   {
@@ -11612,7 +11612,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 74
+    "rank": 70
    }
   },
   {
@@ -11729,7 +11729,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 75
+    "rank": 71
    }
   },
   {
@@ -11846,7 +11846,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 113
+    "rank": 109
    }
   },
   {
@@ -11963,7 +11963,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 76
+    "rank": 72
    }
   },
   {
@@ -12080,7 +12080,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 161
+    "rank": 151
    }
   },
   {
@@ -12197,7 +12197,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 124
+    "rank": 120
    }
   },
   {
@@ -12314,7 +12314,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 77
+    "rank": 73
    }
   },
   {
@@ -12431,7 +12431,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 141
+    "rank": 137
    }
   },
   {
@@ -12548,7 +12548,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 27
+    "rank": 26
    }
   },
   {
@@ -12665,7 +12665,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 162
+    "rank": 152
    }
   },
   {
@@ -12782,7 +12782,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 78
+    "rank": 74
    }
   },
   {
@@ -12908,7 +12908,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 176
+    "rank": 166
    }
   },
   {
@@ -13038,7 +13038,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 125
+    "rank": 121
    }
   },
   {
@@ -13164,7 +13164,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 126
+    "rank": 122
    }
   },
   {
@@ -13281,7 +13281,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 127
+    "rank": 123
    }
   },
   {
@@ -13398,7 +13398,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 163
+    "rank": 153
    }
   },
   {
@@ -13515,7 +13515,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 79
+    "rank": 75
    }
   },
   {
@@ -13632,7 +13632,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 80
+    "rank": 76
    }
   },
   {
@@ -13764,7 +13764,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 216
+    "rank": 193
    }
   },
   {
@@ -13881,7 +13881,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 16
+    "rank": 15
    }
   },
   {
@@ -13998,7 +13998,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 28
+    "rank": 27
    }
   },
   {
@@ -14115,7 +14115,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 186
+    "rank": 176
    }
   },
   {
@@ -14241,7 +14241,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 81
+    "rank": 77
    }
   },
   {
@@ -14358,7 +14358,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 21
+    "rank": 20
    }
   },
   {
@@ -14484,7 +14484,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 177
+    "rank": 167
    }
   },
   {
@@ -14601,7 +14601,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 82
+    "rank": 78
    }
   },
   {
@@ -14727,7 +14727,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 22
+    "rank": 21
    }
   },
   {
@@ -14844,7 +14844,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 164
+    "rank": 154
    }
   },
   {
@@ -14976,7 +14976,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 183
+    "rank": 173
    }
   },
   {
@@ -15093,7 +15093,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 187
+    "rank": 177
    }
   },
   {
@@ -15369,7 +15369,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 142
+    "rank": 138
    }
   },
   {
@@ -15486,7 +15486,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 114
+    "rank": 110
    }
   },
   {
@@ -15603,7 +15603,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 128
+    "rank": 124
    }
   },
   {
@@ -15720,7 +15720,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 83
+    "rank": 79
    }
   },
   {
@@ -15837,7 +15837,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 84
+    "rank": 80
    }
   },
   {
@@ -15954,7 +15954,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 129
+    "rank": 125
    }
   },
   {
@@ -16094,7 +16094,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 143
+    "rank": 139
    }
   },
   {
@@ -16211,7 +16211,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 85
+    "rank": 81
    }
   },
   {
@@ -16328,7 +16328,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 115
+    "rank": 111
    }
   },
   {
@@ -16458,7 +16458,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 165
+    "rank": 155
    }
   },
   {
@@ -16575,7 +16575,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 23
+    "rank": 22
    }
   },
   {
@@ -16692,7 +16692,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 17
+    "rank": 16
    }
   },
   {
@@ -16809,7 +16809,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 29
+    "rank": 28
    }
   },
   {
@@ -16926,7 +16926,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 18
+    "rank": 17
    }
   },
   {
@@ -17043,7 +17043,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 19
+    "rank": 18
    }
   },
   {
@@ -17175,7 +17175,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 43
+    "rank": 39
    }
   },
   {
@@ -17292,7 +17292,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 130
+    "rank": 126
    }
   },
   {
@@ -17409,7 +17409,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 86
+    "rank": 82
    }
   },
   {
@@ -17535,7 +17535,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 87
+    "rank": 83
    }
   },
   {
@@ -17652,7 +17652,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 116
+    "rank": 112
    }
   },
   {
@@ -17769,7 +17769,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 131
+    "rank": 127
    }
   },
   {
@@ -17905,7 +17905,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 47
+    "rank": 43
    }
   },
   {
@@ -18022,7 +18022,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 88
+    "rank": 84
    }
   },
   {
@@ -18148,7 +18148,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 48
+    "rank": 44
    }
   },
   {
@@ -18278,7 +18278,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 89
+    "rank": 85
    }
   },
   {
@@ -18395,7 +18395,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 188
+    "rank": 178
    }
   },
   {
@@ -18531,7 +18531,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 24
+    "rank": 23
    }
   },
   {
@@ -18657,7 +18657,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 117
+    "rank": 113
    }
   },
   {
@@ -18789,7 +18789,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 221
+    "rank": 196
    }
   },
   {
@@ -18906,7 +18906,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 90
+    "rank": 86
    }
   },
   {
@@ -19032,7 +19032,7 @@ window.SKILL_INDEX = {
      5
     ],
     "design": true,
-    "rank": 132
+    "rank": 128
    }
   },
   {
@@ -19149,7 +19149,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 91
+    "rank": 87
    }
   },
   {
@@ -19266,7 +19266,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 92
+    "rank": 88
    }
   },
   {
@@ -19392,7 +19392,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 189
+    "rank": 179
    }
   },
   {
@@ -19509,7 +19509,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 133
+    "rank": 129
    }
   },
   {
@@ -19635,7 +19635,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 44
+    "rank": 40
    }
   },
   {
@@ -19761,7 +19761,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 144
+    "rank": 140
    }
   },
   {
@@ -19878,7 +19878,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 166
+    "rank": 156
    }
   },
   {
@@ -19995,7 +19995,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 134
+    "rank": 130
    }
   },
   {
@@ -20121,7 +20121,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 30
+    "rank": 29
    }
   },
   {
@@ -20379,7 +20379,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 45
+    "rank": 41
    }
   },
   {
@@ -20496,7 +20496,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 93
+    "rank": 89
    }
   },
   {
@@ -20613,7 +20613,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 181
+    "rank": 171
    }
   },
   {
@@ -20730,7 +20730,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 94
+    "rank": 90
    }
   },
   {
@@ -20847,7 +20847,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 95
+    "rank": 91
    }
   },
   {
@@ -20964,7 +20964,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 135
+    "rank": 131
    }
   },
   {
@@ -21090,7 +21090,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 145
+    "rank": 141
    }
   },
   {
@@ -21216,7 +21216,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 167
+    "rank": 157
    }
   },
   {
@@ -21333,7 +21333,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 96
+    "rank": 92
    }
   },
   {
@@ -21450,7 +21450,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 25
+    "rank": 24
    }
   },
   {
@@ -21582,7 +21582,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 168
+    "rank": 158
    }
   },
   {
@@ -21699,7 +21699,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 97
+    "rank": 93
    }
   },
   {
@@ -21816,4518 +21816,8 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 190
+    "rank": 180
    }
-  },
-  {
-   "id": "rlm-techops-access-request",
-   "goal": "Checks an access request: the grant or removal, the approver and the least access needed.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Checks an access request: the grant or removal, the approver and the least access needed. Use when an access request arrives.",
-   "prompt": "Use the rlm-techops-access-request skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a request with no approver, access above the role's standard, and a grant with no expiry."
-   ],
-   "cons": [
-    "Not checked: Whether the access is used."
-   ],
-   "items": [
-    "req-1041.md",
-    "req-1042.md",
-    "req-1043.md",
-    "req-1044.md",
-    "req-1045.md",
-    "req-1046.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "ok",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "approved",
-      "no approver",
-      "no expiry"
-     ],
-     "binOf": [
-      0,
-      1,
-      0,
-      2,
-      0,
-      0
-     ],
-     "note": "Rank. Each request is placed by its approver and its expiry."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 request has no approver",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "req-1042.md:12",
-      "title": "Access requested with no approver",
-      "fix": "Record the approver before the grant"
-     },
-     {
-      "sev": "medium",
-      "where": "req-1046.md:19",
-      "title": "Access above the role's standard",
-      "fix": "Reduce the access to the role's standard"
-     },
-     {
-      "sev": "low",
-      "where": "req-1044.md:26",
-      "title": "Grant with no expiry",
-      "fix": "Set an expiry date"
-     }
-    ],
-    "notChecked": "Whether the access is used."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Compare each access with the role standard."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-access-request",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "A-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 34
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] req-1042.md:12  Access requested with no approver.\n       Fix: Record the approver before the grant.\n[medium] req-1046.md:19  Access above the role's standard.\n       Fix: Reduce the access to the role's standard.\n[low] req-1044.md:26  Grant with no expiry.\n       Fix: Set an expiry date.\nNot checked: Whether the access is used."
-  },
-  {
-   "id": "rlm-techops-access-review",
-   "goal": "Reviews user and privileged access against the roster each quarter.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reviews user and privileged access against the roster each quarter. Use when running the quarterly access review.",
-   "prompt": "Use the rlm-techops-access-review skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags an account not on the roster, a privileged right with no approval, and a dormant privileged account."
-   ],
-   "cons": [
-    "Not checked: Access granted outside the list."
-   ],
-   "items": [
-    "acct-01.csv",
-    "acct-02.csv",
-    "acct-03.csv",
-    "acct-04.csv",
-    "acct-05.csv",
-    "acct-06.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "bad",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "match",
-     "targets": [
-      "roster: staff",
-      "roster: contractor"
-     ],
-     "pairs": [
-      0,
-      0,
-      -1,
-      1,
-      0,
-      0
-     ],
-     "targetState": [
-      "ok",
-      "ok"
-     ],
-     "note": "Compare. Each account is matched to the roster. An account not on the roster is flagged."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      false,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "2 accounts need review",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      2,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "acct-03.csv:12",
-      "title": "Account not on the roster",
-      "fix": "Remove the account or add it to the roster"
-     },
-     {
-      "sev": "high",
-      "where": "acct-05.csv:19",
-      "title": "Privileged right with no approval",
-      "fix": "Record the approval or revoke the right"
-     },
-     {
-      "sev": "medium",
-      "where": "acct-06.csv:26",
-      "title": "Dormant privileged account",
-      "fix": "Disable the account or record why it is needed"
-     }
-    ],
-    "notChecked": "Access granted outside the list."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Match each account by identifier."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-access-review",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 151
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] acct-03.csv:12  Account not on the roster.\n       Fix: Remove the account or add it to the roster.\n[high] acct-05.csv:19  Privileged right with no approval.\n       Fix: Record the approval or revoke the right.\n[medium] acct-06.csv:26  Dormant privileged account.\n       Fix: Disable the account or record why it is needed.\nNot checked: Access granted outside the list."
-  },
-  {
-   "id": "rlm-techops-annual-plan",
-   "goal": "Drafts next year's IT plan and resourcing from this year's records.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Drafts next year's IT plan and resourcing from this year's records. Use when planning IT for next year.",
-   "prompt": "Use the rlm-techops-annual-plan skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags an item with no baseline, a measure with no source, and a resource with no owner."
-   ],
-   "cons": [
-    "Not checked: Changes outside the notes."
-   ],
-   "items": [
-    "it-plan-network.md",
-    "it-plan-erp.md",
-    "it-plan-hiring.md",
-    "it-plan-security.md",
-    "it-plan-cloud.md",
-    "it-plan-desk.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "warn",
-      "ok",
-      "warn",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "measured",
-      "no baseline",
-      "no source"
-     ],
-     "binOf": [
-      0,
-      1,
-      0,
-      2,
-      0,
-      1
-     ],
-     "note": "Rank. Each plan item is placed by whether its measure has a baseline and a source."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "3 plan items need a baseline, a source or an owner",
-    "tone": "warn",
-    "bars": [
-     [
-      "medium",
-      2,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "medium",
-      "where": "it-plan-erp.md:12",
-      "title": "Plan item has no baseline",
-      "fix": "Record last year's actual as the baseline"
-     },
-     {
-      "sev": "medium",
-      "where": "it-plan-security.md:19",
-      "title": "Measure has no source",
-      "fix": "Name the report that supplies the measure"
-     },
-     {
-      "sev": "low",
-      "where": "it-plan-desk.md:26",
-      "title": "Resource has no owner",
-      "fix": "Assign an owner role"
-     }
-    ],
-    "notChecked": "Changes outside the notes."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each baseline from the source rows."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-annual-plan",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 206
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 medium, 1 low).\n[medium] it-plan-erp.md:12  Plan item has no baseline.\n       Fix: Record last year's actual as the baseline.\n[medium] it-plan-security.md:19  Measure has no source.\n       Fix: Name the report that supplies the measure.\n[low] it-plan-desk.md:26  Resource has no owner.\n       Fix: Assign an owner role.\nNot checked: Changes outside the notes."
-  },
-  {
-   "id": "rlm-techops-asset-reconcile",
-   "goal": "Reconciles the asset register each month against what is found on the network.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reconciles the asset register each month against what is found on the network. Use when reconciling the asset register.",
-   "prompt": "Use the rlm-techops-asset-reconcile skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags an asset found but not registered, an asset registered but not found, and an asset with no owner."
-   ],
-   "cons": [
-    "Not checked: Assets not discovered by the scan."
-   ],
-   "items": [
-    "asset-laptop-114",
-    "asset-server-07",
-    "asset-switch-3",
-    "asset-printer-2",
-    "asset-phone-88",
-    "asset-vm-204"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "matched",
-      "found, not registered",
-      "registered, not found"
-     ],
-     "binOf": [
-      0,
-      0,
-      0,
-      1,
-      0,
-      2
-     ],
-     "note": "Rank. Each asset is placed by whether the register and the network agree."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      false,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "2 assets do not match the register",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "asset-printer-2:12",
-      "title": "Found on the network but not registered",
-      "fix": "Register the device or remove it"
-     },
-     {
-      "sev": "medium",
-      "where": "asset-vm-204:19",
-      "title": "Registered but not found on the network",
-      "fix": "Confirm the asset is retired or find it"
-     },
-     {
-      "sev": "low",
-      "where": "asset-phone-88:26",
-      "title": "Asset with no owner",
-      "fix": "Assign an owner"
-     }
-    ],
-    "notChecked": "Assets not discovered by the scan."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Match each asset by identifier, not by name."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-asset-reconcile",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 200
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] asset-printer-2:12  Found on the network but not registered.\n       Fix: Register the device or remove it.\n[medium] asset-vm-204:19  Registered but not found on the network.\n       Fix: Confirm the asset is retired or find it.\n[low] asset-phone-88:26  Asset with no owner.\n       Fix: Assign an owner.\nNot checked: Assets not discovered by the scan."
-  },
-  {
-   "id": "rlm-techops-backup-check",
-   "goal": "Checks backup jobs each day: success or failure, and the age of the last good copy.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Checks backup jobs each day: success or failure, and the age of the last good copy. Use when checking backups.",
-   "prompt": "Use the rlm-techops-backup-check skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a failed job with no ticket, a last good copy older than its target, and a job with no record."
-   ],
-   "cons": [
-    "Not checked: Whether the backup restores."
-   ],
-   "items": [
-    "job-db-nightly",
-    "job-files",
-    "job-mail",
-    "job-crm",
-    "job-logs",
-    "job-config"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "warn",
-      "bad",
-      "ok",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0,
-      0.2,
-      0.4,
-      0.6,
-      0.8,
-      1.0
-     ],
-     "note": "Order. Each backup job is placed by the age of its last good copy."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      false,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 backup is older than its target",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      2,
-      "medium"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "job-crm:12",
-      "title": "Last good copy older than its target",
-      "fix": "Run the job and check it completes"
-     },
-     {
-      "sev": "medium",
-      "where": "job-mail:19",
-      "title": "Failed job with no ticket",
-      "fix": "Open a ticket for the failure"
-     },
-     {
-      "sev": "medium",
-      "where": "job-config:26",
-      "title": "Job with no record",
-      "fix": "Record the job in the backup register"
-     }
-    ],
-    "notChecked": "Whether the backup restores."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Compute each age from the end time and the report time."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-backup-check",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "A",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 11
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] job-crm:12  Last good copy older than its target.\n       Fix: Run the job and check it completes.\n[medium] job-mail:19  Failed job with no ticket.\n       Fix: Open a ticket for the failure.\n[medium] job-config:26  Job with no record.\n       Fix: Record the job in the backup register.\nNot checked: Whether the backup restores."
-  },
-  {
-   "id": "rlm-techops-budget",
-   "goal": "Builds the IT budget with its variance, using the finance method.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Builds the IT budget with its variance, using the finance method. Use when building or reviewing the IT budget.",
-   "prompt": "Use the rlm-techops-budget skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a line more than 20 percent above last year with no reason, a total that does not equal its lines, and a missing currency."
-   ],
-   "cons": [
-    "Not checked: Whether the budget is affordable at group level."
-   ],
-   "items": [
-    "it-hardware.csv",
-    "it-licences.csv",
-    "it-cloud.csv",
-    "it-services.csv",
-    "it-training.csv",
-    "it-contingency.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "ok",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "funnel",
-     "note": "Total. Each line is added up, and the total must equal the sum of its lines."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 line over the 20 percent limit",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "it-licences.csv:12",
-      "title": "Line 24 percent above last year with no reason",
-      "fix": "Give the reason or reduce the line"
-     },
-     {
-      "sev": "medium",
-      "where": "it-contingency.csv:19",
-      "title": "Total does not equal the sum of its lines",
-      "fix": "Correct the total"
-     },
-     {
-      "sev": "low",
-      "where": "it-training.csv:26",
-      "title": "Missing currency on a line",
-      "fix": "State the currency"
-     }
-    ],
-    "notChecked": "Whether the budget is affordable at group level."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each total from the lines."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-budget",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 201
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] it-licences.csv:12  Line 24 percent above last year with no reason.\n       Fix: Give the reason or reduce the line.\n[medium] it-contingency.csv:19  Total does not equal the sum of its lines.\n       Fix: Correct the total.\n[low] it-training.csv:26  Missing currency on a line.\n       Fix: State the currency.\nNot checked: Whether the budget is affordable at group level."
-  },
-  {
-   "id": "rlm-techops-capacity-check",
-   "goal": "Checks disk, CPU, memory and network headroom each week, with the trend.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Checks disk, CPU, memory and network headroom each week, with the trend. Use when checking capacity headroom.",
-   "prompt": "Use the rlm-techops-capacity-check skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a resource with less than 15 percent headroom, a trend that reaches the limit within 30 days, and a resource with no metric."
-   ],
-   "cons": [
-    "Not checked: Workload forecasts beyond the trend."
-   ],
-   "items": [
-    "host-db-01",
-    "host-web-03",
-    "host-app-07",
-    "storage-san-1",
-    "net-core-2",
-    "host-batch-04"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "warn",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "headroom ok",
-      "under 15 percent",
-      "no metric"
-     ],
-     "binOf": [
-      0,
-      1,
-      0,
-      1,
-      0,
-      2
-     ],
-     "note": "Rank. Each resource is placed by its headroom and whether it has a metric."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 resource runs out of headroom within 30 days",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "host-web-03:12",
-      "title": "Under 15 percent headroom, limit reached within 30 days",
-      "fix": "Add capacity before the date"
-     },
-     {
-      "sev": "medium",
-      "where": "storage-san-1:19",
-      "title": "Trend reaches the limit within 30 days",
-      "fix": "Plan the capacity increase"
-     },
-     {
-      "sev": "low",
-      "where": "host-batch-04:26",
-      "title": "Resource with no metric",
-      "fix": "Add the metric to monitoring"
-     }
-    ],
-    "notChecked": "Workload forecasts beyond the trend."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each headroom and trend from the metrics."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-capacity-check",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 152
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] host-web-03:12  Under 15 percent headroom, limit reached within 30 days.\n       Fix: Add capacity before the date.\n[medium] storage-san-1:19  Trend reaches the limit within 30 days.\n       Fix: Plan the capacity increase.\n[low] host-batch-04:26  Resource with no metric.\n       Fix: Add the metric to monitoring.\nNot checked: Workload forecasts beyond the trend."
-  },
-  {
-   "id": "rlm-techops-change-request",
-   "goal": "Writes an IT change request with its impact, risk, approvals and rollback.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Writes an IT change request with its impact, risk, approvals and rollback. Use when an IT change needs a formal request.",
-   "prompt": "Use the rlm-techops-change-request skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a request with no rollback, an impact with no affected service named, and an approver missing for the risk level."
-   ],
-   "cons": [
-    "Not checked: Whether the change works."
-   ],
-   "items": [
-    "chg-441.md",
-    "chg-442.md",
-    "chg-443.md",
-    "chg-444.md",
-    "chg-445.md",
-    "chg-446.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      false,
-      true
-     ],
-     "note": "Gate. A change needs a named service, an approver for its risk level and a rollback."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 change cannot be approved as written",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "chg-442.md:12",
-      "title": "Approver missing for the risk level",
-      "fix": "Name the approver before the change"
-     },
-     {
-      "sev": "medium",
-      "where": "chg-445.md:19",
-      "title": "Impact names no affected service",
-      "fix": "Name the services affected"
-     },
-     {
-      "sev": "low",
-      "where": "chg-443.md:26",
-      "title": "No rollback described",
-      "fix": "Write the rollback steps"
-     }
-    ],
-    "notChecked": "Whether the change works."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited line."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-change-request",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 153
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] chg-442.md:12  Approver missing for the risk level.\n       Fix: Name the approver before the change.\n[medium] chg-445.md:19  Impact names no affected service.\n       Fix: Name the services affected.\n[low] chg-443.md:26  No rollback described.\n       Fix: Write the rollback steps.\nNot checked: Whether the change works."
-  },
-  {
-   "id": "rlm-techops-change-review",
-   "goal": "Reviews the changes scheduled each fortnight, their risk and any failed changes.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reviews the changes scheduled each fortnight, their risk and any failed changes. Use when reviewing the change schedule.",
-   "prompt": "Use the rlm-techops-change-review skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a high-risk change with no approver, a change with no rollback, and a failed change with no review."
-   ],
-   "cons": [
-    "Not checked: Whether the change worked as intended."
-   ],
-   "items": [
-    "chg-wk1-db.md",
-    "chg-wk1-net.md",
-    "chg-wk2-app.md",
-    "chg-wk2-os.md",
-    "chg-wk2-sec.md",
-    "chg-wk2-dns.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0,
-      0.2,
-      0.4,
-      0.6,
-      0.8,
-      1.0
-     ],
-     "note": "Order. Each scheduled change is placed in the order it runs in the fortnight."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 high-risk change has no approver",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "chg-wk2-app.md:12",
-      "title": "High-risk change with no approver",
-      "fix": "Get an approver before the change runs"
-     },
-     {
-      "sev": "medium",
-      "where": "chg-wk2-sec.md:19",
-      "title": "Failed change with no review",
-      "fix": "Review the failure and record the cause"
-     },
-     {
-      "sev": "low",
-      "where": "chg-wk2-dns.md:26",
-      "title": "Change with no rollback",
-      "fix": "Add a rollback step"
-     }
-    ],
-    "notChecked": "Whether the change worked as intended."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited change record."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-change-review",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 154
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] chg-wk2-app.md:12  High-risk change with no approver.\n       Fix: Get an approver before the change runs.\n[medium] chg-wk2-sec.md:19  Failed change with no review.\n       Fix: Review the failure and record the cause.\n[low] chg-wk2-dns.md:26  Change with no rollback.\n       Fix: Add a rollback step.\nNot checked: Whether the change worked as intended."
-  },
-  {
-   "id": "rlm-techops-decommission-checklist",
-   "goal": "Lists the steps to retire a system: data, access, licences and records.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Lists the steps to retire a system: data, access, licences and records. Use when a system is retired.",
-   "prompt": "Use the rlm-techops-decommission-checklist skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a step with no owner, a step with no record, and a dependency still in use."
-   ],
-   "cons": [
-    "Not checked: Whether the data was really deleted."
-   ],
-   "items": [
-    "step-data-erase.md",
-    "step-access-revoke.md",
-    "step-licences.md",
-    "step-records.md",
-    "step-dependency-db.md",
-    "step-archive.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "ok",
-      "warn",
-      "bad",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "graph",
-     "edges": [
-      [
-       1,
-       0
-      ],
-      [
-       0,
-       3
-      ],
-      [
-       2,
-       3
-      ],
-      [
-       3,
-       5
-      ],
-      [
-       4,
-       0
-      ]
-     ],
-     "note": "Order. A step waits for the steps it depends on. A dependency still in use blocks the chain."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      false,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 dependency is still in use, so do not retire yet",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "step-dependency-db.md:12",
-      "title": "Dependency still in use",
-      "fix": "Move the dependency before retiring the system"
-     },
-     {
-      "sev": "medium",
-      "where": "step-records.md:19",
-      "title": "Step with no record",
-      "fix": "Record the step and its date"
-     },
-     {
-      "sev": "low",
-      "where": "step-licences.md:26",
-      "title": "Licence step with no owner",
-      "fix": "Assign an owner"
-     }
-    ],
-    "notChecked": "Whether the data was really deleted."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited step."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-decommission-checklist",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 207
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] step-dependency-db.md:12  Dependency still in use.\n       Fix: Move the dependency before retiring the system.\n[medium] step-records.md:19  Step with no record.\n       Fix: Record the step and its date.\n[low] step-licences.md:26  Licence step with no owner.\n       Fix: Assign an owner.\nNot checked: Whether the data was really deleted."
-  },
-  {
-   "id": "rlm-techops-dr-test",
-   "goal": "Records an infrastructure restore and failover test each quarter, with its result.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Records an infrastructure restore and failover test each quarter, with its result. Use when recording an infrastructure recovery test.",
-   "prompt": "Use the rlm-techops-dr-test skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a test with no measured time, a result that does not match the measured time, and a gap with no action."
-   ],
-   "cons": [
-    "Not checked: Recovery of real data at scale."
-   ],
-   "items": [
-    "scenario-ad.md",
-    "scenario-vm-restore.md",
-    "scenario-network.md",
-    "scenario-backup-db.md",
-    "scenario-dns.md",
-    "scenario-storage.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "bad",
-      "warn",
-      "warn",
-      "ok",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "store",
-     "storeLabel": "test record",
-     "note": "Record. Each measured time is written to the test record against its target."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      false,
-      true,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 test has no measured restore time",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      2,
-      "medium"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "scenario-ad.md:12",
-      "title": "Restore time not measured",
-      "fix": "Measure the restore and record the time"
-     },
-     {
-      "sev": "medium",
-      "where": "scenario-vm-restore.md:19",
-      "title": "Result does not match the measured time",
-      "fix": "Correct the result"
-     },
-     {
-      "sev": "medium",
-      "where": "scenario-network.md:26",
-      "title": "Gap with no action",
-      "fix": "Name the action and its owner"
-     }
-    ],
-    "notChecked": "Recovery of real data at scale."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each recovery time from the log."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-dr-test",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "A-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 35
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] scenario-ad.md:12  Restore time not measured.\n       Fix: Measure the restore and record the time.\n[medium] scenario-vm-restore.md:19  Result does not match the measured time.\n       Fix: Correct the result.\n[medium] scenario-network.md:26  Gap with no action.\n       Fix: Name the action and its owner.\nNot checked: Recovery of real data at scale."
-  },
-  {
-   "id": "rlm-techops-hardware-refresh-plan",
-   "goal": "Lists hardware reaching end of life and the replacement order each half-year.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Lists hardware reaching end of life and the replacement order each half-year. Use when planning hardware replacement.",
-   "prompt": "Use the rlm-techops-hardware-refresh-plan skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags an asset past its end of support in service, a critical asset with no replacement plan, and a cost with no source."
-   ],
-   "cons": [
-    "Not checked: Whether the replacement will fit the workload."
-   ],
-   "items": [
-    "asset-fw-2019",
-    "asset-server-old-4",
-    "asset-laptops-2018",
-    "asset-switch-14",
-    "asset-ups-9",
-    "asset-san-2017"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "warn",
-      "bad",
-      "ok",
-      "ok",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0.1,
-      0.3,
-      0.5,
-      0.6,
-      0.8,
-      0.9
-     ],
-     "note": "Order. Each asset is placed by its end-of-support date."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 asset is past end of support",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "asset-server-old-4:12",
-      "title": "Past end of support and still in service",
-      "fix": "Replace it or plan the replacement now"
-     },
-     {
-      "sev": "medium",
-      "where": "asset-fw-2019:19",
-      "title": "Critical asset with no replacement plan",
-      "fix": "Write a replacement plan with a date"
-     },
-     {
-      "sev": "low",
-      "where": "asset-ups-9:26",
-      "title": "Replacement cost with no source",
-      "fix": "Attach the quote"
-     }
-    ],
-    "notChecked": "Whether the replacement will fit the workload."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each date from the support dates."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-hardware-refresh-plan",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 208
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] asset-server-old-4:12  Past end of support and still in service.\n       Fix: Replace it or plan the replacement now.\n[medium] asset-fw-2019:19  Critical asset with no replacement plan.\n       Fix: Write a replacement plan with a date.\n[low] asset-ups-9:26  Replacement cost with no source.\n       Fix: Attach the quote.\nNot checked: Whether the replacement will fit the workload."
-  },
-  {
-   "id": "rlm-techops-it-proposal",
-   "goal": "Drafts a business case for an IT investment: cost, benefit, risk and the decision asked.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Drafts a business case for an IT investment: cost, benefit, risk and the decision asked. Use when proposing an IT investment.",
-   "prompt": "Use the rlm-techops-it-proposal skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a benefit with no basis, a cost line with no estimate source, and a risk with no mitigation."
-   ],
-   "cons": [
-    "Not checked: The actual benefit."
-   ],
-   "items": [
-    "claim-savings.md",
-    "cost-licences.csv",
-    "risk-migration.md",
-    "benefit-uptime.md",
-    "cost-training.csv",
-    "risk-vendor.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "warn",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "match",
-     "targets": [
-      "source: pilot data",
-      "source: vendor quote",
-      "no source"
-     ],
-     "pairs": [
-      0,
-      1,
-      2,
-      2,
-      1,
-      2
-     ],
-     "targetState": [
-      "ok",
-      "ok",
-      "bad"
-     ],
-     "note": "Compare. Each benefit and cost is matched to its source. One with no source is a gap."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "2 benefits or risks lack a basis",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      2,
-      "medium"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "risk-migration.md:12",
-      "title": "Risk with no mitigation",
-      "fix": "Name a mitigation and its owner"
-     },
-     {
-      "sev": "medium",
-      "where": "benefit-uptime.md:19",
-      "title": "Benefit with no basis",
-      "fix": "Give the basis for the benefit"
-     },
-     {
-      "sev": "medium",
-      "where": "cost-training.csv:26",
-      "title": "Cost line with no estimate source",
-      "fix": "Attach the estimate"
-     }
-    ],
-    "notChecked": "The actual benefit."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited line."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-it-proposal",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 209
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] risk-migration.md:12  Risk with no mitigation.\n       Fix: Name a mitigation and its owner.\n[medium] benefit-uptime.md:19  Benefit with no basis.\n       Fix: Give the basis for the benefit.\n[medium] cost-training.csv:26  Cost line with no estimate source.\n       Fix: Attach the estimate.\nNot checked: The actual benefit."
-  },
-  {
-   "id": "rlm-techops-licence-renewal",
-   "goal": "Lists licence renewals in the coming year, with the cost and use of each.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Lists licence renewals in the coming year, with the cost and use of each. Use when planning licence renewals.",
-   "prompt": "Use the rlm-techops-licence-renewal skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a renewal within 60 days with no decision, a renewal with no cost, and a licence renewed with no use in the last year."
-   ],
-   "cons": [
-    "Not checked: Vendor price changes not in the register."
-   ],
-   "items": [
-    "lic-office.md",
-    "lic-crm.csv",
-    "lic-design.csv",
-    "lic-vpn.csv",
-    "lic-analytics.csv",
-    "lic-backup.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "warn",
-      "ok",
-      "bad",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0.05,
-      0.2,
-      0.35,
-      0.5,
-      0.7,
-      0.9
-     ],
-     "note": "Order. Each renewal is placed by its date in the coming year."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      false,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 renewal due within 60 days has no decision",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      2,
-      "medium"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "lic-analytics.csv:12",
-      "title": "Renews within 60 days with no decision",
-      "fix": "Decide renew or cancel this week"
-     },
-     {
-      "sev": "medium",
-      "where": "lic-design.csv:19",
-      "title": "Renewal with no cost recorded",
-      "fix": "Record the cost from the quote"
-     },
-     {
-      "sev": "medium",
-      "where": "lic-backup.csv:26",
-      "title": "Licence renewed with no use in the last year",
-      "fix": "Check the use before renewing"
-     }
-    ],
-    "notChecked": "Vendor price changes not in the register."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each renewal window from the dates."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-licence-renewal",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 210
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] lic-analytics.csv:12  Renews within 60 days with no decision.\n       Fix: Decide renew or cancel this week.\n[medium] lic-design.csv:19  Renewal with no cost recorded.\n       Fix: Record the cost from the quote.\n[medium] lic-backup.csv:26  Licence renewed with no use in the last year.\n       Fix: Check the use before renewing.\nNot checked: Vendor price changes not in the register."
-  },
-  {
-   "id": "rlm-techops-licence-usage",
-   "goal": "Reports licences installed against licences used each month, with the cost of unused ones.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports licences installed against licences used each month, with the cost of unused ones. Use when reviewing licence use.",
-   "prompt": "Use the rlm-techops-licence-usage skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags use above the licences held, and unused licences with a cost."
-   ],
-   "cons": [
-    "Not checked: The vendor's contract terms."
-   ],
-   "items": [
-    "pool-office.csv",
-    "pool-design.csv",
-    "pool-dev.csv",
-    "pool-crm.csv",
-    "pool-bi.csv",
-    "pool-vpn.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "warn",
-      "ok",
-      "ok",
-      "bad",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "in use",
-      "unused, costs money",
-      "use above held"
-     ],
-     "binOf": [
-      0,
-      1,
-      0,
-      0,
-      2,
-      0
-     ],
-     "note": "Rank. Each pool is placed by its use against the licences held."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      false,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 pool is used above what is held",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "pool-bi.csv:12",
-      "title": "Use above the licences held",
-      "fix": "Buy the missing licences"
-     },
-     {
-      "sev": "medium",
-      "where": "pool-design.csv:19",
-      "title": "Unused licences with a cost",
-      "fix": "Reclaim or cancel the unused licences"
-     },
-     {
-      "sev": "low",
-      "where": "pool-crm.csv:26",
-      "title": "Pool with no owner",
-      "fix": "Assign an owner"
-     }
-    ],
-    "notChecked": "The vendor's contract terms."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each difference and cost."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-licence-usage",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 202
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] pool-bi.csv:12  Use above the licences held.\n       Fix: Buy the missing licences.\n[medium] pool-design.csv:19  Unused licences with a cost.\n       Fix: Reclaim or cancel the unused licences.\n[low] pool-crm.csv:26  Pool with no owner.\n       Fix: Assign an owner.\nNot checked: The vendor's contract terms."
-  },
-  {
-   "id": "rlm-techops-monthly-report",
-   "goal": "Monthly IT service pack with the month-on-month change for each service.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Monthly IT service pack with the month-on-month change for each service. Use when preparing the monthly IT service report.",
-   "prompt": "Use the rlm-techops-monthly-report skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a figure that does not match its source, a missing service, and a change above 25 percent with no note."
-   ],
-   "cons": [
-    "Not checked: Business outcomes."
-   ],
-   "items": [
-    "svc-email.csv",
-    "svc-erp.csv",
-    "svc-vpn.csv",
-    "svc-desk.csv",
-    "svc-wifi.csv",
-    "svc-web.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "funnel",
-     "note": "Compute. Each figure is recomputed from its source, not copied from the last report."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 figure does not match its source",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "svc-erp.csv:12",
-      "title": "Figure does not match its source",
-      "fix": "Recompute from the source export"
-     },
-     {
-      "sev": "medium",
-      "where": "svc-wifi.csv:19",
-      "title": "Change above 25 percent with no note",
-      "fix": "Explain the change in one line"
-     },
-     {
-      "sev": "low",
-      "where": "svc-desk.csv:26",
-      "title": "Service missing from the report",
-      "fix": "Add the service row"
-     }
-    ],
-    "notChecked": "Business outcomes."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each figure from the source rows."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-monthly-report",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 203
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-erp.csv:12  Figure does not match its source.\n       Fix: Recompute from the source export.\n[medium] svc-wifi.csv:19  Change above 25 percent with no note.\n       Fix: Explain the change in one line.\n[low] svc-desk.csv:26  Service missing from the report.\n       Fix: Add the service row.\nNot checked: Business outcomes."
-  },
-  {
-   "id": "rlm-techops-patch-compliance",
-   "goal": "Reports patch compliance by system group each month, against the patch policy.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports patch compliance by system group each month, against the patch policy. Use when reporting patch compliance.",
-   "prompt": "Use the rlm-techops-patch-compliance skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a group below the policy share, and a host outside policy with no exception."
-   ],
-   "cons": [
-    "Not checked: Whether the patches work."
-   ],
-   "items": [
-    "group-finance.csv",
-    "group-sales.csv",
-    "group-dev.csv",
-    "group-servers.csv",
-    "group-kiosks.csv",
-    "group-lab.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "ok",
-      "ok",
-      "bad",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "at policy",
-      "below policy",
-      "exception"
-     ],
-     "binOf": [
-      0,
-      0,
-      0,
-      1,
-      0,
-      1
-     ],
-     "note": "Rank. Each system group is placed by its patch share against the policy."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      false,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 host is outside policy with no exception",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "group-kiosks.csv:12",
-      "title": "Host outside policy with no exception",
-      "fix": "Patch the host or record an exception"
-     },
-     {
-      "sev": "medium",
-      "where": "group-lab.csv:19",
-      "title": "Group below the policy share",
-      "fix": "Set a date to reach the policy share"
-     },
-     {
-      "sev": "low",
-      "where": "group-sales.csv:26",
-      "title": "Exception recorded without an expiry",
-      "fix": "Set an expiry for the exception"
-     }
-    ],
-    "notChecked": "Whether the patches work."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each share from the host list."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-patch-compliance",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 155
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] group-kiosks.csv:12  Host outside policy with no exception.\n       Fix: Patch the host or record an exception.\n[medium] group-lab.csv:19  Group below the policy share.\n       Fix: Set a date to reach the policy share.\n[low] group-sales.csv:26  Exception recorded without an expiry.\n       Fix: Set an expiry for the exception.\nNot checked: Whether the patches work."
-  },
-  {
-   "id": "rlm-techops-patch-status",
-   "goal": "Reports the patch status of hosts each week against the target, with the exceptions.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports the patch status of hosts each week against the target, with the exceptions. Use when reviewing patch status each week.",
-   "prompt": "Use the rlm-techops-patch-status skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a host below the target with no exception recorded, and an exception past its expiry."
-   ],
-   "cons": [
-    "Not checked: Whether the patch installed correctly."
-   ],
-   "items": [
-    "host-web-01",
-    "host-web-02",
-    "host-db-01",
-    "host-app-03",
-    "host-app-04",
-    "host-file-02"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "on target",
-      "below target",
-      "exception"
-     ],
-     "binOf": [
-      0,
-      0,
-      1,
-      0,
-      2,
-      1
-     ],
-     "note": "Rank. Each host is placed by its patch status against the target."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 host is below target with no exception",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "host-db-01:12",
-      "title": "Below target with no exception recorded",
-      "fix": "Patch the host this week"
-     },
-     {
-      "sev": "medium",
-      "where": "host-app-04:19",
-      "title": "Exception past its expiry",
-      "fix": "Patch the host or renew the exception"
-     },
-     {
-      "sev": "low",
-      "where": "host-file-02:26",
-      "title": "Host below target",
-      "fix": "Schedule the patch window"
-     }
-    ],
-    "notChecked": "Whether the patch installed correctly."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Compare each patch level with the target."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-patch-status",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 156
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] host-db-01:12  Below target with no exception recorded.\n       Fix: Patch the host this week.\n[medium] host-app-04:19  Exception past its expiry.\n       Fix: Patch the host or renew the exception.\n[low] host-file-02:26  Host below target.\n       Fix: Schedule the patch window.\nNot checked: Whether the patch installed correctly."
-  },
-  {
-   "id": "rlm-techops-service-health",
-   "goal": "Checks service and host status each day, with alerts and the day-on-day change.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Checks service and host status each day, with alerts and the day-on-day change. Use when checking IT service health each day.",
-   "prompt": "Use the rlm-techops-service-health skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a service down for more than 15 minutes with no ticket, a host with alerts and no owner, and a status with no timestamp."
-   ],
-   "cons": [
-    "Not checked: Problems the monitoring does not measure."
-   ],
-   "items": [
-    "svc-checkout",
-    "svc-login",
-    "svc-search",
-    "host-batch-02",
-    "host-mail-01",
-    "svc-reports"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0,
-      0.15,
-      0.4,
-      0.6,
-      0.8,
-      1.0
-     ],
-     "note": "Order. Each service's status is placed in the order it changed during the day."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 service is down with no ticket",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "svc-search:12",
-      "title": "Down for more than 15 minutes with no ticket",
-      "fix": "Open a ticket and start the incident"
-     },
-     {
-      "sev": "medium",
-      "where": "host-mail-01:19",
-      "title": "Host with alerts and no owner",
-      "fix": "Assign an owner"
-     },
-     {
-      "sev": "low",
-      "where": "svc-reports:26",
-      "title": "Status with no timestamp",
-      "fix": "Record when the status was read"
-     }
-    ],
-    "notChecked": "Problems the monitoring does not measure."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each outage duration from its timestamps."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-service-health",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "A-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 36
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-search:12  Down for more than 15 minutes with no ticket.\n       Fix: Open a ticket and start the incident.\n[medium] host-mail-01:19  Host with alerts and no owner.\n       Fix: Assign an owner.\n[low] svc-reports:26  Status with no timestamp.\n       Fix: Record when the status was read.\nNot checked: Problems the monitoring does not measure."
-  },
-  {
-   "id": "rlm-techops-system-requirements",
-   "goal": "Writes the requirements for a new system: users, data, integrations and security.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Writes the requirements for a new system: users, data, integrations and security. Use when a new system is planned.",
-   "prompt": "Use the rlm-techops-system-requirements skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a requirement with no criterion, a data item with no classification, and an integration with no owner."
-   ],
-   "cons": [
-    "Not checked: Whether the system can meet the requirement."
-   ],
-   "items": [
-    "req-users.md",
-    "req-data.md",
-    "req-integrations.md",
-    "req-security.md",
-    "req-availability.md",
-    "req-reporting.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "warn",
-      "warn",
-      "ok",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "stack",
-     "note": "List. Each requirement is stacked with its criterion, owner and classification."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "2 requirements need an owner or a classification",
-    "tone": "warn",
-    "bars": [
-     [
-      "medium",
-      2,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "medium",
-      "where": "req-data.md:12",
-      "title": "Data item with no classification",
-      "fix": "Classify the data"
-     },
-     {
-      "sev": "medium",
-      "where": "req-integrations.md:19",
-      "title": "Integration with no owner",
-      "fix": "Name the owner"
-     },
-     {
-      "sev": "low",
-      "where": "req-availability.md:26",
-      "title": "Requirement with no criterion",
-      "fix": "Write a measurable criterion"
-     }
-    ],
-    "notChecked": "Whether the system can meet the requirement."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited requirement."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-system-requirements",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 211
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 medium, 1 low).\n[medium] req-data.md:12  Data item with no classification.\n       Fix: Classify the data.\n[medium] req-integrations.md:19  Integration with no owner.\n       Fix: Name the owner.\n[low] req-availability.md:26  Requirement with no criterion.\n       Fix: Write a measurable criterion.\nNot checked: Whether the system can meet the requirement."
-  },
-  {
-   "id": "rlm-techops-ticket-queue",
-   "goal": "Reports the open service desk tickets each day by priority, age and owner.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports the open service desk tickets each day by priority, age and owner. Use when reviewing the service desk queue.",
-   "prompt": "Use the rlm-techops-ticket-queue skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a ticket older than its priority target, a ticket with no owner, and a ticket with no update for two working days."
-   ],
-   "cons": [
-    "Not checked: Tickets not in the export."
-   ],
-   "items": [
-    "tkt-8812",
-    "tkt-8815",
-    "tkt-8820",
-    "tkt-8821",
-    "tkt-8823",
-    "tkt-8830"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "within target",
-      "over target",
-      "no owner"
-     ],
-     "binOf": [
-      0,
-      1,
-      0,
-      0,
-      0,
-      2
-     ],
-     "note": "Rank. Each ticket is placed by its age against its priority target and by its owner."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 ticket is over its priority target",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "tkt-8815:12",
-      "title": "Older than its priority target",
-      "fix": "Escalate and assign the ticket today"
-     },
-     {
-      "sev": "medium",
-      "where": "tkt-8823:19",
-      "title": "No update for two working days",
-      "fix": "Update the requester"
-     },
-     {
-      "sev": "low",
-      "where": "tkt-8830:26",
-      "title": "Ticket with no owner",
-      "fix": "Assign an owner"
-     }
-    ],
-    "notChecked": "Tickets not in the export."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each age from the open date."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-ticket-queue",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 204
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] tkt-8815:12  Older than its priority target.\n       Fix: Escalate and assign the ticket today.\n[medium] tkt-8823:19  No update for two working days.\n       Fix: Update the requester.\n[low] tkt-8830:26  Ticket with no owner.\n       Fix: Assign an owner.\nNot checked: Tickets not in the export."
-  },
-  {
-   "id": "rlm-techops-ticket-trend",
-   "goal": "Reports service desk ticket volume and categories each week, with the week-on-week change.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports service desk ticket volume and categories each week, with the week-on-week change. Use when reviewing ticket trends.",
-   "prompt": "Use the rlm-techops-ticket-trend skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a category up more than 25 percent with no note, and a ticket with no category."
-   ],
-   "cons": [
-    "Not checked: The cause of recurring tickets."
-   ],
-   "items": [
-    "cat-hardware",
-    "cat-email",
-    "cat-access",
-    "cat-software",
-    "cat-network",
-    "cat-uncategorised"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "warn"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "steady",
-      "up over 25 percent",
-      "no category"
-     ],
-     "binOf": [
-      0,
-      0,
-      1,
-      0,
-      0,
-      2
-     ],
-     "note": "Rank. Each category is placed by its change on last week and whether it is categorised."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 category is up 27 percent",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "cat-access:12",
-      "title": "Category up 27 percent with no note",
-      "fix": "Explain the rise and name the cause"
-     },
-     {
-      "sev": "medium",
-      "where": "cat-uncategorised:19",
-      "title": "Tickets with no category",
-      "fix": "Categorise the tickets"
-     },
-     {
-      "sev": "low",
-      "where": "cat-network:26",
-      "title": "Recurring cause not recorded",
-      "fix": "Record the cause of the recurring ticket"
-     }
-    ],
-    "notChecked": "The cause of recurring tickets."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recount each category from the rows."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-ticket-trend",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 212
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] cat-access:12  Category up 27 percent with no note.\n       Fix: Explain the rise and name the cause.\n[medium] cat-uncategorised:19  Tickets with no category.\n       Fix: Categorise the tickets.\n[low] cat-network:26  Recurring cause not recorded.\n       Fix: Record the cause of the recurring ticket.\nNot checked: The cause of recurring tickets."
-  },
-  {
-   "id": "rlm-techops-triage",
-   "goal": "Intake, priority, owner and deadline for unplanned IT requests.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Intake, priority, owner and deadline for unplanned IT requests. Use when an unplanned IT request arrives.",
-   "prompt": "Use the rlm-techops-triage skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a request with no ask, an urgent request with no reason, and a request with no owner."
-   ],
-   "cons": [
-    "Not checked: Whether the request is worth doing."
-   ],
-   "items": [
-    "req-1042.md",
-    "req-1043.md",
-    "req-1044.md",
-    "req-1045.md",
-    "req-1046.md",
-    "req-1047.md"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "bad",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "urgent",
-      "normal",
-      "later"
-     ],
-     "binOf": [
-      1,
-      1,
-      0,
-      2,
-      1,
-      0
-     ],
-     "note": "Rank. Each request is placed by its stated priority."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      false,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 urgent request has no reason",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "req-1044.md:12",
-      "title": "Urgent request with no reason",
-      "fix": "Give the reason or lower the priority"
-     },
-     {
-      "sev": "medium",
-      "where": "req-1046.md:19",
-      "title": "Request with no owner",
-      "fix": "Assign an owner role and a deadline"
-     },
-     {
-      "sev": "low",
-      "where": "req-1047.md:26",
-      "title": "No ask recorded",
-      "fix": "Write the ask in one sentence"
-     }
-    ],
-    "notChecked": "Whether the request is worth doing."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Re-read each cited line."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-triage",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "C+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 219
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] req-1044.md:12  Urgent request with no reason.\n       Fix: Give the reason or lower the priority.\n[medium] req-1046.md:19  Request with no owner.\n       Fix: Assign an owner role and a deadline.\n[low] req-1047.md:26  No ask recorded.\n       Fix: Write the ask in one sentence.\nNot checked: Whether the request is worth doing."
-  },
-  {
-   "id": "rlm-techops-vendor-review",
-   "goal": "Reviews vendor performance against the service level agreement each quarter.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reviews vendor performance against the service level agreement each quarter. Use when reviewing a technology vendor.",
-   "prompt": "Use the rlm-techops-vendor-review skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a service level missed with no credit claimed, a result with no source, and an open issue past its due date."
-   ],
-   "cons": [
-    "Not checked: Vendor processes."
-   ],
-   "items": [
-    "vendor-sla-uptime",
-    "vendor-sla-response",
-    "vendor-sla-backup",
-    "vendor-invoice",
-    "vendor-issue-14",
-    "vendor-notes"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "bad",
-      "ok",
-      "ok",
-      "warn",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "bins",
-     "bins": [
-      "met",
-      "missed, credit claimed",
-      "missed, no credit"
-     ],
-     "binOf": [
-      0,
-      2,
-      0,
-      0,
-      1,
-      0
-     ],
-     "note": "Rank. Each service level is placed by whether it was met and whether a credit was claimed."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      false,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "1 missed service level with no credit claimed",
-    "tone": "bad",
-    "bars": [
-     [
-      "high",
-      1,
-      "high"
-     ],
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "high",
-      "where": "vendor-sla-response:12",
-      "title": "Service level missed with no credit claimed",
-      "fix": "Claim the credit from the vendor"
-     },
-     {
-      "sev": "medium",
-      "where": "vendor-issue-14:19",
-      "title": "Open issue past its due date",
-      "fix": "Escalate the issue with the vendor"
-     },
-     {
-      "sev": "low",
-      "where": "vendor-invoice:26",
-      "title": "Result with no source",
-      "fix": "Attach the report the result came from"
-     }
-    ],
-    "notChecked": "Vendor processes."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Recompute each result from the source report."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-vendor-review",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "B-",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 213
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] vendor-sla-response:12  Service level missed with no credit claimed.\n       Fix: Claim the credit from the vendor.\n[medium] vendor-issue-14:19  Open issue past its due date.\n       Fix: Escalate the issue with the vendor.\n[low] vendor-invoice:26  Result with no source.\n       Fix: Attach the report the result came from.\nNot checked: Vendor processes."
-  },
-  {
-   "id": "rlm-techops-ytd-report",
-   "goal": "Reports year-to-date IT service levels and spend against plan.",
-   "cat": "Installed",
-   "on": false,
-   "use": "Reports year-to-date IT service levels and spend against plan. Use when reporting IT performance for the year so far.",
-   "prompt": "Use the rlm-techops-ytd-report skill on the records for this review.",
-   "input": "The records for this review, as text or CSV",
-   "output": "A draft report: findings with location, fix and a not-checked list",
-   "pros": [
-    "Flags a month missing, a measure with no monthly result, and a year-to-date figure that differs from the sum of its months by more than rounding."
-   ],
-   "cons": [
-    "Not checked: Results after the report date."
-   ],
-   "items": [
-    "month-01.csv",
-    "month-02.csv",
-    "month-03.csv",
-    "month-04.csv",
-    "month-05.csv",
-    "month-06.csv"
-   ],
-   "steps": [
-    {
-     "layout": "row",
-     "note": "Inspect. The records in scope are listed, and any skipped file is reported."
-    },
-    {
-     "layout": "chunks",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "note": "Partition. The records are cut into chunks, each read on its own."
-    },
-    {
-     "layout": "parallel",
-     "groups": [
-      0,
-      0,
-      1,
-      1,
-      2,
-      2
-     ],
-     "state": [
-      "ok",
-      "ok",
-      "ok",
-      "warn",
-      "ok",
-      "ok"
-     ],
-     "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
-    },
-    {
-     "layout": "timeline",
-     "at": [
-      0,
-      0.2,
-      0.4,
-      0.6,
-      0.8,
-      1.0
-     ],
-     "note": "Sum. Each month is added once to the year-to-date figure."
-    },
-    {
-     "layout": "gate",
-     "pass": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true
-     ],
-     "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
-    },
-    {
-     "layout": "doc",
-     "docLabel": "draft report",
-     "note": "Report. Status: draft for the owner to review. It is not a decision."
-    }
-   ],
-   "outcome": {
-    "verdict": "2 months need a check",
-    "tone": "warn",
-    "bars": [
-     [
-      "medium",
-      1,
-      "medium"
-     ],
-     [
-      "low",
-      1,
-      "low"
-     ]
-    ],
-    "findings": [
-     {
-      "sev": "medium",
-      "where": "month-04.csv:12",
-      "title": "Month missing from the year-to-date sum",
-      "fix": "Add the month's records"
-     },
-     {
-      "sev": "low",
-      "where": "month-06.csv:19",
-      "title": "Year-to-date differs from the sum of months",
-      "fix": "Recompute from the monthly rows"
-     }
-    ],
-    "notChecked": "Results after the report date."
-   },
-   "idea": "",
-   "why": "",
-   "protocol": [
-    {
-     "title": "Inspect",
-     "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
-    },
-    {
-     "title": "Partition",
-     "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
-    },
-    {
-     "title": "Map",
-     "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
-    },
-    {
-     "title": "Reduce",
-     "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
-    },
-    {
-     "title": "Verify",
-     "text": "Sum from the source rows, not from monthly totals alone."
-    },
-    {
-     "title": "Report",
-     "text": "Write the report in the format below."
-    },
-    {
-     "title": "Clean up",
-     "text": "Delete `$WORK` after the report is delivered."
-    }
-   ],
-   "path": ".github/skills/rlm-techops-ytd-report",
-   "files": [
-    "scripts/rlm_corpus.py"
-   ],
-   "helperScripts": 1,
-   "notChecked": true,
-   "group": "ops",
-   "grade": {
-    "grade": "C+",
-    "score": null,
-    "scores": null,
-    "design": true,
-    "rank": 220
-   },
-   "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 2 findings (1 medium, 1 low).\n[medium] month-04.csv:12  Month missing from the year-to-date sum.\n       Fix: Add the month's records.\n[low] month-06.csv:19  Year-to-date differs from the sum of months.\n       Fix: Recompute from the monthly rows.\nNot checked: Results after the report date."
   },
   {
    "id": "rlm-terraform-review",
@@ -26452,7 +21942,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 136
+    "rank": 132
    }
   },
   {
@@ -26714,7 +22204,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 169
+    "rank": 159
    }
   },
   {
@@ -26831,7 +22321,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 137
+    "rank": 133
    }
   },
   {
@@ -26963,7 +22453,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 13
+    "rank": 12
    }
   },
   {
@@ -27080,7 +22570,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 98
+    "rank": 94
    }
   },
   {
@@ -27212,7 +22702,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 191
+    "rank": 181
    }
   },
   {
@@ -27342,7 +22832,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 49
+    "rank": 45
    }
   },
   {
@@ -27459,7 +22949,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 192
+    "rank": 182
    }
   },
   {
@@ -27589,7 +23079,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 20
+    "rank": 19
    }
   },
   {
@@ -27706,7 +23196,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 170
+    "rank": 160
    }
   },
   {
@@ -27823,7 +23313,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 193
+    "rank": 183
    }
   },
   {
@@ -27940,7 +23430,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 99
+    "rank": 95
    }
   },
   {
@@ -28130,7 +23620,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 194
+    "rank": 184
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] manifest.json:12  Manifest missing the 512 pixel icon.\n       Fix: Add the 512 pixel icon with its purpose.\n[medium] sw.js:19  Cache holds a stale page.\n       Fix: Version the cache and remove the old entry.\n[low] locale.ts:26  Date shown in the server time zone.\n       Fix: Format the date in the user's time zone.\nNot checked: Behaviour on each platform's install flow unless tested, server-side date handling outside the scope, and time zone database updates on the server."
   },
@@ -28265,7 +23755,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 118
+    "rank": 114
    }
   },
   {
@@ -28455,7 +23945,7 @@ window.SKILL_INDEX = {
      1
     ],
     "design": true,
-    "rank": 222
+    "rank": 197
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] ai-summary.ts:12  AI API used without feature detection.\n       Fix: Check the API exists before calling it.\n[medium] agent-tools.ts:19  Agent action with no confirmation step.\n       Fix: Ask the user before the action.\n[low] ui-prompt.tsx:26  Unavailable state not handled.\n       Fix: Show a message for the unavailable state.\nNot checked: Model behaviour and output quality, availability on specific devices, and draft specifications that changed after the date checked."
   },
@@ -28825,7 +24315,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 178
+    "rank": 168
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 medium, 2 low).\n[medium] cards.css:12  Viewport query on a component that adapts to its container.\n       Fix: Use a container query.\n[low] theme.css:19  Dark-mode colours hardcoded.\n       Fix: Use colour tokens.\n[low] nav.css:26  Fixed pixel width breaks at narrow widths.\n       Fix: Use a fluid width.\nNot checked: Rendering in real browsers and devices, styles generated at run time, third-party widget styles, and visual design quality beyond these checks."
   },
@@ -29200,7 +24690,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 171
+    "rank": 161
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] hero.jpg:12  LCP image is lazy-loaded.\n       Fix: Load the hero image eagerly with high priority.\n[medium] analytics.js:19  Third-party script blocks rendering.\n       Fix: Load it with defer or async.\n[low] app.js:26  Script loaded without defer.\n       Fix: Add defer.\nNot checked: Real-user data if none was given, server response time and CDN configuration, low-end devices and slow networks unless tested, and features whose support was not confirmed for the targets."
   },
@@ -29389,7 +24879,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 179
+    "rank": 169
    },
    "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] dialog-confirm.tsx:12  Focus not returned to the opener on close.\n       Fix: Return focus to the button that opened it.\n[medium] tabs-settings.tsx:19  Arrow keys not supported in the tabs.\n       Fix: Add arrow-key navigation.\n[low] toast-save.tsx:26  Toast rebuilt in custom code.\n       Fix: Use the platform's popover.\nNot checked: Behaviour in real assistive technology and browsers, third-party component internals, and visual design quality."
   },
@@ -29516,7 +25006,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 182
+    "rank": 172
    }
   },
   {
@@ -29633,7 +25123,7 @@ window.SKILL_INDEX = {
      4
     ],
     "design": true,
-    "rank": 119
+    "rank": 115
    }
   },
   {
@@ -29750,7 +25240,7 @@ window.SKILL_INDEX = {
      3
     ],
     "design": true,
-    "rank": 26
+    "rank": 25
    }
   }
  ]

@@ -166,7 +166,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 199
+  "rank": 189
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] week-44.csv:12  Week with missing records.\n       Fix: Add the missing records and recompute.\n[medium] week-42.csv:19  Failure with no restore time.\n       Fix: Record the restore time.\n[low] week-45.csv:26  Measure with no source records.\n       Fix: Name the source of the measure.\nNot checked: Whether the metrics reflect real customer value.",
  "skillMd": "skill-md/rlm-devops-weekly-delivery-report.md",
