@@ -1,0 +1,187 @@
+{
+ "id": "rlm-devops-platform-roadmap",
+ "goal": "Reviews platform work done last quarter and drafts the platform roadmap for next quarter.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Reviews platform work done last quarter and drafts the platform roadmap for next quarter. Use when running the quarterly platform review.",
+ "prompt": "Use the rlm-devops-platform-roadmap skill on the records for this review.",
+ "input": "The records for this review, as text or CSV",
+ "output": "A draft report: findings with location, fix and a not-checked list",
+ "pros": [
+  "Flags a planned item with no outcome, a roadmap item with no owner, and a next-quarter item with no measure."
+ ],
+ "cons": [
+  "Not checked: Work not in the records."
+ ],
+ "items": [
+  "roadmap-q2-cache.md",
+  "roadmap-q2-secrets.md",
+  "roadmap-q2-ci.md",
+  "roadmap-q2-observability.md",
+  "roadmap-q2-dbpool.md",
+  "roadmap-q3-plan.md"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. The records in scope are listed, and any skipped file is reported."
+  },
+  {
+   "layout": "chunks",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "note": "Partition. The records are cut into chunks, each read on its own."
+  },
+  {
+   "layout": "parallel",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "warn",
+    "warn"
+   ],
+   "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
+  },
+  {
+   "layout": "match",
+   "targets": [
+    "delivered",
+    "partly delivered",
+    "not started"
+   ],
+   "pairs": [
+    0,
+    1,
+    2,
+    0,
+    2,
+    -1
+   ],
+   "targetState": [
+    "ok",
+    "warn",
+    "bad"
+   ],
+   "note": "Compare. Each planned item is matched to its outcome. A planned item with no outcome is a gap."
+  },
+  {
+   "layout": "gate",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
+  },
+  {
+   "layout": "doc",
+   "docLabel": "draft report",
+   "note": "Report. Status: draft for the owner to review. It is not a decision."
+  }
+ ],
+ "outcome": {
+  "verdict": "2 roadmap items have no outcome or no measure",
+  "tone": "warn",
+  "bars": [
+   [
+    "medium",
+    2,
+    "medium"
+   ],
+   [
+    "low",
+    1,
+    "low"
+   ]
+  ],
+  "findings": [
+   {
+    "sev": "medium",
+    "where": "roadmap-q2-dbpool.md:12",
+    "title": "Planned item has no outcome",
+    "fix": "Record the outcome or move the item"
+   },
+   {
+    "sev": "medium",
+    "where": "roadmap-q3-plan.md:19",
+    "title": "Next-quarter item has no measure",
+    "fix": "Add a measure with its target"
+   },
+   {
+    "sev": "low",
+    "where": "roadmap-q2-secrets.md:26",
+    "title": "Roadmap item has no owner",
+    "fix": "Assign an owner role"
+   }
+  ],
+  "notChecked": "Work not in the records."
+ },
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Re-read each cited item."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-devops-platform-roadmap",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "B-",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 72
+ },
+ "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 medium, 1 low).\n[medium] roadmap-q2-dbpool.md:12  Planned item has no outcome.\n       Fix: Record the outcome or move the item.\n[medium] roadmap-q3-plan.md:19  Next-quarter item has no measure.\n       Fix: Add a measure with its target.\n[low] roadmap-q2-secrets.md:26  Roadmap item has no owner.\n       Fix: Assign an owner role.\nNot checked: Work not in the records.",
+ "skillMd": "skill-md/rlm-devops-platform-roadmap.md",
+ "zip": "downloads/rlm-devops-platform-roadmap.zip"
+}

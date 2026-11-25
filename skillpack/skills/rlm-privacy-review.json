@@ -1,0 +1,138 @@
+{
+ "id": "rlm-privacy-review",
+ "goal": "Review a large codebase for personal data handling using Recursive Language Model (RLM) decomposition: where…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review a large codebase for personal data handling using Recursive Language Model (RLM) decomposition: where personal data is collected, stored, logged, shared with third parties and retained, with a data inventory and gaps. Use for privacy reviews, data-protection impact assessments, or when asked where personal data goes.",
+ "prompt": "Use the rlm-privacy-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. Run `python3 <skill>/scripts/rlm_corpus.py scan <repo>`."
+  },
+  {
+   "layout": "chunks",
+   "note": "Partition. Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <repo> \"$WORK/chunks\"`.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Map. For each chunk, run a fresh sub-task (a subagent if you can start one) that sees the chunk and the \"Chunk task\" below.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Reduce. Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`."
+  },
+  {
+   "layout": "gate",
+   "note": "Trace. For each data element in the inventory, follow its path through the code: collection, storage, logging, transfer, deletion.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Verify. Open each cited file and line, confirm each finding against the source, and drop any finding you cannot confirm.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py scan <repo>`. Narrow the scope with `--include` if the repository is very large, and record what was skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <repo> \"$WORK/chunks\"`."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees the chunk and the \"Chunk task\" below. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"` and process the first listed chunk, then run `pending` again until nothing is pending."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. Re-run any `failed_outputs`."
+  },
+  {
+   "title": "Trace",
+   "text": "For each data element in the inventory, follow its path through the code: collection, storage, logging, transfer, deletion. Confirm the path by reading the code, not by name alone."
+  },
+  {
+   "title": "Verify",
+   "text": "Open each cited file and line, confirm each finding against the source, and drop any finding you cannot confirm."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-privacy-review",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": false,
+ "group": "security",
+ "grade": {
+  "grade": "B+",
+  "score": "3.90",
+  "scores": [
+   4,
+   4,
+   5,
+   2,
+   4
+  ],
+  "design": true,
+  "rank": 21
+ },
+ "skillMd": "skill-md/rlm-privacy-review.md",
+ "zip": "downloads/rlm-privacy-review.zip"
+}

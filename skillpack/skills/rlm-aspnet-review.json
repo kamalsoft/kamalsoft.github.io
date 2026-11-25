@@ -1,0 +1,130 @@
+{
+ "id": "rlm-aspnet-review",
+ "goal": "Review ASP.NET Core code for authorization, model binding, CSRF, CORS, security headers and error handling.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review ASP.NET Core code for authorization, model binding, CSRF, CORS, security headers and error handling. Use when asked to review or harden an ASP.NET Core application or API.",
+ "prompt": "Use the rlm-aspnet-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the app setup. Open Program.cs or Startup.cs, the middleware order, the controllers or minimal API routes, and appsettings."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check authorization. Every endpoint that changes data or returns private data needs `[Authorize]` or an explicit policy.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check input binding. Flag models bound directly from the request with no validation, binding of fields the user should not set (such as `IsAdmin`), and missing `[ApiController]` validation.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check CSRF and CORS. Cookie-authenticated forms need antiforgery tokens."
+  },
+  {
+   "layout": "gate",
+   "note": "Check headers and transport. Look for HTTPS redirection, HSTS outside development, and missing security headers such as Content-Security-Policy and X-Content-Type-Options.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Check errors. Flag exception details or stack traces returned to clients, and `UseDeveloperExceptionPage` enabled in production.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the app setup",
+   "text": "Open Program.cs or Startup.cs, the middleware order, the controllers or minimal API routes, and appsettings. Note whether the app is an API, MVC or Razor Pages."
+  },
+  {
+   "title": "Check authorization",
+   "text": "Every endpoint that changes data or returns private data needs `[Authorize]` or an explicit policy. Flag `[AllowAnonymous]` on sensitive endpoints, and missing authorization on minimal API routes."
+  },
+  {
+   "title": "Check input binding",
+   "text": "Flag models bound directly from the request with no validation, binding of fields the user should not set (such as `IsAdmin`), and missing `[ApiController]` validation."
+  },
+  {
+   "title": "Check CSRF and CORS",
+   "text": "Cookie-authenticated forms need antiforgery tokens. Flag `AllowAnyOrigin` combined with credentials, and wildcard origins."
+  },
+  {
+   "title": "Check headers and transport",
+   "text": "Look for HTTPS redirection, HSTS outside development, and missing security headers such as Content-Security-Policy and X-Content-Type-Options."
+  },
+  {
+   "title": "Check errors",
+   "text": "Flag exception details or stack traces returned to clients, and `UseDeveloperExceptionPage` enabled in production."
+  },
+  {
+   "title": "Check output",
+   "text": "Razor output that is not encoded, `Html.Raw` on user data, and JSON responses that include internal fields."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as `file:line`, with severity (high, medium or low), the problem and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-aspnet-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 25
+ },
+ "skillMd": "skill-md/rlm-aspnet-review.md",
+ "zip": "downloads/rlm-aspnet-review.zip"
+}

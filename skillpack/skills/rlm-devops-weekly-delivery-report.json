@@ -1,0 +1,174 @@
+{
+ "id": "rlm-devops-weekly-delivery-report",
+ "goal": "Reports deploy frequency, lead time, change failure rate and time to restore each week, with the week-on-week…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Reports deploy frequency, lead time, change failure rate and time to restore each week, with the week-on-week change. Use when preparing the weekly delivery report.",
+ "prompt": "Use the rlm-devops-weekly-delivery-report skill on the records for this review.",
+ "input": "The records for this review, as text or CSV",
+ "output": "A draft report: findings with location, fix and a not-checked list",
+ "pros": [
+  "Flags a measure with no source records, a failure with no restore time, and a week with missing records."
+ ],
+ "cons": [
+  "Not checked: Whether the metrics reflect real customer value."
+ ],
+ "items": [
+  "week-40.csv",
+  "week-41.csv",
+  "week-42.csv",
+  "week-43.csv",
+  "week-44.csv",
+  "week-45.csv"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. The records in scope are listed, and any skipped file is reported."
+  },
+  {
+   "layout": "chunks",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "note": "Partition. The records are cut into chunks, each read on its own."
+  },
+  {
+   "layout": "parallel",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "warn",
+    "ok",
+    "bad",
+    "ok"
+   ],
+   "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
+  },
+  {
+   "layout": "funnel",
+   "note": "Compute. Each measure is computed from the week's records by the published definition."
+  },
+  {
+   "layout": "gate",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
+  },
+  {
+   "layout": "doc",
+   "docLabel": "draft report",
+   "note": "Report. Status: draft for the owner to review. It is not a decision."
+  }
+ ],
+ "outcome": {
+  "verdict": "1 week has missing records",
+  "tone": "bad",
+  "bars": [
+   [
+    "high",
+    1,
+    "high"
+   ],
+   [
+    "medium",
+    1,
+    "medium"
+   ],
+   [
+    "low",
+    1,
+    "low"
+   ]
+  ],
+  "findings": [
+   {
+    "sev": "high",
+    "where": "week-44.csv:12",
+    "title": "Week with missing records",
+    "fix": "Add the missing records and recompute"
+   },
+   {
+    "sev": "medium",
+    "where": "week-42.csv:19",
+    "title": "Failure with no restore time",
+    "fix": "Record the restore time"
+   },
+   {
+    "sev": "low",
+    "where": "week-45.csv:26",
+    "title": "Measure with no source records",
+    "fix": "Name the source of the measure"
+   }
+  ],
+  "notChecked": "Whether the metrics reflect real customer value."
+ },
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Recompute each measure from the records."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-devops-weekly-delivery-report",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "B",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 64
+ },
+ "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] week-44.csv:12  Week with missing records.\n       Fix: Add the missing records and recompute.\n[medium] week-42.csv:19  Failure with no restore time.\n       Fix: Record the restore time.\n[low] week-45.csv:26  Measure with no source records.\n       Fix: Name the source of the measure.\nNot checked: Whether the metrics reflect real customer value.",
+ "skillMd": "skill-md/rlm-devops-weekly-delivery-report.md",
+ "zip": "downloads/rlm-devops-weekly-delivery-report.zip"
+}

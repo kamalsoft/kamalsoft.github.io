@@ -1,0 +1,130 @@
+{
+ "id": "rlm-csharp-review",
+ "goal": "Review C# code for nullability, async and await, disposal, LINQ pitfalls, input handling and tests.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review C# code for nullability, async and await, disposal, LINQ pitfalls, input handling and tests. Use when asked to review or harden C# code.",
+ "prompt": "Use the rlm-csharp-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Open the .csproj or .sln files, Directory.Build.props, the analyzer configuration and the target framework."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check nullability. Flag `!` (null-forgiving) used where a real null is possible, and public members without nullable annotations.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check async code. Look for `async void` outside event handlers, `.Result` or `.Wait()` that can deadlock, missing `ConfigureAwait` where a library is consumed, and `CancellationToken` not passed through.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check disposal. `IDisposable` values, streams, `HttpClient` created per request, and database connections must be disposed, normally with `using`."
+  },
+  {
+   "layout": "gate",
+   "note": "Check LINQ and collections. Flag multiple enumeration of a lazy query, `First()` where `FirstOrDefault()` is needed, and string building in loops.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Check input and output. Flag untrusted data used in SQL built as strings, in `Process.Start` arguments, in file paths, and in deserialisation with `BinaryFormatter` or unsafe type handling.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Open the .csproj or .sln files, Directory.Build.props, the analyzer configuration and the target framework. Note whether nullable reference types are enabled."
+  },
+  {
+   "title": "Check nullability",
+   "text": "Flag `!` (null-forgiving) used where a real null is possible, and public members without nullable annotations."
+  },
+  {
+   "title": "Check async code",
+   "text": "Look for `async void` outside event handlers, `.Result` or `.Wait()` that can deadlock, missing `ConfigureAwait` where a library is consumed, and `CancellationToken` not passed through."
+  },
+  {
+   "title": "Check disposal",
+   "text": "`IDisposable` values, streams, `HttpClient` created per request, and database connections must be disposed, normally with `using`."
+  },
+  {
+   "title": "Check LINQ and collections",
+   "text": "Flag multiple enumeration of a lazy query, `First()` where `FirstOrDefault()` is needed, and string building in loops."
+  },
+  {
+   "title": "Check input and output",
+   "text": "Flag untrusted data used in SQL built as strings, in `Process.Start` arguments, in file paths, and in deserialisation with `BinaryFormatter` or unsafe type handling."
+  },
+  {
+   "title": "Check tests",
+   "text": "Find public methods and branches with no test, and assertions that cannot fail."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as `file:line`, with severity (high, medium or low), the problem and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-csharp-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 28
+ },
+ "skillMd": "skill-md/rlm-csharp-review.md",
+ "zip": "downloads/rlm-csharp-review.zip"
+}

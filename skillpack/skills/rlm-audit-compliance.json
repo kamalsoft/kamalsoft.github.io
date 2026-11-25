@@ -1,0 +1,126 @@
+{
+ "id": "rlm-audit-compliance",
+ "goal": "Check code and its changes for audit and compliance evidence: logging, change records, access control and ret…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Check code and its changes for audit and compliance evidence: logging, change records, access control and retention. Use when preparing for an audit or when a change touches regulated data.",
+ "prompt": "Use the rlm-audit-compliance skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the scope. Identify the regulated data or controls this code touches, and the policy it must meet."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check audit logging. Security-relevant events (sign-in, permission change, data export, deletion) must be logged with who, what, when and the result.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check log safety. Flag secrets, passwords, tokens and personal data written to logs.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check change records. Each change should have a linked ticket, a reviewer and a passing check."
+  },
+  {
+   "layout": "gate",
+   "note": "Check access control. Flag shared accounts, hard-coded credentials and admin actions without a second check.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Check retention. Flag data kept with no deletion path, and deletion that does not reach backups or copies where the policy requires it.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the scope",
+   "text": "Identify the regulated data or controls this code touches, and the policy it must meet. If no policy is given, ask for it rather than assume one."
+  },
+  {
+   "title": "Check audit logging",
+   "text": "Security-relevant events (sign-in, permission change, data export, deletion) must be logged with who, what, when and the result. Flag events with no log."
+  },
+  {
+   "title": "Check log safety",
+   "text": "Flag secrets, passwords, tokens and personal data written to logs."
+  },
+  {
+   "title": "Check change records",
+   "text": "Each change should have a linked ticket, a reviewer and a passing check. Flag merges with no review."
+  },
+  {
+   "title": "Check access control",
+   "text": "Flag shared accounts, hard-coded credentials and admin actions without a second check."
+  },
+  {
+   "title": "Check retention",
+   "text": "Flag data kept with no deletion path, and deletion that does not reach backups or copies where the policy requires it."
+  },
+  {
+   "title": "Report",
+   "text": "For each control give the status: evidence present, partly present, or missing. Say what must be collected from outside the repository. This is a technical aid, not a certification. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-audit-compliance",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 26
+ },
+ "skillMd": "skill-md/rlm-audit-compliance.md",
+ "zip": "downloads/rlm-audit-compliance.zip"
+}

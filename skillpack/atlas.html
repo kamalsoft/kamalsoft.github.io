@@ -472,6 +472,7 @@ body.embed #detail { position: static; width: 100%; max-width: none; max-height:
 body.embed .detail-dialog .detail { max-height: none; overflow: visible; }
 body.embed .dlg-close { display: none; }
 body.embed .crumbs { display: none; }
+  .skillmd { margin: 0; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; font: 12.5px/1.6 "IBM Plex Mono", ui-monospace, monospace; white-space: pre; overflow: auto; max-height: 70vh; }
 </style>
 </head>
 <body>
@@ -569,6 +570,7 @@ body.embed .crumbs { display: none; }
         <button type="button" role="tab" id="t-out" aria-controls="p-out" aria-selected="false" data-tab="out">Output</button>
         <button type="button" role="tab" id="t-use" aria-controls="p-use" aria-selected="false" data-tab="use">Use it</button>
         <button type="button" role="tab" id="t-grade" aria-controls="p-grade" aria-selected="false" data-tab="grade">Grade</button>
+        <button type="button" role="tab" id="t-md" aria-controls="p-md" aria-selected="false" data-tab="md">SKILL.md</button>
       </div>
       <div class="dpanel" role="tabpanel" id="p-how" aria-labelledby="t-how">
         <div class="stage-head">
@@ -630,6 +632,10 @@ body.embed .crumbs { display: none; }
       </div>
       <div class="dpanel" role="tabpanel" id="p-grade" aria-labelledby="t-grade" hidden>
         <div id="gradePanel"></div>
+      </div>
+      <div class="dpanel" role="tabpanel" id="p-md" aria-labelledby="t-md" hidden>
+        <p class="caption">The SKILL.md file from the skill's folder in .github/skills, as the agent reads it.</p>
+        <pre id="skillMd" class="skillmd"><code>Loading…</code></pre>
       </div>
     </section>
 
@@ -753,7 +759,6 @@ body.embed .crumbs { display: none; }
 
     <h3>Uninstall the extension</h3>
     <ol>
-      <li>If you entered a licence key, run <strong>RLM: Remove Licence Key</strong> first, so the key does not stay in VS Code's secret storage.</li>
       <li>Uninstall it from a terminal, or in the Extensions view (⇧⌘X): click the gear on <strong>RLM Agent Skills</strong> and choose <strong>Uninstall</strong>.
         <div class="cmd"><code>code --uninstall-extension kamalsoft.skill-pack</code><button type="button" class="copy" data-copy="code --uninstall-extension kamalsoft.skill-pack">Copy</button></div></li>
       <li>Quit VS Code completely (⌘Q on macOS) and start it again. A window reload is not enough: VS Code removes uninstalled extensions only on a full restart.</li>
@@ -769,8 +774,6 @@ body.embed .crumbs { display: none; }
       <thead><tr><th>Command</th><th>What it does</th></tr></thead>
       <tbody>
         <tr><td><strong>RLM: Install Agent Skills</strong></td><td>Installs or updates the skills in the open project. Asks how helpers run, which agents, and which skills.</td></tr>
-        <tr><td><strong>RLM: Enter Licence Key</strong></td><td>Checks a key offline and stores it in VS Code's secret storage on this machine. Unlocks pro or premium skills in every project.</td></tr>
-        <tr><td><strong>RLM: Remove Licence Key</strong></td><td>Deletes the stored key. Essentials skills keep working.</td></tr>
       </tbody>
     </table></div>
     <p><strong>In a terminal</strong>, with the <code>code</code> command on your path:</p>
@@ -811,7 +814,7 @@ body.embed .crumbs { display: none; }
     <h3>Questions</h3>
     <details class="qa">
       <summary>Does it need an API key?</summary>
-      <p>No model API key. The extension makes no model calls; the agent you use sends the code it reads to its own model provider, under your subscription. Essentials skills install without a key. Pro and premium skills need a licence key; see <a href="#grades">Grades and tiers</a>.</p>
+      <p>No model API key. The extension makes no model calls; the agent you use sends the code it reads to its own model provider, under your subscription. See <a href="#grades">Grades</a>.</p>
     </details>
     <details class="qa">
       <summary>Does it change my code?</summary>
@@ -6616,10 +6619,26 @@ function renderInfo() {
   $('#t-out').hidden = !skill.outcome;
 }
 
+// The SKILL.md file is published next to the page by scripts/build-downloads.py.
+async function loadSkillMd(id) {
+  const box = $('#skillMd');
+  if (box.dataset.id === id) return;
+  box.dataset.id = id;
+  box.textContent = 'Loading…';
+  try {
+    const res = await fetch(`skill-md/${encodeURIComponent(id)}.md`);
+    if (!res.ok) throw new Error('missing');
+    box.textContent = await res.text();
+  } catch {
+    box.textContent = 'SKILL.md is not available for this skill.';
+  }
+}
+
 function showTab(name) {
   document.querySelectorAll('.dtabs [role="tab"]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
   document.querySelectorAll('.dpanel').forEach((p) => { p.hidden = p.id !== 'p-' + name; });
   if (name === 'how') setView(view);
+  if (name === 'md' && params.get('skill')) loadSkillMd(params.get('skill'));
 }
 
 function renderSteps() {

@@ -1,0 +1,177 @@
+{
+ "id": "rlm-techops-backup-check",
+ "goal": "Checks backup jobs each day: success or failure, and the age of the last good copy.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Checks backup jobs each day: success or failure, and the age of the last good copy. Use when checking backups.",
+ "prompt": "Use the rlm-techops-backup-check skill on the records for this review.",
+ "input": "The records for this review, as text or CSV",
+ "output": "A draft report: findings with location, fix and a not-checked list",
+ "pros": [
+  "Flags a failed job with no ticket, a last good copy older than its target, and a job with no record."
+ ],
+ "cons": [
+  "Not checked: Whether the backup restores."
+ ],
+ "items": [
+  "job-db-nightly",
+  "job-files",
+  "job-mail",
+  "job-crm",
+  "job-logs",
+  "job-config"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. The records in scope are listed, and any skipped file is reported."
+  },
+  {
+   "layout": "chunks",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "note": "Partition. The records are cut into chunks, each read on its own."
+  },
+  {
+   "layout": "parallel",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "warn",
+    "bad",
+    "ok",
+    "warn"
+   ],
+   "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
+  },
+  {
+   "layout": "timeline",
+   "at": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+   ],
+   "note": "Order. Each backup job is placed by the age of its last good copy."
+  },
+  {
+   "layout": "gate",
+   "pass": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
+  },
+  {
+   "layout": "doc",
+   "docLabel": "draft report",
+   "note": "Report. Status: draft for the owner to review. It is not a decision."
+  }
+ ],
+ "outcome": {
+  "verdict": "1 backup is older than its target",
+  "tone": "bad",
+  "bars": [
+   [
+    "high",
+    1,
+    "high"
+   ],
+   [
+    "medium",
+    2,
+    "medium"
+   ]
+  ],
+  "findings": [
+   {
+    "sev": "high",
+    "where": "job-crm:12",
+    "title": "Last good copy older than its target",
+    "fix": "Run the job and check it completes"
+   },
+   {
+    "sev": "medium",
+    "where": "job-mail:19",
+    "title": "Failed job with no ticket",
+    "fix": "Open a ticket for the failure"
+   },
+   {
+    "sev": "medium",
+    "where": "job-config:26",
+    "title": "Job with no record",
+    "fix": "Record the job in the backup register"
+   }
+  ],
+  "notChecked": "Whether the backup restores."
+ },
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Compute each age from the end time and the report time."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-techops-backup-check",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "A",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 9
+ },
+ "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] job-crm:12  Last good copy older than its target.\n       Fix: Run the job and check it completes.\n[medium] job-mail:19  Failed job with no ticket.\n       Fix: Open a ticket for the failure.\n[medium] job-config:26  Job with no record.\n       Fix: Record the job in the backup register.\nNot checked: Whether the backup restores.",
+ "skillMd": "skill-md/rlm-techops-backup-check.md",
+ "zip": "downloads/rlm-techops-backup-check.zip"
+}

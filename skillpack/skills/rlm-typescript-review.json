@@ -1,0 +1,126 @@
+{
+ "id": "rlm-typescript-review",
+ "goal": "Review TypeScript and JavaScript code for type safety, async errors, input handling and tests.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review TypeScript and JavaScript code for type safety, async errors, input handling and tests. Use when asked to review or harden a TypeScript or Node.js project or module.",
+ "prompt": "Use the rlm-typescript-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Open package.json, tsconfig.json, the lint configuration and the lock file."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check types. Flag `any` and non-null assertions (`!`) that hide a real case, casts that bypass checks, and union values not narrowed before use.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check async code. Look for promises that are not awaited or caught, `async` functions that can throw into an event handler, and sequential awaits in loops that could run together.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check input and output. Flag untrusted data used in `eval`, `new Function`, HTML or `innerHTML`, shell commands, file paths and redirects without validation."
+  },
+  {
+   "layout": "gate",
+   "note": "Check dependencies and the runtime. Flag packages with known issues in the lock file, and Node APIs that need a flag or are not available on the targeted runtime.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Check tests. Find exported functions and branches with no test, and assertions that cannot fail.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Open package.json, tsconfig.json, the lint configuration and the lock file. Note the Node.js version and whether strict mode is on."
+  },
+  {
+   "title": "Check types",
+   "text": "Flag `any` and non-null assertions (`!`) that hide a real case, casts that bypass checks, and union values not narrowed before use."
+  },
+  {
+   "title": "Check async code",
+   "text": "Look for promises that are not awaited or caught, `async` functions that can throw into an event handler, and sequential awaits in loops that could run together."
+  },
+  {
+   "title": "Check input and output",
+   "text": "Flag untrusted data used in `eval`, `new Function`, HTML or `innerHTML`, shell commands, file paths and redirects without validation."
+  },
+  {
+   "title": "Check dependencies and the runtime",
+   "text": "Flag packages with known issues in the lock file, and Node APIs that need a flag or are not available on the targeted runtime."
+  },
+  {
+   "title": "Check tests",
+   "text": "Find exported functions and branches with no test, and assertions that cannot fail."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as `file:line`, with severity (high, medium or low), the problem and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-typescript-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 48
+ },
+ "skillMd": "skill-md/rlm-typescript-review.md",
+ "zip": "downloads/rlm-typescript-review.zip"
+}

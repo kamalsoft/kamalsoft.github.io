@@ -1,0 +1,122 @@
+{
+ "id": "rlm-requirements-check",
+ "goal": "Map each requirement to the code and tests that meet it, and flag the code flaws found on the way.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Map each requirement to the code and tests that meet it, and flag the code flaws found on the way. Use when a feature must be checked against its requirements before release.",
+ "prompt": "Use the rlm-requirements-check skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the requirements. Take the requirements as written, numbered."
+  },
+  {
+   "layout": "chunks",
+   "note": "Map to code. For each requirement, find the code and the tests that meet it.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Mark each requirement. Met (code and test), partly met (code but no test, or a gap), or not met (no code).",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Find code flaws. While mapping, note flaws in the code that the requirement depends on: missing validation, unhandled errors, unclear behaviour and missing edge cases."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the edge cases. For each met requirement, list the edge cases it implies (empty input, limits, failure of a dependency) and whether each one is handled.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A table: requirement, status, code location, test location, flaws found, fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the requirements",
+   "text": "Take the requirements as written, numbered. If a requirement is vague, record it as vague rather than guessing its meaning."
+  },
+  {
+   "title": "Map to code",
+   "text": "For each requirement, find the code and the tests that meet it. Record `file:line` for each."
+  },
+  {
+   "title": "Mark each requirement",
+   "text": "Met (code and test), partly met (code but no test, or a gap), or not met (no code)."
+  },
+  {
+   "title": "Find code flaws",
+   "text": "While mapping, note flaws in the code that the requirement depends on: missing validation, unhandled errors, unclear behaviour and missing edge cases."
+  },
+  {
+   "title": "Check the edge cases",
+   "text": "For each met requirement, list the edge cases it implies (empty input, limits, failure of a dependency) and whether each one is handled."
+  },
+  {
+   "title": "Report",
+   "text": "A table: requirement, status, code location, test location, flaws found, fix. Mark what you did not check and any requirement you had to read loosely."
+  }
+ ],
+ "path": ".github/skills/rlm-requirements-check",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 40
+ },
+ "skillMd": "skill-md/rlm-requirements-check.md",
+ "zip": "downloads/rlm-requirements-check.zip"
+}

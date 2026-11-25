@@ -1,0 +1,187 @@
+{
+ "id": "rlm-techops-it-proposal",
+ "goal": "Drafts a business case for an IT investment: cost, benefit, risk and the decision asked.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Drafts a business case for an IT investment: cost, benefit, risk and the decision asked. Use when proposing an IT investment.",
+ "prompt": "Use the rlm-techops-it-proposal skill on the records for this review.",
+ "input": "The records for this review, as text or CSV",
+ "output": "A draft report: findings with location, fix and a not-checked list",
+ "pros": [
+  "Flags a benefit with no basis, a cost line with no estimate source, and a risk with no mitigation."
+ ],
+ "cons": [
+  "Not checked: The actual benefit."
+ ],
+ "items": [
+  "claim-savings.md",
+  "cost-licences.csv",
+  "risk-migration.md",
+  "benefit-uptime.md",
+  "cost-training.csv",
+  "risk-vendor.md"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. The records in scope are listed, and any skipped file is reported."
+  },
+  {
+   "layout": "chunks",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "note": "Partition. The records are cut into chunks, each read on its own."
+  },
+  {
+   "layout": "parallel",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "bad",
+    "warn",
+    "warn",
+    "ok"
+   ],
+   "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
+  },
+  {
+   "layout": "match",
+   "targets": [
+    "source: pilot data",
+    "source: vendor quote",
+    "no source"
+   ],
+   "pairs": [
+    0,
+    1,
+    2,
+    2,
+    1,
+    2
+   ],
+   "targetState": [
+    "ok",
+    "ok",
+    "bad"
+   ],
+   "note": "Compare. Each benefit and cost is matched to its source. One with no source is a gap."
+  },
+  {
+   "layout": "gate",
+   "pass": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
+  },
+  {
+   "layout": "doc",
+   "docLabel": "draft report",
+   "note": "Report. Status: draft for the owner to review. It is not a decision."
+  }
+ ],
+ "outcome": {
+  "verdict": "2 benefits or risks lack a basis",
+  "tone": "bad",
+  "bars": [
+   [
+    "high",
+    1,
+    "high"
+   ],
+   [
+    "medium",
+    2,
+    "medium"
+   ]
+  ],
+  "findings": [
+   {
+    "sev": "high",
+    "where": "risk-migration.md:12",
+    "title": "Risk with no mitigation",
+    "fix": "Name a mitigation and its owner"
+   },
+   {
+    "sev": "medium",
+    "where": "benefit-uptime.md:19",
+    "title": "Benefit with no basis",
+    "fix": "Give the basis for the benefit"
+   },
+   {
+    "sev": "medium",
+    "where": "cost-training.csv:26",
+    "title": "Cost line with no estimate source",
+    "fix": "Attach the estimate"
+   }
+  ],
+  "notChecked": "The actual benefit."
+ },
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Re-read each cited line."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-techops-it-proposal",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "B-",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 77
+ },
+ "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] risk-migration.md:12  Risk with no mitigation.\n       Fix: Name a mitigation and its owner.\n[medium] benefit-uptime.md:19  Benefit with no basis.\n       Fix: Give the basis for the benefit.\n[medium] cost-training.csv:26  Cost line with no estimate source.\n       Fix: Attach the estimate.\nNot checked: The actual benefit.",
+ "skillMd": "skill-md/rlm-techops-it-proposal.md",
+ "zip": "downloads/rlm-techops-it-proposal.zip"
+}

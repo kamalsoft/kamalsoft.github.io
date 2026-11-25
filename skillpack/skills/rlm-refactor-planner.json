@@ -1,0 +1,138 @@
+{
+ "id": "rlm-refactor-planner",
+ "goal": "Architecture review and phased refactoring plan for a large repository using Recursive Language Model (RLM) d…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Architecture review and phased refactoring plan for a large repository using Recursive Language Model (RLM) decomposition. Use when asked to plan a refactor, find circular or tangled dependencies, split or merge modules, or assess coupling in code too large to read in one pass.",
+ "prompt": "Use the rlm-refactor-planner skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. Run `python3 <skill>/scripts/rlm_corpus.py scan <repo>` for the size and layout."
+  },
+  {
+   "layout": "chunks",
+   "note": "Graph. Run `python3 <skill>/scripts/rlm_corpus.py graph <repo>`.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Partition. Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <repo> \"$WORK/chunks\"`.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Map. For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below."
+  },
+  {
+   "layout": "gate",
+   "note": "Reduce. Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Verify. For each cycle and each high-impact recommendation, open the files and confirm the coupling is real before recommending a change.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py scan <repo>` for the size and layout. If the repo is very large, agree the scope with the user and narrow it with `--include 'src/*'` (repeatable) on every command. Files over 20 MB are skipped; report what `scan` lists as skipped."
+  },
+  {
+   "title": "Graph",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py graph <repo>`. It prints each file's local imports, the import cycles, and the most-imported files. Keep this output in your working notes; it is the backbone of the plan."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <repo> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"` and process the first listed chunk: read it, write its output, then run `pending` again until nothing is pending."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. Re-run any `failed_outputs`. A broken output is not \"no issues\". Repeat the map step on the merged findings if they are still too large."
+  },
+  {
+   "title": "Verify",
+   "text": "For each cycle and each high-impact recommendation, open the files and confirm the coupling is real before recommending a change."
+  },
+  {
+   "title": "Plan",
+   "text": "Write the plan in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the plan is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-refactor-planner",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   3,
+   3,
+   5
+  ],
+  "design": true,
+  "rank": 12
+ },
+ "skillMd": "skill-md/rlm-refactor-planner.md",
+ "zip": "downloads/rlm-refactor-planner.zip"
+}

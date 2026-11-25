@@ -1,0 +1,126 @@
+{
+ "id": "rlm-dotnet-review",
+ "goal": "Review a .NET project for package versions, configuration, dependency injection, runtime settings and build s…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review a .NET project for package versions, configuration, dependency injection, runtime settings and build safety. Use when asked to review or harden a .NET solution.",
+ "prompt": "Use the rlm-dotnet-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the solution. Open the .sln, every .csproj, Directory.Packages.props if used, global.json, NuGet.config and any appsettings files."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check packages. List each package and version.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check configuration. Flag secrets in appsettings, connection strings with embedded passwords, and `Development` settings that would run in production.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check dependency injection. Flag services registered with the wrong lifetime (a scoped service held by a singleton), and service locator calls inside business code."
+  },
+  {
+   "layout": "gate",
+   "note": "Check runtime settings. Flag debug builds shipped, detailed errors enabled outside development, and `TreatWarningsAsErrors` turned off with many warnings ignored.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Check build and CI. Note the build commands, whether restore is locked, and whether tests run in the pipeline.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the solution",
+   "text": "Open the .sln, every .csproj, Directory.Packages.props if used, global.json, NuGet.config and any appsettings files. Note the target frameworks and whether a framework is out of support."
+  },
+  {
+   "title": "Check packages",
+   "text": "List each package and version. Flag versions with known advisories, packages pinned to floating versions (`*`), and duplicate packages with different versions."
+  },
+  {
+   "title": "Check configuration",
+   "text": "Flag secrets in appsettings, connection strings with embedded passwords, and `Development` settings that would run in production."
+  },
+  {
+   "title": "Check dependency injection",
+   "text": "Flag services registered with the wrong lifetime (a scoped service held by a singleton), and service locator calls inside business code."
+  },
+  {
+   "title": "Check runtime settings",
+   "text": "Flag debug builds shipped, detailed errors enabled outside development, and `TreatWarningsAsErrors` turned off with many warnings ignored."
+  },
+  {
+   "title": "Check build and CI",
+   "text": "Note the build commands, whether restore is locked, and whether tests run in the pipeline."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as `file`, with severity (high, medium or low), the problem and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-dotnet-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 35
+ },
+ "skillMd": "skill-md/rlm-dotnet-review.md",
+ "zip": "downloads/rlm-dotnet-review.zip"
+}

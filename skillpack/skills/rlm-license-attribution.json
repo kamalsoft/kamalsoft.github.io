@@ -1,0 +1,134 @@
+{
+ "id": "rlm-license-attribution",
+ "goal": "Check the licences of direct and transitive dependencies against a stated licence policy, flag copyleft, unkn…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Check the licences of direct and transitive dependencies against a stated licence policy, flag copyleft, unknown or incompatible licences, and draft the attribution (NOTICE) content that distribution requires. Use when distributing software, enforcing a licence policy, or when attribution files are missing.",
+ "prompt": "Use the rlm-license-attribution skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. Run `python3 <skill>/scripts/rlm_corpus.py scan <corpus>`."
+  },
+  {
+   "layout": "chunks",
+   "note": "Partition. Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <corpus> \"$WORK/chunks\"`.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Map. For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Reduce. Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`."
+  },
+  {
+   "layout": "gate",
+   "note": "Verify. Cite the manifest or lock file for every dependency flagged.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. Write the report in the format below.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py scan <corpus>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <corpus> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files (a duplicate across manifests, a route missing from a contract, a pattern repeated across chunks) are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Cite the manifest or lock file for every dependency flagged. Copy licence text from the package, or mark it as missing; never invent licence text. Run a licence tool (license-checker, pip-licenses, go-licenses, cargo license) once in the reduce step if one is installed, and record its name and version. Check combinations (a strong copyleft dependency in a proprietary distribution) in the reduce step."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-license-attribution",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.50",
+  "scores": [
+   4,
+   3,
+   4,
+   2,
+   4
+  ],
+  "design": true,
+  "rank": 55
+ },
+ "skillMd": "skill-md/rlm-license-attribution.md",
+ "zip": "downloads/rlm-license-attribution.zip"
+}

@@ -1,0 +1,192 @@
+{
+ "id": "rlm-devops-pipeline-proposal",
+ "goal": "Drafts a business case for a pipeline or platform change: the problem, the cost, the risk and the effect.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Drafts a business case for a pipeline or platform change: the problem, the cost, the risk and the effect. Use when proposing a pipeline or platform change.",
+ "prompt": "Use the rlm-devops-pipeline-proposal skill on the records for this review.",
+ "input": "The records for this review, as text or CSV",
+ "output": "A draft report: findings with location, fix and a not-checked list",
+ "pros": [
+  "Flags an effect with no basis, a cost line with no estimate source, and a risk with no mitigation."
+ ],
+ "cons": [
+  "Not checked: The actual effect."
+ ],
+ "items": [
+  "claim-build-time.md",
+  "claim-cost.md",
+  "risk-rollout.md",
+  "cost-runners.csv",
+  "effect-deploy-speed.md",
+  "risk-skills.md"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Inspect. The records in scope are listed, and any skipped file is reported."
+  },
+  {
+   "layout": "chunks",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "note": "Partition. The records are cut into chunks, each read on its own."
+  },
+  {
+   "layout": "parallel",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "warn",
+    "ok",
+    "bad"
+   ],
+   "note": "Map. Each chunk is checked against this skill's rules, one chunk at a time."
+  },
+  {
+   "layout": "match",
+   "targets": [
+    "source: pilot data",
+    "source: vendor quote",
+    "no source"
+   ],
+   "pairs": [
+    0,
+    1,
+    2,
+    2,
+    0,
+    -1
+   ],
+   "targetState": [
+    "ok",
+    "ok",
+    "bad"
+   ],
+   "note": "Compare. Each claim is matched to its source. A claim with no source is a gap."
+  },
+  {
+   "layout": "gate",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "note": "Verify. Each cited line is re-read, and a finding that does not hold is dropped."
+  },
+  {
+   "layout": "doc",
+   "docLabel": "draft report",
+   "note": "Report. Status: draft for the owner to review. It is not a decision."
+  }
+ ],
+ "outcome": {
+  "verdict": "2 claims lack a source or a mitigation",
+  "tone": "bad",
+  "bars": [
+   [
+    "high",
+    1,
+    "high"
+   ],
+   [
+    "medium",
+    1,
+    "medium"
+   ],
+   [
+    "low",
+    1,
+    "low"
+   ]
+  ],
+  "findings": [
+   {
+    "sev": "high",
+    "where": "risk-skills.md:12",
+    "title": "Risk with no mitigation",
+    "fix": "Name a mitigation and its owner"
+   },
+   {
+    "sev": "medium",
+    "where": "cost-runners.csv:19",
+    "title": "Cost line with no estimate source",
+    "fix": "Attach the vendor quote"
+   },
+   {
+    "sev": "low",
+    "where": "risk-rollout.md:26",
+    "title": "Mitigation listed but not dated",
+    "fix": "Give a date for the mitigation"
+   }
+  ],
+  "notChecked": "The actual effect."
+ },
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Inspect",
+   "text": "The corpus is the generic corpus (docs/SKILL-TEMPLATE-STANDARD.md, section 6): prepare `<input>` with the files in scope, as text. Convert any Excel or PDF input to CSV first (export each sheet as CSV; export PDF tables as CSV or text). Text inputs (CSV, TXT, Markdown) are used as they are. Run `python3 <skill>/scripts/rlm_corpus.py scan <input>`. Note the file count, line count and top-level folders. If the corpus is very large, agree the scope with the user, then narrow it with `--include '<folder>'` (repeatable) on every command. Files over 20 MB are skipped; `--max-bytes N` changes the limit. Report what `scan` lists as skipped."
+  },
+  {
+   "title": "Partition",
+   "text": "Run `WORK=$(mktemp -d)`, then `python3 <skill>/scripts/rlm_corpus.py chunk <input> \"$WORK/chunks\"`. Chunks are limited to 800 lines and 100,000 characters each, and are cut between definitions where possible. Each `chunk_NNN.md` holds the data notice and labelled file sections. `manifest.json` lists the chunks."
+  },
+  {
+   "title": "Map",
+   "text": "For each chunk, run a fresh sub-task (a subagent if you can start one) that sees only that chunk file and the \"Chunk task\" below. It writes `\"$WORK/out/<chunk>.out.md\"`. If you cannot start sub-tasks, run `python3 <skill>/scripts/rlm_corpus.py pending \"$WORK/chunks\" \"$WORK/out\"`. It lists the chunks that still have no output. Process the first one: read it, write its output, then run `pending` again. Repeat until nothing is pending. Never hold all chunks in context at once."
+  },
+  {
+   "title": "Reduce",
+   "text": "Run `python3 <skill>/scripts/rlm_corpus.py merge \"$WORK/out\" --out \"$WORK/merged.json\"`. If it lists `failed_outputs`, re-run those chunks. A missing or invalid output is not \"no findings\". Checks that span files are done on the merged list in this step. If the merged list is still too large to read, repeat steps 2 to 4 on the findings."
+  },
+  {
+   "title": "Verify",
+   "text": "Re-read each cited line."
+  },
+  {
+   "title": "Report",
+   "text": "Write the report in the format below."
+  },
+  {
+   "title": "Clean up",
+   "text": "Delete `$WORK` after the report is delivered."
+  }
+ ],
+ "path": ".github/skills/rlm-devops-pipeline-proposal",
+ "files": [
+  "scripts/rlm_corpus.py"
+ ],
+ "helperScripts": 1,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "C+",
+  "score": null,
+  "scores": null,
+  "design": true,
+  "rank": 86
+ },
+ "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] risk-skills.md:12  Risk with no mitigation.\n       Fix: Name a mitigation and its owner.\n[medium] cost-runners.csv:19  Cost line with no estimate source.\n       Fix: Attach the vendor quote.\n[low] risk-rollout.md:26  Mitigation listed but not dated.\n       Fix: Give a date for the mitigation.\nNot checked: The actual effect.",
+ "skillMd": "skill-md/rlm-devops-pipeline-proposal.md",
+ "zip": "downloads/rlm-devops-pipeline-proposal.zip"
+}
