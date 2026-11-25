@@ -1,0 +1,128 @@
+{
+ "id": "rlm-error-handling-review",
+ "goal": "Review error handling for swallowed errors, retries, timeouts, cleanup and useful messages.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review error handling for swallowed errors, retries, timeouts, cleanup and useful messages. Use when code handles failures from I/O, networks or external services.",
+ "prompt": "Use the rlm-error-handling-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the call paths. Open the code that calls external services, files, databases and queues, and list each call that can fail."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check swallowed errors. Flag empty catch blocks, errors logged and then ignored, and errors that turn into a success result.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check retries. Retries need a limit, a backoff and a check that the operation is safe to repeat.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check timeouts. Every external call needs a timeout."
+  },
+  {
+   "layout": "gate",
+   "note": "Check cleanup. Resources must be released on every failure path, normally by a language construct that does this.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding as file and line, with severity, the problem and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the call paths",
+   "text": "Open the code that calls external services, files, databases and queues, and list each call that can fail."
+  },
+  {
+   "title": "Check swallowed errors",
+   "text": "Flag empty catch blocks, errors logged and then ignored, and errors that turn into a success result."
+  },
+  {
+   "title": "Check retries",
+   "text": "Retries need a limit, a backoff and a check that the operation is safe to repeat."
+  },
+  {
+   "title": "Check timeouts",
+   "text": "Every external call needs a timeout. Flag calls that can wait forever."
+  },
+  {
+   "title": "Check cleanup",
+   "text": "Resources must be released on every failure path, normally by a language construct that does this."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as file and line, with severity, the problem and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-error-handling-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   3,
+   4,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 110
+ },
+ "skillMd": "skill-md/rlm-error-handling-review.md",
+ "zip": "downloads/rlm-error-handling-review.zip"
+}

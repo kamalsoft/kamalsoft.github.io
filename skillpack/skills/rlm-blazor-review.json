@@ -1,0 +1,128 @@
+{
+ "id": "rlm-blazor-review",
+ "goal": "Review Blazor components for state handling, authorization, JavaScript interop and rendering cost.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review Blazor components for state handling, authorization, JavaScript interop and rendering cost. Use when Blazor pages or components are added or changed.",
+ "prompt": "Use the rlm-blazor-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the components. Open the pages, shared components and the interop layer."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check state. Flag state shared across users in singleton services, and state that is lost on reconnect without a plan.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check authorization. Pages need the authorization attribute, and components must not rely on hidden UI for protection.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check interop. Flag JavaScript interop that passes unvalidated data, or calls that are never disposed."
+  },
+  {
+   "layout": "gate",
+   "note": "Check rendering. Flag large lists without virtualisation, and state changes that re-render the whole page.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding with its file and line, severity and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the components",
+   "text": "Open the pages, shared components and the interop layer."
+  },
+  {
+   "title": "Check state",
+   "text": "Flag state shared across users in singleton services, and state that is lost on reconnect without a plan."
+  },
+  {
+   "title": "Check authorization",
+   "text": "Pages need the authorization attribute, and components must not rely on hidden UI for protection."
+  },
+  {
+   "title": "Check interop",
+   "text": "Flag JavaScript interop that passes unvalidated data, or calls that are never disposed."
+  },
+  {
+   "title": "Check rendering",
+   "text": "Flag large lists without virtualisation, and state changes that re-render the whole page."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding with its file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-blazor-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B",
+  "score": "3.55",
+  "scores": [
+   4,
+   3,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 180
+ },
+ "skillMd": "skill-md/rlm-blazor-review.md",
+ "zip": "downloads/rlm-blazor-review.zip"
+}

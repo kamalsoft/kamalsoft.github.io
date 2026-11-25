@@ -120,10 +120,16 @@
  "group": "dotnet",
  "grade": {
   "grade": "B+",
-  "score": null,
-  "scores": null,
+  "score": "3.80",
+  "scores": [
+   4,
+   3,
+   4,
+   4,
+   4
+  ],
   "design": true,
-  "rank": 25
+  "rank": 101
  },
  "skillMd": "skill-md/rlm-aspnet-review.md",
  "zip": "downloads/rlm-aspnet-review.zip"

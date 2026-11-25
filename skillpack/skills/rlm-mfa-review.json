@@ -1,0 +1,119 @@
+{
+ "id": "rlm-mfa-review",
+ "goal": "Multi-factor authentication review: where second factors are required, enrolled and recovered.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Multi-factor authentication review: where second factors are required, enrolled and recovered. Use when code enables, enforces or recovers second factors.",
+ "prompt": "Use the rlm-mfa-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the enforcement points. Find where a second factor is required."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check bypass. Flag paths that sign in without the second factor.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check enrolment. Flag factors that can be added without re-verification.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check recovery. Flag recovery codes that are reusable or stored in plain text."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each path with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the enforcement points",
+   "text": "Find where a second factor is required."
+  },
+  {
+   "title": "Check bypass",
+   "text": "Flag paths that sign in without the second factor."
+  },
+  {
+   "title": "Check enrolment",
+   "text": "Flag factors that can be added without re-verification."
+  },
+  {
+   "title": "Check recovery",
+   "text": "Flag recovery codes that are reusable or stored in plain text."
+  },
+  {
+   "title": "Report",
+   "text": "Each path with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-mfa-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 83
+ },
+ "skillMd": "skill-md/rlm-mfa-review.md",
+ "zip": "downloads/rlm-mfa-review.zip"
+}

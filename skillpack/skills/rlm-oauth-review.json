@@ -1,0 +1,119 @@
+{
+ "id": "rlm-oauth-review",
+ "goal": "OAuth review: redirect URI checks, PKCE, state parameters and token storage.",
+ "cat": "Installed",
+ "on": false,
+ "use": "OAuth review: redirect URI checks, PKCE, state parameters and token storage. Use when code implements an OAuth or OpenID Connect sign-in.",
+ "prompt": "Use the rlm-oauth-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Check the flow. Use the authorisation code flow with PKCE for public clients."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check redirects. Redirect URIs must match exactly, with no open redirects.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check state. The state parameter must be random and checked on return.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check tokens. Flag tokens stored in local storage or logged."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Check the flow",
+   "text": "Use the authorisation code flow with PKCE for public clients."
+  },
+  {
+   "title": "Check redirects",
+   "text": "Redirect URIs must match exactly, with no open redirects."
+  },
+  {
+   "title": "Check state",
+   "text": "The state parameter must be random and checked on return."
+  },
+  {
+   "title": "Check tokens",
+   "text": "Flag tokens stored in local storage or logged."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-oauth-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 23
+ },
+ "skillMd": "skill-md/rlm-oauth-review.md",
+ "zip": "downloads/rlm-oauth-review.zip"
+}

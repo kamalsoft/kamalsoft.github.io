@@ -1,0 +1,119 @@
+{
+ "id": "rlm-ssrf-review",
+ "goal": "SSRF review: server-side requests to URLs that users can influence.",
+ "cat": "Installed",
+ "on": false,
+ "use": "SSRF review: server-side requests to URLs that users can influence. Use when code fetches a URL, host or address that comes from a request.",
+ "prompt": "Use the rlm-ssrf-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the fetches. List each outbound request whose target can be influenced."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the allow-list. Flag requests to any host the caller names.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check internal addresses. Flag requests that can reach private or metadata addresses.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check redirects. Flag clients that follow redirects into internal hosts."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each request with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the fetches",
+   "text": "List each outbound request whose target can be influenced."
+  },
+  {
+   "title": "Check the allow-list",
+   "text": "Flag requests to any host the caller names."
+  },
+  {
+   "title": "Check internal addresses",
+   "text": "Flag requests that can reach private or metadata addresses."
+  },
+  {
+   "title": "Check redirects",
+   "text": "Flag clients that follow redirects into internal hosts."
+  },
+  {
+   "title": "Report",
+   "text": "Each request with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-ssrf-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 25
+ },
+ "skillMd": "skill-md/rlm-ssrf-review.md",
+ "zip": "downloads/rlm-ssrf-review.zip"
+}

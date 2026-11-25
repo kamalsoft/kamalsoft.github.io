@@ -1,0 +1,119 @@
+{
+ "id": "rlm-risk-acceptance-review",
+ "goal": "Risk acceptance review: formal acceptance of a finding with the reason, the owner and the review date.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Risk acceptance review: formal acceptance of a finding with the reason, the owner and the review date. Use when a finding will not be fixed in the agreed time.",
+ "prompt": "Use the rlm-risk-acceptance-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the accepted risks with their findings."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the reason. Each acceptance states why fixing is not possible now.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the approver. The approver has the authority for the risk level.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the review date. Each acceptance has a date to revisit it."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The accepted risks, their approvers and those due for review.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the accepted risks with their findings",
+   "text": ""
+  },
+  {
+   "title": "Check the reason",
+   "text": "Each acceptance states why fixing is not possible now."
+  },
+  {
+   "title": "Check the approver",
+   "text": "The approver has the authority for the risk level."
+  },
+  {
+   "title": "Check the review date",
+   "text": "Each acceptance has a date to revisit it."
+  },
+  {
+   "title": "Report",
+   "text": "The accepted risks, their approvers and those due for review."
+  }
+ ],
+ "path": ".github/skills/rlm-risk-acceptance-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 92
+ },
+ "skillMd": "skill-md/rlm-risk-acceptance-review.md",
+ "zip": "downloads/rlm-risk-acceptance-review.zip"
+}

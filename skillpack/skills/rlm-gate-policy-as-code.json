@@ -1,0 +1,119 @@
+{
+ "id": "rlm-gate-policy-as-code",
+ "goal": "Policy as code gate: organisational rules written as code and checked on every change.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Policy as code gate: organisational rules written as code and checked on every change. Use when a team writes or changes rules for infrastructure or deployments.",
+ "prompt": "Use the rlm-gate-policy-as-code skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the policies. Each rule with its purpose and owner."
+  },
+  {
+   "layout": "chunks",
+   "note": "Confirm each policy is code, versioned and tested.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Set the rule. A change that breaks a policy is blocked with a clear message.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check drift. Flag policies that exist only as documents."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each policy, its enforcement point and any gap.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the policies",
+   "text": "Each rule with its purpose and owner."
+  },
+  {
+   "title": "Confirm each policy is code, versioned and tested",
+   "text": ""
+  },
+  {
+   "title": "Set the rule",
+   "text": "A change that breaks a policy is blocked with a clear message."
+  },
+  {
+   "title": "Check drift",
+   "text": "Flag policies that exist only as documents."
+  },
+  {
+   "title": "Report",
+   "text": "Each policy, its enforcement point and any gap."
+  }
+ ],
+ "path": ".github/skills/rlm-gate-policy-as-code",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 124
+ },
+ "skillMd": "skill-md/rlm-gate-policy-as-code.md",
+ "zip": "downloads/rlm-gate-policy-as-code.zip"
+}

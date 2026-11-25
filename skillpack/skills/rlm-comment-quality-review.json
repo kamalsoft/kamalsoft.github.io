@@ -1,0 +1,119 @@
+{
+ "id": "rlm-comment-quality-review",
+ "goal": "Comment quality review: comments that explain why, and comments that have gone stale.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Comment quality review: comments that explain why, and comments that have gone stale. Use when comments are added or code they describe has changed.",
+ "prompt": "Use the rlm-comment-quality-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List comments. Collect the comments in the changed code."
+  },
+  {
+   "layout": "chunks",
+   "note": "Flag restating comments that repeat what the code does.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Flag stale comments that no longer match the code beside them.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Flag missing why. A non-obvious choice with no explanation."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each comment with file and line, the problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List comments",
+   "text": "Collect the comments in the changed code."
+  },
+  {
+   "title": "Flag restating comments that repeat what the code does",
+   "text": ""
+  },
+  {
+   "title": "Flag stale comments that no longer match the code beside them",
+   "text": ""
+  },
+  {
+   "title": "Flag missing why",
+   "text": "A non-obvious choice with no explanation."
+  },
+  {
+   "title": "Report",
+   "text": "Each comment with file and line, the problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-comment-quality-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B",
+  "score": "3.45",
+  "scores": [
+   3,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 184
+ },
+ "skillMd": "skill-md/rlm-comment-quality-review.md",
+ "zip": "downloads/rlm-comment-quality-review.zip"
+}

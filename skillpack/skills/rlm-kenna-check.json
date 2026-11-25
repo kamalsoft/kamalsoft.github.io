@@ -111,11 +111,17 @@
  "notChecked": true,
  "group": "vulnerability",
  "grade": {
-  "grade": "B+",
-  "score": null,
-  "scores": null,
+  "grade": "B",
+  "score": "3.60",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   3
+  ],
   "design": true,
-  "rank": 37
+  "rank": 177
  },
  "skillMd": "skill-md/rlm-kenna-check.md",
  "zip": "downloads/rlm-kenna-check.zip"

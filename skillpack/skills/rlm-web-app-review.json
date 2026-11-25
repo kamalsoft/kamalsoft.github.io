@@ -120,10 +120,16 @@
  "group": "web",
  "grade": {
   "grade": "B+",
-  "score": null,
-  "scores": null,
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
   "design": true,
-  "rank": 50
+  "rank": 118
  },
  "skillMd": "skill-md/rlm-web-app-review.md",
  "zip": "downloads/rlm-web-app-review.zip"

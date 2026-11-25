@@ -177,7 +177,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 42
+  "rank": 151
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] acct-03.csv:12  Account not on the roster.\n       Fix: Remove the account or add it to the roster.\n[high] acct-05.csv:19  Privileged right with no approval.\n       Fix: Record the approval or revoke the right.\n[medium] acct-06.csv:26  Dormant privileged account.\n       Fix: Disable the account or record why it is needed.\nNot checked: Access granted outside the list.",
  "skillMd": "skill-md/rlm-techops-access-review.md",

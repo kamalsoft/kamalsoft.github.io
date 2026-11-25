@@ -1,0 +1,128 @@
+{
+ "id": "rlm-ruby-review",
+ "goal": "Review Ruby and Rails-style code for injection, mass assignment, dynamic code, callbacks and tests.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review Ruby and Rails-style code for injection, mass assignment, dynamic code, callbacks and tests. Use when asked to review or harden a Ruby project or module.",
+ "prompt": "Use the rlm-ruby-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Open the Gemfile, the lock file, the Ruby version and any Rails configuration."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check injection. Flag SQL built with string interpolation, and user input passed to system, backticks or eval.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check mass assignment. Flag models that accept every parameter.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check dynamic code. Flag send, instance_eval and constantize on user input."
+  },
+  {
+   "layout": "gate",
+   "note": "Check callbacks. Flag callbacks that call external services, which make saves slow and hard to test.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding with its file and line, severity and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Open the Gemfile, the lock file, the Ruby version and any Rails configuration."
+  },
+  {
+   "title": "Check injection",
+   "text": "Flag SQL built with string interpolation, and user input passed to system, backticks or eval."
+  },
+  {
+   "title": "Check mass assignment",
+   "text": "Flag models that accept every parameter. Permitted attributes must be listed."
+  },
+  {
+   "title": "Check dynamic code",
+   "text": "Flag send, instance_eval and constantize on user input."
+  },
+  {
+   "title": "Check callbacks",
+   "text": "Flag callbacks that call external services, which make saves slow and hard to test."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding with its file and line, severity and the fix. Mark what you did not run."
+  }
+ ],
+ "path": ".github/skills/rlm-ruby-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B",
+  "score": "3.45",
+  "scores": [
+   4,
+   3,
+   3,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 189
+ },
+ "skillMd": "skill-md/rlm-ruby-review.md",
+ "zip": "downloads/rlm-ruby-review.zip"
+}

@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 62
+  "rank": 197
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] pipeline-web.json:12  Failure rate 18 percent today.\n       Fix: Fix the failing stage.\n[medium] pipeline-worker.json:19  Queue time 14 minutes against a target of 5.\n       Fix: Add runners or split the job.\n[low] pipeline-e2e.json:26  Test passes and fails on the same commit.\n       Fix: Quarantine the test and fix it.\nNot checked: Failures outside the export.",
  "skillMd": "skill-md/rlm-devops-pipeline-health.md",

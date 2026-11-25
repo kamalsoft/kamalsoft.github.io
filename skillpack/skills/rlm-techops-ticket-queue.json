@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 69
+  "rank": 204
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] tkt-8815:12  Older than its priority target.\n       Fix: Escalate and assign the ticket today.\n[medium] tkt-8823:19  No update for two working days.\n       Fix: Update the requester.\n[low] tkt-8830:26  Ticket with no owner.\n       Fix: Assign an owner.\nNot checked: Tickets not in the export.",
  "skillMd": "skill-md/rlm-techops-ticket-queue.md",

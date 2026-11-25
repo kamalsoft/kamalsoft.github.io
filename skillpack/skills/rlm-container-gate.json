@@ -1,0 +1,128 @@
+{
+ "id": "rlm-container-gate",
+ "goal": "Check a container image before it ships: base image, running user, secrets and scan results.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Check a container image before it ships: base image, running user, secrets and scan results. Use when a Dockerfile or image build changes.",
+ "prompt": "Use the rlm-container-gate skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the Dockerfile. Note the base image, its tag, the build stages and the final command."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the base image. Flag untagged or latest base images, and images no longer supported.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the user. Flag images that run as root with no reason.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check secrets. Flag secrets copied into the image or passed as build arguments that stay in the layers."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the scan. Note the image scan result.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A pass or fail verdict, with each finding, its file and line, and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the Dockerfile",
+   "text": "Note the base image, its tag, the build stages and the final command."
+  },
+  {
+   "title": "Check the base image",
+   "text": "Flag untagged or latest base images, and images no longer supported."
+  },
+  {
+   "title": "Check the user",
+   "text": "Flag images that run as root with no reason."
+  },
+  {
+   "title": "Check secrets",
+   "text": "Flag secrets copied into the image or passed as build arguments that stay in the layers."
+  },
+  {
+   "title": "Check the scan",
+   "text": "Note the image scan result. Block on a known exploitable critical finding."
+  },
+  {
+   "title": "Report",
+   "text": "A pass or fail verdict, with each finding, its file and line, and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-container-gate",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B",
+  "score": "3.65",
+  "scores": [
+   4,
+   3,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 158
+ },
+ "skillMd": "skill-md/rlm-container-gate.md",
+ "zip": "downloads/rlm-container-gate.zip"
+}

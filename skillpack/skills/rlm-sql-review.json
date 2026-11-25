@@ -1,0 +1,119 @@
+{
+ "id": "rlm-sql-review",
+ "goal": "SQL review: injection in dynamic SQL, missing indexes, locking and destructive statements.",
+ "cat": "Installed",
+ "on": false,
+ "use": "SQL review: injection in dynamic SQL, missing indexes, locking and destructive statements. Use when asked to review SQL scripts, queries or migrations.",
+ "prompt": "Use the rlm-sql-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the statements. Queries, updates, deletes and migrations."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check dynamic SQL. Flag statements built with string concatenation.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check indexes. Flag filters and joins on unindexed columns.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check locks. Flag long transactions and updates without batching."
+  },
+  {
+   "layout": "gate",
+   "note": "Check destructive statements. Flag deletes or drops with no where clause or backup.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the statements",
+   "text": "Queries, updates, deletes and migrations."
+  },
+  {
+   "title": "Check dynamic SQL",
+   "text": "Flag statements built with string concatenation."
+  },
+  {
+   "title": "Check indexes",
+   "text": "Flag filters and joins on unindexed columns."
+  },
+  {
+   "title": "Check locks",
+   "text": "Flag long transactions and updates without batching."
+  },
+  {
+   "title": "Check destructive statements",
+   "text": "Flag deletes or drops with no where clause or backup."
+  }
+ ],
+ "path": ".github/skills/rlm-sql-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 96
+ },
+ "skillMd": "skill-md/rlm-sql-review.md",
+ "zip": "downloads/rlm-sql-review.zip"
+}

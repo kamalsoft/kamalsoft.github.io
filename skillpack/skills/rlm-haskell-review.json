@@ -1,0 +1,119 @@
+{
+ "id": "rlm-haskell-review",
+ "goal": "Haskell review: partial functions, laziness leaks, exceptions in pure code and effect boundaries.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Haskell review: partial functions, laziness leaks, exceptions in pure code and effect boundaries. Use when asked to review a Haskell project or module.",
+ "prompt": "Use the rlm-haskell-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Cabal or stack files and the compiler flags."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check partial functions. Flag head, tail and fromJust on external data.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check laziness. Flag space leaks from lazy accumulation.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check exceptions. Flag errors thrown from pure code."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Cabal or stack files and the compiler flags."
+  },
+  {
+   "title": "Check partial functions",
+   "text": "Flag head, tail and fromJust on external data."
+  },
+  {
+   "title": "Check laziness",
+   "text": "Flag space leaks from lazy accumulation."
+  },
+  {
+   "title": "Check exceptions",
+   "text": "Flag errors thrown from pure code."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-haskell-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B",
+  "score": "3.65",
+  "scores": [
+   4,
+   4,
+   3,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 163
+ },
+ "skillMd": "skill-md/rlm-haskell-review.md",
+ "zip": "downloads/rlm-haskell-review.zip"
+}

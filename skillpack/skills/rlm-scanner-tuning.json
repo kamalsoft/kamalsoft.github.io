@@ -1,0 +1,119 @@
+{
+ "id": "rlm-scanner-tuning",
+ "goal": "Scanner tuning review: rules that are noisy, rules that are missing and exclusions that have expired.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Scanner tuning review: rules that are noisy, rules that are missing and exclusions that have expired. Use when a scanner produces too many false positives or misses a known issue.",
+ "prompt": "Use the rlm-scanner-tuning skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the rules enabled and disabled, with the reason for each."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check noise. Rules that flag the same accepted pattern repeatedly.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check gaps. Known issues the scanner should have flagged.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check exclusions. Each exclusion needs a reason and an expiry."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The rules to enable, disable or tune, with the reason for each.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the rules enabled and disabled, with the reason for each",
+   "text": ""
+  },
+  {
+   "title": "Check noise",
+   "text": "Rules that flag the same accepted pattern repeatedly."
+  },
+  {
+   "title": "Check gaps",
+   "text": "Known issues the scanner should have flagged."
+  },
+  {
+   "title": "Check exclusions",
+   "text": "Each exclusion needs a reason and an expiry."
+  },
+  {
+   "title": "Report",
+   "text": "The rules to enable, disable or tune, with the reason for each."
+  }
+ ],
+ "path": ".github/skills/rlm-scanner-tuning",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 134
+ },
+ "skillMd": "skill-md/rlm-scanner-tuning.md",
+ "zip": "downloads/rlm-scanner-tuning.zip"
+}

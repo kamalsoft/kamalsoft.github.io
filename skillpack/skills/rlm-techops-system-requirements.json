@@ -161,7 +161,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 79
+  "rank": 211
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 medium, 1 low).\n[medium] req-data.md:12  Data item with no classification.\n       Fix: Classify the data.\n[medium] req-integrations.md:19  Integration with no owner.\n       Fix: Name the owner.\n[low] req-availability.md:26  Requirement with no criterion.\n       Fix: Write a measurable criterion.\nNot checked: Whether the system can meet the requirement.",
  "skillMd": "skill-md/rlm-techops-system-requirements.md",

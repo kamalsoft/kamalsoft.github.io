@@ -162,7 +162,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 16
+  "rank": 35
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] scenario-ad.md:12  Restore time not measured.\n       Fix: Measure the restore and record the time.\n[medium] scenario-vm-restore.md:19  Result does not match the measured time.\n       Fix: Correct the result.\n[medium] scenario-network.md:26  Gap with no action.\n       Fix: Name the action and its owner.\nNot checked: Recovery of real data at scale.",
  "skillMd": "skill-md/rlm-techops-dr-test.md",

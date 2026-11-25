@@ -188,7 +188,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 33
+  "rank": 149
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] step-03-db.md:12  Database change with no reverse step.\n       Fix: Write the reverse migration.\n[medium] step-04-cache.md:19  Cache step has no verification.\n       Fix: Add a check that the cache is cleared.\n[low] step-06-notify.md:26  Notify step depends on a step not listed.\n       Fix: List the step it depends on.\nNot checked: Whether the rollback works in production.",
  "skillMd": "skill-md/rlm-devops-rollback-runbook.md",

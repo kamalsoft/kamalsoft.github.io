@@ -116,10 +116,16 @@
  "group": "dotnet",
  "grade": {
   "grade": "B+",
-  "score": null,
-  "scores": null,
+  "score": "3.85",
+  "scores": [
+   4,
+   3,
+   5,
+   3,
+   4
+  ],
   "design": true,
-  "rank": 35
+  "rank": 65
  },
  "skillMd": "skill-md/rlm-dotnet-review.md",
  "zip": "downloads/rlm-dotnet-review.zip"

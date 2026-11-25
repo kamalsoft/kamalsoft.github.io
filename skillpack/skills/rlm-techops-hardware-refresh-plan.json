@@ -174,7 +174,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 76
+  "rank": 208
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] asset-server-old-4:12  Past end of support and still in service.\n       Fix: Replace it or plan the replacement now.\n[medium] asset-fw-2019:19  Critical asset with no replacement plan.\n       Fix: Write a replacement plan with a date.\n[low] asset-ups-9:26  Replacement cost with no source.\n       Fix: Attach the quote.\nNot checked: Whether the replacement will fit the workload.",
  "skillMd": "skill-md/rlm-techops-hardware-refresh-plan.md",

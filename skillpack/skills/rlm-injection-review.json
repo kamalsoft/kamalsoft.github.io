@@ -1,0 +1,119 @@
+{
+ "id": "rlm-injection-review",
+ "goal": "Injection review: SQL, command, template and LDAP inputs kept apart from code.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Injection review: SQL, command, template and LDAP inputs kept apart from code. Use when code builds queries, commands or templates from input.",
+ "prompt": "Use the rlm-injection-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the sinks. List each query, command, template and directory query."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check construction. Flag any string built with input.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check parameters. Each input must reach the sink as a parameter or escaped value.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the framework. Flag raw query helpers used where a safe API exists."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each sink with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the sinks",
+   "text": "List each query, command, template and directory query."
+  },
+  {
+   "title": "Check construction",
+   "text": "Flag any string built with input."
+  },
+  {
+   "title": "Check parameters",
+   "text": "Each input must reach the sink as a parameter or escaped value."
+  },
+  {
+   "title": "Check the framework",
+   "text": "Flag raw query helpers used where a safe API exists."
+  },
+  {
+   "title": "Report",
+   "text": "Each sink with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-injection-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.20",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 16
+ },
+ "skillMd": "skill-md/rlm-injection-review.md",
+ "zip": "downloads/rlm-injection-review.zip"
+}

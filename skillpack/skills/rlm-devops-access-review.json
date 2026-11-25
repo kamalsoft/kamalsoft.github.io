@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 30
+  "rank": 146
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] grant-4.yaml:12  Deploy grant with no roster match.\n       Fix: Remove the grant or add the holder to the roster.\n[high] grant-3.yaml:19  Production grant with no approver reference.\n       Fix: Record the approver or revoke the grant.\n[medium] grant-6.yaml:26  Staging role not needed for this team.\n       Fix: Confirm the need with the team lead.\nNot checked: Access granted outside the list.",
  "skillMd": "skill-md/rlm-devops-access-review.md",

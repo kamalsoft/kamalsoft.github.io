@@ -1,0 +1,119 @@
+{
+ "id": "rlm-cpp-review",
+ "goal": "C++ review: memory ownership, bounds, undefined behaviour and exception safety.",
+ "cat": "Installed",
+ "on": false,
+ "use": "C++ review: memory ownership, bounds, undefined behaviour and exception safety. Use when asked to review a C++ project or module.",
+ "prompt": "Use the rlm-cpp-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Build files, the standard in use and sanitiser settings."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check ownership. Flag raw new and delete without a clear owner.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check bounds. Flag indexing and copies with no size check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check undefined behaviour. Flag signed overflow, uninitialised values and dangling references."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Build files, the standard in use and sanitiser settings."
+  },
+  {
+   "title": "Check ownership",
+   "text": "Flag raw new and delete without a clear owner."
+  },
+  {
+   "title": "Check bounds",
+   "text": "Flag indexing and copies with no size check."
+  },
+  {
+   "title": "Check undefined behaviour",
+   "text": "Flag signed overflow, uninitialised values and dangling references."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-cpp-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.95",
+  "scores": [
+   4,
+   4,
+   5,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 40
+ },
+ "skillMd": "skill-md/rlm-cpp-review.md",
+ "zip": "downloads/rlm-cpp-review.zip"
+}

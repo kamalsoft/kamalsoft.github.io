@@ -1,0 +1,128 @@
+{
+ "id": "rlm-api-design-review",
+ "goal": "Review an API design for naming, consistency, versioning, error shape and backward compatibility.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review an API design for naming, consistency, versioning, error shape and backward compatibility. Use when a new or changed API is being designed or reviewed.",
+ "prompt": "Use the rlm-api-design-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the contract. Open the OpenAPI or route definitions, and note every public endpoint, its method and its request and response shapes."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check naming. Flag inconsistent names, verbs in resource paths, and fields that mean different things in different endpoints.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check versioning. Flag breaking changes to existing fields or status codes, and changes with no version or deprecation path.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check errors. Errors should share one shape with a stable code and a message that does not leak internals."
+  },
+  {
+   "layout": "gate",
+   "note": "Check pagination and limits. List endpoints need paging and a maximum size.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding as the endpoint and field, with severity, the problem and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the contract",
+   "text": "Open the OpenAPI or route definitions, and note every public endpoint, its method and its request and response shapes."
+  },
+  {
+   "title": "Check naming",
+   "text": "Flag inconsistent names, verbs in resource paths, and fields that mean different things in different endpoints."
+  },
+  {
+   "title": "Check versioning",
+   "text": "Flag breaking changes to existing fields or status codes, and changes with no version or deprecation path."
+  },
+  {
+   "title": "Check errors",
+   "text": "Errors should share one shape with a stable code and a message that does not leak internals."
+  },
+  {
+   "title": "Check pagination and limits",
+   "text": "List endpoints need paging and a maximum size. Flag unbounded result sets."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as the endpoint and field, with severity, the problem and the fix. Mark what you did not check."
+  }
+ ],
+ "path": ".github/skills/rlm-api-design-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "engineering",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 51
+ },
+ "skillMd": "skill-md/rlm-api-design-review.md",
+ "zip": "downloads/rlm-api-design-review.zip"
+}

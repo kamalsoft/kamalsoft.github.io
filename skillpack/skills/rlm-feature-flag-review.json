@@ -1,0 +1,119 @@
+{
+ "id": "rlm-feature-flag-review",
+ "goal": "Feature flag review: flags with an owner, a default and a removal date.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Feature flag review: flags with an owner, a default and a removal date. Use when a feature is behind a flag or a flag is added.",
+ "prompt": "Use the rlm-feature-flag-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the flags. Find each flag check and its default value."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check ownership. Each flag needs a named owner.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check removal. Flag flags older than their planned removal date.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check both paths. Test the code with the flag on and off."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each flag with its owner, default, age and the risk of each path.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the flags",
+   "text": "Find each flag check and its default value."
+  },
+  {
+   "title": "Check ownership",
+   "text": "Each flag needs a named owner."
+  },
+  {
+   "title": "Check removal",
+   "text": "Flag flags older than their planned removal date."
+  },
+  {
+   "title": "Check both paths",
+   "text": "Test the code with the flag on and off."
+  },
+  {
+   "title": "Report",
+   "text": "Each flag with its owner, default, age and the risk of each path."
+  }
+ ],
+ "path": ".github/skills/rlm-feature-flag-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 69
+ },
+ "skillMd": "skill-md/rlm-feature-flag-review.md",
+ "zip": "downloads/rlm-feature-flag-review.zip"
+}

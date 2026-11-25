@@ -1,0 +1,119 @@
+{
+ "id": "rlm-deserialization-review",
+ "goal": "Deserialisation review: untrusted data turned into objects, with type control and size limits.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Deserialisation review: untrusted data turned into objects, with type control and size limits. Use when code reads serialised data from outside the process.",
+ "prompt": "Use the rlm-deserialization-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the readers. List each place serialised data is read."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the format. Flag binary or polymorphic formats read from untrusted sources.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check types. Flag readers that choose the type from the input.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check limits. Flag readers with no size or depth limit."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each reader with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the readers",
+   "text": "List each place serialised data is read."
+  },
+  {
+   "title": "Check the format",
+   "text": "Flag binary or polymorphic formats read from untrusted sources."
+  },
+  {
+   "title": "Check types",
+   "text": "Flag readers that choose the type from the input."
+  },
+  {
+   "title": "Check limits",
+   "text": "Flag readers with no size or depth limit."
+  },
+  {
+   "title": "Report",
+   "text": "Each reader with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-deserialization-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "B+",
+  "score": "3.95",
+  "scores": [
+   5,
+   4,
+   4,
+   2,
+   3
+  ],
+  "design": true,
+  "rank": 41
+ },
+ "skillMd": "skill-md/rlm-deserialization-review.md",
+ "zip": "downloads/rlm-deserialization-review.zip"
+}

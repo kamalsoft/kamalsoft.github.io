@@ -1,0 +1,119 @@
+{
+ "id": "rlm-dotnet-security-analyser-review",
+ "goal": "NET security analyser review: analyser rules enabled, suppressed and treated as errors.",
+ "cat": "Installed",
+ "on": false,
+ "use": "NET security analyser review: analyser rules enabled, suppressed and treated as errors. Use when the project's analysers or warning settings are changed.",
+ "prompt": "Use the rlm-dotnet-security-analyser-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the analysers and the security rule sets enabled."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check severity. Security rules should be errors, not warnings.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check suppressions. Each suppression needs a reason.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the build. Analyser errors must fail the build in CI."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The rules enabled, the suppressions and the gaps.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the analysers and the security rule sets enabled",
+   "text": ""
+  },
+  {
+   "title": "Check severity",
+   "text": "Security rules should be errors, not warnings."
+  },
+  {
+   "title": "Check suppressions",
+   "text": "Each suppression needs a reason."
+  },
+  {
+   "title": "Check the build",
+   "text": "Analyser errors must fail the build in CI."
+  },
+  {
+   "title": "Report",
+   "text": "The rules enabled, the suppressions and the gaps."
+  }
+ ],
+ "path": ".github/skills/rlm-dotnet-security-analyser-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 66
+ },
+ "skillMd": "skill-md/rlm-dotnet-security-analyser-review.md",
+ "zip": "downloads/rlm-dotnet-security-analyser-review.zip"
+}

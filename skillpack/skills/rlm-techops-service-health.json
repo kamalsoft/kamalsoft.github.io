@@ -174,7 +174,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 17
+  "rank": 36
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-search:12  Down for more than 15 minutes with no ticket.\n       Fix: Open a ticket and start the incident.\n[medium] host-mail-01:19  Host with alerts and no owner.\n       Fix: Assign an owner.\n[low] svc-reports:26  Status with no timestamp.\n       Fix: Record when the status was read.\nNot checked: Problems the monitoring does not measure.",
  "skillMd": "skill-md/rlm-techops-service-health.md",

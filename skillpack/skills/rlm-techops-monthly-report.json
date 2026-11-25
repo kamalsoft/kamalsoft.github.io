@@ -166,7 +166,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 68
+  "rank": 203
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] svc-erp.csv:12  Figure does not match its source.\n       Fix: Recompute from the source export.\n[medium] svc-wifi.csv:19  Change above 25 percent with no note.\n       Fix: Explain the change in one line.\n[low] svc-desk.csv:26  Service missing from the report.\n       Fix: Add the service row.\nNot checked: Business outcomes.",
  "skillMd": "skill-md/rlm-techops-monthly-report.md",

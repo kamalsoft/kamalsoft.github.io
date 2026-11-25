@@ -1,0 +1,119 @@
+{
+ "id": "rlm-patch-prioritisation",
+ "goal": "Patch prioritisation: which patches go first, by exploitability, exposure and business effect.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Patch prioritisation: which patches go first, by exploitability, exposure and business effect. Use when a list of available patches needs an order.",
+ "prompt": "Use the rlm-patch-prioritisation skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the patches. Each package or system, its version and fix."
+  },
+  {
+   "layout": "chunks",
+   "note": "Rank by exploitability. Put known-exploited issues first.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Rank by exposure. Internet-facing and privileged systems first.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Estimate effort. Note the restart or downtime each patch needs."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The ordered list with the reason for each place.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the patches",
+   "text": "Each package or system, its version and fix."
+  },
+  {
+   "title": "Rank by exploitability",
+   "text": "Put known-exploited issues first."
+  },
+  {
+   "title": "Rank by exposure",
+   "text": "Internet-facing and privileged systems first."
+  },
+  {
+   "title": "Estimate effort",
+   "text": "Note the restart or downtime each patch needs."
+  },
+  {
+   "title": "Report",
+   "text": "The ordered list with the reason for each place."
+  }
+ ],
+ "path": ".github/skills/rlm-patch-prioritisation",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "A-",
+  "score": "4.20",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 18
+ },
+ "skillMd": "skill-md/rlm-patch-prioritisation.md",
+ "zip": "downloads/rlm-patch-prioritisation.zip"
+}

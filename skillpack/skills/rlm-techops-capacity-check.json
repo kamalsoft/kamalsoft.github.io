@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 43
+  "rank": 152
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] host-web-03:12  Under 15 percent headroom, limit reached within 30 days.\n       Fix: Add capacity before the date.\n[medium] storage-san-1:19  Trend reaches the limit within 30 days.\n       Fix: Plan the capacity increase.\n[low] host-batch-04:26  Resource with no metric.\n       Fix: Add the metric to monitoring.\nNot checked: Workload forecasts beyond the trend.",
  "skillMd": "skill-md/rlm-techops-capacity-check.md",

@@ -1,0 +1,128 @@
+{
+ "id": "rlm-release-gate",
+ "goal": "Check the release gate: the sign-off, tests, rollback plan and security checks a release needs before it goes…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Check the release gate: the sign-off, tests, rollback plan and security checks a release needs before it goes to production. Use when a release is about to be promoted.",
+ "prompt": "Use the rlm-release-gate skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the release scope. List the changes in the release, and the services they touch."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the tests. The release needs its test results and a note of any skipped tests.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the security checks. Confirm the security gates passed for this release, and list any open high findings.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the rollback. A tested rollback path must exist, with the steps written down."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the sign-off. A named owner must approve.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A pass or fail verdict, with the reasons, and what must be fixed before the release can go.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the release scope",
+   "text": "List the changes in the release, and the services they touch."
+  },
+  {
+   "title": "Check the tests",
+   "text": "The release needs its test results and a note of any skipped tests."
+  },
+  {
+   "title": "Check the security checks",
+   "text": "Confirm the security gates passed for this release, and list any open high findings."
+  },
+  {
+   "title": "Check the rollback",
+   "text": "A tested rollback path must exist, with the steps written down."
+  },
+  {
+   "title": "Check the sign-off",
+   "text": "A named owner must approve. Flag releases with no approval."
+  },
+  {
+   "title": "Report",
+   "text": "A pass or fail verdict, with the reasons, and what must be fixed before the release can go."
+  }
+ ],
+ "path": ".github/skills/rlm-release-gate",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 117
+ },
+ "skillMd": "skill-md/rlm-release-gate.md",
+ "zip": "downloads/rlm-release-gate.zip"
+}

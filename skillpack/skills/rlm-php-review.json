@@ -1,0 +1,119 @@
+{
+ "id": "rlm-php-review",
+ "goal": "PHP review: input handling, SQL, file inclusion, session settings and type declarations.",
+ "cat": "Installed",
+ "on": false,
+ "use": "PHP review: input handling, SQL, file inclusion, session settings and type declarations. Use when asked to review a PHP project or module.",
+ "prompt": "Use the rlm-php-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Composer file, PHP version and configuration."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check input. Flag superglobals used without validation.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check SQL. Flag queries built with concatenation or interpolation.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check file inclusion. Flag include or require with input-derived paths."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Composer file, PHP version and configuration."
+  },
+  {
+   "title": "Check input",
+   "text": "Flag superglobals used without validation."
+  },
+  {
+   "title": "Check SQL",
+   "text": "Flag queries built with concatenation or interpolation."
+  },
+  {
+   "title": "Check file inclusion",
+   "text": "Flag include or require with input-derived paths."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-php-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 86
+ },
+ "skillMd": "skill-md/rlm-php-review.md",
+ "zip": "downloads/rlm-php-review.zip"
+}

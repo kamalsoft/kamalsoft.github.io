@@ -1,0 +1,119 @@
+{
+ "id": "rlm-dotnet-testing-review",
+ "goal": "NET testing review: test isolation, fakes for I/O, coverage of branches and flaky tests.",
+ "cat": "Installed",
+ "on": false,
+ "use": "NET testing review: test isolation, fakes for I/O, coverage of branches and flaky tests. Use when a .NET test project is added or changed.",
+ "prompt": "Use the rlm-dotnet-testing-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the test projects and what each one covers."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check isolation. Flag tests that call real databases, networks or the clock.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check fakes. Each external dependency should have a fake or stub.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check flakiness. Flag tests that depend on timing or order."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, the problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the test projects and what each one covers",
+   "text": ""
+  },
+  {
+   "title": "Check isolation",
+   "text": "Flag tests that call real databases, networks or the clock."
+  },
+  {
+   "title": "Check fakes",
+   "text": "Each external dependency should have a fake or stub."
+  },
+  {
+   "title": "Check flakiness",
+   "text": "Flag tests that depend on timing or order."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, the problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-dotnet-testing-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 108
+ },
+ "skillMd": "skill-md/rlm-dotnet-testing-review.md",
+ "zip": "downloads/rlm-dotnet-testing-review.zip"
+}

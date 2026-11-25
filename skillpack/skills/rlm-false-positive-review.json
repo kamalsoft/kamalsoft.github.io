@@ -1,0 +1,119 @@
+{
+ "id": "rlm-false-positive-review",
+ "goal": "False positive review: findings checked and closed with evidence, not with a shrug.",
+ "cat": "Installed",
+ "on": false,
+ "use": "False positive review: findings checked and closed with evidence, not with a shrug. Use when a finding is marked as not applicable.",
+ "prompt": "Use the rlm-false-positive-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Take each finding marked not applicable."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the evidence. The code path, configuration or version that makes it inapplicable.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the reasoning. The argument must hold for every path, not only the one tested.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the record. Each closure has an approver and a date."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The findings closed, their evidence and any that should be reopened.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Take each finding marked not applicable",
+   "text": ""
+  },
+  {
+   "title": "Check the evidence",
+   "text": "The code path, configuration or version that makes it inapplicable."
+  },
+  {
+   "title": "Check the reasoning",
+   "text": "The argument must hold for every path, not only the one tested."
+  },
+  {
+   "title": "Check the record",
+   "text": "Each closure has an approver and a date."
+  },
+  {
+   "title": "Report",
+   "text": "The findings closed, their evidence and any that should be reopened."
+  }
+ ],
+ "path": ".github/skills/rlm-false-positive-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 68
+ },
+ "skillMd": "skill-md/rlm-false-positive-review.md",
+ "zip": "downloads/rlm-false-positive-review.zip"
+}

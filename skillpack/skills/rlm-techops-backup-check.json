@@ -169,7 +169,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 9
+  "rank": 11
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] job-crm:12  Last good copy older than its target.\n       Fix: Run the job and check it completes.\n[medium] job-mail:19  Failed job with no ticket.\n       Fix: Open a ticket for the failure.\n[medium] job-config:26  Job with no record.\n       Fix: Record the job in the backup register.\nNot checked: Whether the backup restores.",
  "skillMd": "skill-md/rlm-techops-backup-check.md",

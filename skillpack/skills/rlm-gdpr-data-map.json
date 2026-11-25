@@ -1,0 +1,128 @@
+{
+ "id": "rlm-gdpr-data-map",
+ "goal": "Map where personal data is collected, stored, shared and deleted in the code, with the purpose and retention…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Map where personal data is collected, stored, shared and deleted in the code, with the purpose and retention of each. Use when a feature touches personal data.",
+ "prompt": "Use the rlm-gdpr-data-map skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the personal data. List fields that hold personal data: names, emails, addresses, identifiers and location."
+  },
+  {
+   "layout": "chunks",
+   "note": "Map the flow. For each field, follow where it is collected, stored, sent to other services and logged.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the purpose. Each field should have a stated purpose.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check retention. Each field needs a retention period and a delete path."
+  },
+  {
+   "layout": "gate",
+   "note": "Check sharing. Flag personal data sent to third parties, or to a region the policy does not allow.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A table: field, where collected, stored, shared, purpose, retention, and gaps.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the personal data",
+   "text": "List fields that hold personal data: names, emails, addresses, identifiers and location."
+  },
+  {
+   "title": "Map the flow",
+   "text": "For each field, follow where it is collected, stored, sent to other services and logged."
+  },
+  {
+   "title": "Check the purpose",
+   "text": "Each field should have a stated purpose. Flag fields collected with no use."
+  },
+  {
+   "title": "Check retention",
+   "text": "Each field needs a retention period and a delete path. Flag data kept with no delete."
+  },
+  {
+   "title": "Check sharing",
+   "text": "Flag personal data sent to third parties, or to a region the policy does not allow."
+  },
+  {
+   "title": "Report",
+   "text": "A table: field, where collected, stored, shared, purpose, retention, and gaps. This is a map for a person to review, not a legal opinion."
+  }
+ ],
+ "path": ".github/skills/rlm-gdpr-data-map",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.60",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   3
+  ],
+  "design": true,
+  "rank": 176
+ },
+ "skillMd": "skill-md/rlm-gdpr-data-map.md",
+ "zip": "downloads/rlm-gdpr-data-map.zip"
+}

@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 80
+  "rank": 212
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] cat-access:12  Category up 27 percent with no note.\n       Fix: Explain the rise and name the cause.\n[medium] cat-uncategorised:19  Tickets with no category.\n       Fix: Categorise the tickets.\n[low] cat-network:26  Recurring cause not recorded.\n       Fix: Record the cause of the recurring ticket.\nNot checked: The cause of recurring tickets.",
  "skillMd": "skill-md/rlm-techops-ticket-trend.md",

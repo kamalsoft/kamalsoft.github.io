@@ -1,0 +1,128 @@
+{
+ "id": "rlm-container-image-findings",
+ "goal": "Review container image scanner findings: which are reachable, which have fixes, and which are false positives.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review container image scanner findings: which are reachable, which have fixes, and which are false positives. Use when an image scan reports findings before a release.",
+ "prompt": "Use the rlm-container-image-findings skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the scan output. Take the findings the user exports, with package, version and severity."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the base layer. Note which findings come from the base image, and whether a newer base image fixes them.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check reachability. For each finding, decide whether the code in the image uses the vulnerable component.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check fixes. Note the fixed version of each package and whether a rebuild with updated packages is enough."
+  },
+  {
+   "layout": "gate",
+   "note": "Check false positives. Mark findings with no fix and no reachable path as candidates for a documented exception, not as passed.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A table: finding, layer, reachable, fix, and decision.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the scan output",
+   "text": "Take the findings the user exports, with package, version and severity. Do not invent findings."
+  },
+  {
+   "title": "Check the base layer",
+   "text": "Note which findings come from the base image, and whether a newer base image fixes them."
+  },
+  {
+   "title": "Check reachability",
+   "text": "For each finding, decide whether the code in the image uses the vulnerable component."
+  },
+  {
+   "title": "Check fixes",
+   "text": "Note the fixed version of each package and whether a rebuild with updated packages is enough."
+  },
+  {
+   "title": "Check false positives",
+   "text": "Mark findings with no fix and no reachable path as candidates for a documented exception, not as passed."
+  },
+  {
+   "title": "Report",
+   "text": "A table: finding, layer, reachable, fix, and decision. State the findings that need a person to confirm."
+  }
+ ],
+ "path": ".github/skills/rlm-container-image-findings",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B",
+  "score": "3.60",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   3
+  ],
+  "design": true,
+  "rank": 175
+ },
+ "skillMd": "skill-md/rlm-container-image-findings.md",
+ "zip": "downloads/rlm-container-image-findings.zip"
+}

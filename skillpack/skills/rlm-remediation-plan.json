@@ -1,0 +1,119 @@
+{
+ "id": "rlm-remediation-plan",
+ "goal": "Remediation plan: a dated plan for fixing a group of related findings.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Remediation plan: a dated plan for fixing a group of related findings. Use when several related findings need fixing together.",
+ "prompt": "Use the rlm-remediation-plan skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Group the findings by component or cause."
+  },
+  {
+   "layout": "chunks",
+   "note": "Choose the fix. One upgrade, one configuration or one code change per group.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Set the dates. Each group gets an owner and a deadline.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Plan the test. Note how the fix will be verified."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The groups, the fix, the owner, the date and the verification.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Group the findings by component or cause",
+   "text": ""
+  },
+  {
+   "title": "Choose the fix",
+   "text": "One upgrade, one configuration or one code change per group."
+  },
+  {
+   "title": "Set the dates",
+   "text": "Each group gets an owner and a deadline."
+  },
+  {
+   "title": "Plan the test",
+   "text": "Note how the fix will be verified."
+  },
+  {
+   "title": "Report",
+   "text": "The groups, the fix, the owner, the date and the verification."
+  }
+ ],
+ "path": ".github/skills/rlm-remediation-plan",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 90
+ },
+ "skillMd": "skill-md/rlm-remediation-plan.md",
+ "zip": "downloads/rlm-remediation-plan.zip"
+}

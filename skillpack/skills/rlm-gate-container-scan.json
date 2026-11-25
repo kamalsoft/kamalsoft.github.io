@@ -1,0 +1,119 @@
+{
+ "id": "rlm-gate-container-scan",
+ "goal": "Container scan gate: images with exploitable critical findings blocked before deployment.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Container scan gate: images with exploitable critical findings blocked before deployment. Use when a container image is built for deployment.",
+ "prompt": "Use the rlm-gate-container-scan skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Confirm the scan runs on each image build, before it is pushed."
+  },
+  {
+   "layout": "chunks",
+   "note": "Set the rule. An exploitable critical finding blocks the push.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the base image. Flag images built on an unsupported base.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check exceptions. Each accepted finding needs an owner and an expiry."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The image, the findings, the decision and the owner.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Confirm the scan runs on each image build, before it is pushed",
+   "text": ""
+  },
+  {
+   "title": "Set the rule",
+   "text": "An exploitable critical finding blocks the push."
+  },
+  {
+   "title": "Check the base image",
+   "text": "Flag images built on an unsupported base."
+  },
+  {
+   "title": "Check exceptions",
+   "text": "Each accepted finding needs an owner and an expiry."
+  },
+  {
+   "title": "Report",
+   "text": "The image, the findings, the decision and the owner."
+  }
+ ],
+ "path": ".github/skills/rlm-gate-container-scan",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 72
+ },
+ "skillMd": "skill-md/rlm-gate-container-scan.md",
+ "zip": "downloads/rlm-gate-container-scan.zip"
+}

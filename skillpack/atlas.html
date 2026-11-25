@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
-<title>Skill Atlas</title>
+<title>Agent Skills Hub</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cstyle%3E.t%7Bfill%3A%231c6d75%7D.f%7Bfill%3A%23fff%7D.k%7Bstroke%3A%23fff%7D%40media%20%28prefers-color-scheme%3Adark%29%7B.t%7Bfill%3A%235fcbd5%7D.f%7Bfill%3A%230e1318%7D.k%7Bstroke%3A%230e1318%7D%7D%3C/style%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20class%3D%22t%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2236%22%20text-anchor%3D%22middle%22%20class%3D%22f%22%20style%3D%22font%3A700%2021px%20%27IBM%20Plex%20Sans%27%2C%27Segoe%20UI%27%2CHelvetica%2CArial%2Csans-serif%3Bletter-spacing%3A.02em%22%3ERLM%3C/text%3E%3Cpath%20d%3D%22M17%2047%20H47%22%20class%3D%22k%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2217%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3Ccircle%20cx%3D%2247%22%20cy%3D%2247%22%20r%3D%223.5%22%20class%3D%22f%22/%3E%3C/svg%3E">
-<meta name="description" content="Pick the RLM agent skill you need. A 3D pipeline for each of the 33 skills, with its grade and tier, with install steps for the VS Code extension.">
+<meta name="description" content="Pick the RLM agent skill you need. A 3D pipeline for each of the 33 skills, with its grade, with install steps for the VS Code extension.">
 <meta name="theme-color" content="#13808a">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
@@ -60,7 +60,7 @@ button:disabled { opacity: .5; cursor: default; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); min-width: 0; }
 
 /* Tier palette: any element with tp-<tier> gets --tc */
-.tp-premium { --tc: var(--premium); } .tp-pro { --tc: var(--pro); } .tp-essentials { --tc: var(--essentials); } .tp-none { --tc: var(--muted); }
+.tp-A { --tc: var(--premium); } .tp-B { --tc: var(--pro); } .tp-C { --tc: var(--essentials); } .tp-none { --tc: var(--muted); }
 .tier { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; border-radius: 999px; padding: 2px 9px; white-space: nowrap; color: var(--tc); background: color-mix(in srgb, var(--tc) 13%, transparent); }
 .tier::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--tc); }
 .pill { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; color: var(--muted); white-space: nowrap; background: var(--surface); }
@@ -479,7 +479,7 @@ body.embed .crumbs { display: none; }
 <header class="topbar">
   <a class="brand" href="#overview">
     <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="26" height="26" rx="6" class="i"/><rect x="34" y="4" width="26" height="26" rx="6" class="i" opacity=".78"/><rect x="4" y="34" width="26" height="26" rx="6" class="i" opacity=".78"/><rect x="34" y="34" width="11.5" height="11.5" rx="3" class="i" opacity=".55"/><rect x="48.5" y="34" width="11.5" height="11.5" rx="3" class="i" opacity=".55"/><rect x="34" y="48.5" width="11.5" height="11.5" rx="3" class="i" opacity=".55"/><rect x="48.5" y="48.5" width="11.5" height="11.5" rx="3" class="a"/></svg>
-    <span class="wordmark">Skill Atlas</span>
+    <span class="wordmark">Agent Skills Hub</span>
   </a>
   <nav class="topnav" aria-label="Page sections">
     <a href="#glance" class="opt">Overview</a>
@@ -490,14 +490,13 @@ body.embed .crumbs { display: none; }
     <a href="#more" class="opt">More</a>
   </nav>
   <button type="button" class="iconbtn" id="theme" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
-  <a class="iconbtn" href="https://github.com/kamalsoft/skill-pack" target="_blank" rel="noopener noreferrer" aria-label="Repository on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
 </header>
 
 <div class="shell">
 
   <main class="main">
     <section class="card hero" id="overview" aria-labelledby="ov-title">
-      <p class="eyebrow">Skill Atlas · <span id="count"></span></p>
+      <p class="eyebrow">Agent Skills Hub · <span id="count"></span></p>
       <h1 id="ov-title">Every skill has a starting point. Find yours.</h1>
       <p class="lede">The skills in this project, grouped by family and graded A+ to D. Search or filter, then open a skill to read its steps, grade and folder.</p>
       <p class="trust" id="trust"></p>
@@ -506,7 +505,7 @@ body.embed .crumbs { display: none; }
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="q" type="search" placeholder="Search by goal or name" autocomplete="off" aria-label="Search skills"><kbd aria-hidden="true">/</kbd>
         </label>
-        <div class="seg-ctl" id="tiers" role="group" aria-label="Filter by tier"></div>
+        <div class="seg-ctl" id="tiers" role="group" aria-label="Filter by grade band"></div>
         <div class="viewsw" id="modes" role="group" aria-label="Choose a view">
           <button type="button" data-mode="cards" aria-pressed="true">Cards</button>
           <button type="button" data-mode="table" aria-pressed="false">Table</button>
@@ -519,7 +518,7 @@ body.embed .crumbs { display: none; }
           <option value="grade|-1">Grade (best first)</option>
           <option value="goal|1">Name (A to Z)</option>
           <option value="fam|1">Family</option>
-          <option value="tier|1">Tier</option>
+          <option value="tier|1">Grade band</option>
         </select></label>
         <span class="count-note" id="shownNote"></span>
       </div>
@@ -529,7 +528,7 @@ body.embed .crumbs { display: none; }
           <thead><tr>
             <th><button type="button" data-key="goal">Skill</button></th>
             <th><button type="button" data-key="fam">Family</button></th>
-            <th><button type="button" data-key="tier">Tier</button></th>
+            <th><button type="button" data-key="tier">Grade band</button></th>
             <th class="n"><button type="button" data-key="score">Score</button></th>
             <th class="n"><button type="button" data-key="grade">Grade</button></th>
           </tr></thead>
@@ -537,7 +536,7 @@ body.embed .crumbs { display: none; }
         </table>
       </div>
       <div class="more-row"><button type="button" class="more" id="more" hidden></button></div>
-      <p class="none" id="empty" hidden>No skill matches. Clear the search, or choose another family or tier.</p>
+      <p class="none" id="empty" hidden>No skill matches. Clear the search, or choose another family or grade band.</p>
     </section>
 
     <section class="card hero glance" id="glance" aria-labelledby="gl-title">
@@ -649,7 +648,7 @@ body.embed .crumbs { display: none; }
     </section>
 
     <section class="card doc" id="grades" aria-labelledby="grades-title">
-      <p class="eyebrow">Grades and tiers</p>
+      <p class="eyebrow">Grades</p>
       <h2 id="grades-title">How the skills are graded</h2>
       <p class="lead">Every skill is scored 1 to 5 on five criteria. The weighted sum gives a score out of 5, the score gives the grade, and the grade sets the tier; the tier never affects the grade. These are design grades: no skill has yet been run against a model with measured results. Reference project: a team that builds and runs a commercial web application, with a front end, APIs, a database, third-party dependencies and CI.</p>
       <div class="legend-row">
@@ -660,9 +659,9 @@ body.embed .crumbs { display: none; }
         <div class="wt"><b>10%</b><span>Presence: how many projects have it</span></div>
       </div>
       <div class="bands">
-        <div class="bandc tp-premium"><b>A+ · A · A- → premium</b><p>Score 4.00 to 5.00. Essential, core or strong: high value with a strong method.</p></div>
-        <div class="bandc tp-pro"><b>B+ · B · B- → pro</b><p>Score 3.10 to 3.99. Valuable for many projects, or vital for some.</p></div>
-        <div class="bandc tp-essentials"><b>C+ · C · D → essentials</b><p>Score below 3.10. Situational, narrow or early. Installs without a key.</p></div>
+        <div class="bandc tp-A"><b>A+ · A · A-</b><p>Score 4.00 to 5.00. Essential, core or strong: high value with a strong method.</p></div>
+        <div class="bandc tp-B"><b>B+ · B · B-</b><p>Score 3.10 to 3.99. Valuable for many projects, or vital for some.</p></div>
+        <div class="bandc tp-C"><b>C+ · C · D</b><p>Score below 3.10. Situational, narrow or early. Installs without a key.</p></div>
       </div>
       <h3>All skills, ranked</h3>
       <ul class="crit-key" aria-label="Column key">
@@ -680,7 +679,7 @@ body.embed .crumbs { display: none; }
           <th class="n"><button type="button" data-sort="rank">#</button></th>
           <th><button type="button" data-sort="id">Skill</button></th>
           <th><button type="button" data-sort="cat">Category</button></th>
-          <th><button type="button" data-sort="tier">Tier</button></th>
+          <th><button type="button" data-sort="tier">Grade band</button></th>
           <th class="n"><button type="button" data-sort="0" title="Support strength">S</button></th>
           <th class="n"><button type="button" data-sort="1" title="Importance">I</button></th>
           <th class="n"><button type="button" data-sort="2" title="Severity">V</button></th>
@@ -691,21 +690,21 @@ body.embed .crumbs { display: none; }
         </tr></thead>
         <tbody id="gradeRows"></tbody>
       </table></div>
-      <p>Full reasoning for every grade: <a href="https://github.com/kamalsoft/skill-pack/blob/main/docs/skill-grade.md" target="_blank" rel="noopener noreferrer">skill-grade.md</a>.</p>
+      <p>Full reasoning for every grade: <a href="/grades/">the grades page</a>.</p>
     </section>
 
   <section class="card doc" id="install" aria-labelledby="install-title">
     <h2 id="install-title">How to install</h2>
     <p class="lead">Two steps. Install the extension once, then install the skills into each project that uses them.</p>
     <!-- absolute URL: the sync workflow copies only this page to the live site -->
-    <img src="https://raw.githubusercontent.com/kamalsoft/skill-pack/main/docs/install.gif" width="960" height="600" loading="lazy" style="display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:12px;margin:0 0 20px" alt="Download the .vsix from this page, install it with Install from VSIX… in the Extensions view, then run RLM: Install Agent Skills and keep the defaults. The extension installs the 14 default skills in .github/skills/ and reports 23 files written.">
+    <img src="install.gif" width="960" height="600" loading="lazy" style="display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:12px;margin:0 0 20px" alt="Download the .vsix from this page, install it with Install from VSIX… in the Extensions view, then run RLM: Install Agent Skills and keep the defaults. The extension installs the 14 default skills in .github/skills/ and reports 23 files written.">
 
     <h3>Step 1: install the extension</h3>
     <p>The extension is not on the VS Code Marketplace yet. Download the package, then install it.</p>
     <ol>
-      <li>Download <a href="https://github.com/kamalsoft/skill-pack/raw/main/binary/skill-pack-2.1.0.vsix" target="_blank" rel="noopener noreferrer">skill-pack-2.1.0.vsix</a> from the <a href="https://github.com/kamalsoft/skill-pack" target="_blank" rel="noopener noreferrer">skill-pack repository</a>.</li>
+      <li>Download <a href="skill-pack-2.3.0.vsix" target="_blank" rel="noopener noreferrer">skill-pack-2.3.0.vsix</a> from the <a href="/install/">install page</a>.</li>
       <li>Install it from a terminal, or from VS Code.
-        <div class="cmd"><code>code --install-extension skill-pack-2.1.0.vsix</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.1.0.vsix">Copy</button></div>
+        <div class="cmd"><code>code --install-extension skill-pack-2.3.0.vsix</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.3.0.vsix">Copy</button></div>
         In VS Code, open the Extensions view (⇧⌘X), choose <strong>Install from VSIX…</strong> from the … menu, select the file, and reload if asked.
       </li>
     </ol>
@@ -752,8 +751,8 @@ body.embed .crumbs { display: none; }
 
     <h3>Update the extension</h3>
     <ol>
-      <li>Download the newer <code>.vsix</code> from the <a href="https://github.com/kamalsoft/skill-pack/tree/main/binary" target="_blank" rel="noopener noreferrer"><code>binary/</code> folder</a> and install it over the old one.
-        <div class="cmd"><code>code --install-extension skill-pack-2.1.0.vsix --force</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.1.0.vsix --force">Copy</button></div></li>
+      <li>Download the newer <code>.vsix</code> from the <a href="/install/">install page</a> and install it over the old one.
+        <div class="cmd"><code>code --install-extension skill-pack-2.3.0.vsix --force</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.3.0.vsix --force">Copy</button></div></li>
       <li>Run <strong>RLM: Install Agent Skills</strong> again in each project, to refresh its skills. Files you have edited are left alone.</li>
     </ol>
 
@@ -780,11 +779,10 @@ body.embed .crumbs { display: none; }
     <div class="tbl-scroll"><table class="t">
       <thead><tr><th>To</th><th>Run</th></tr></thead>
       <tbody>
-        <tr><td>Install</td><td><div class="cmd"><code>code --install-extension skill-pack-2.1.0.vsix</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.1.0.vsix">Copy</button></div></td></tr>
-        <tr><td>Update to a newer file</td><td><div class="cmd"><code>code --install-extension skill-pack-2.1.0.vsix --force</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.1.0.vsix --force">Copy</button></div></td></tr>
+        <tr><td>Install</td><td><div class="cmd"><code>code --install-extension skill-pack-2.3.0.vsix</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.3.0.vsix">Copy</button></div></td></tr>
+        <tr><td>Update to a newer file</td><td><div class="cmd"><code>code --install-extension skill-pack-2.3.0.vsix --force</code><button type="button" class="copy" data-copy="code --install-extension skill-pack-2.3.0.vsix --force">Copy</button></div></td></tr>
         <tr><td>See the installed version</td><td><div class="cmd"><code>code --list-extensions --show-versions | grep kamalsoft</code><button type="button" class="copy" data-copy="code --list-extensions --show-versions | grep kamalsoft">Copy</button></div></td></tr>
         <tr><td>Uninstall</td><td><div class="cmd"><code>code --uninstall-extension kamalsoft.skill-pack</code><button type="button" class="copy" data-copy="code --uninstall-extension kamalsoft.skill-pack">Copy</button></div></td></tr>
-        <tr><td>Get the package repository</td><td><div class="cmd"><code>git clone https://github.com/kamalsoft/skill-pack.git</code><button type="button" class="copy" data-copy="git clone https://github.com/kamalsoft/skill-pack.git">Copy</button></div></td></tr>
       </tbody>
     </table></div>
     <p><strong>Helper scripts</strong> (optional). The agent runs these for you; run them yourself to see what a skill will read. The chunked skills include <code>rlm_corpus.py</code> (or <code>rlm_corpus.js</code> with <code>node</code> if you chose Node.js). Run from the project root:</p>
@@ -804,11 +802,9 @@ body.embed .crumbs { display: none; }
   <section class="card doc" id="more" aria-labelledby="more-title">
     <h2 id="more-title">More</h2>
     <div class="cards">
-      <a class="card-link" href="https://github.com/kamalsoft/skill-pack/blob/main/docs/SKILLS.md" target="_blank" rel="noopener noreferrer"><strong>Skill reference</strong><span>Each skill: what it is for, an example prompt, pros and cons.</span></a>
-      <a class="card-link" href="https://github.com/kamalsoft/skill-pack/blob/main/docs/DOCUMENTATION.md" target="_blank" rel="noopener noreferrer"><strong>Install and troubleshooting guide</strong><span>Install steps, helper runtimes, known limits.</span></a>
-      <a class="card-link" href="https://github.com/kamalsoft/skill-pack" target="_blank" rel="noopener noreferrer"><strong>Package repository</strong><span>README, licence and the .vsix file.</span></a>
-      <a class="card-link" href="https://github.com/kamalsoft/vscode-rlm/issues" target="_blank" rel="noopener noreferrer"><strong>Report a problem</strong><span>Open an issue with the steps that failed.</span></a>
-      <a class="card-link" href="https://github.com/kamalsoft/skill-pack/blob/main/LICENSE.MD" target="_blank" rel="noopener noreferrer"><strong>Licence</strong><span>MIT. Copyright (c) 2026 kamalsoft.</span></a>
+      <a class="card-link" href="/marketplace/"><strong>Skill reference</strong><span>Each skill: what it is for, an example prompt, pros and cons.</span></a>
+      <a class="card-link" href="/install/"><strong>Install and troubleshooting guide</strong><span>Install steps, helper runtimes, known limits.</span></a>
+      <a class="card-link" href="/about/"><strong>Licence</strong><span>MIT. Copyright (c) 2026 kamalsoft.</span></a>
     </div>
 
     <h3>Questions</h3>
@@ -848,12 +844,11 @@ body.embed .crumbs { display: none; }
     <p>RLM Agent Skills is built and maintained by Kamalesh (kamalsoft).</p>
     <div class="cards">
       <a class="card-link" href="https://github.com/kamalsoft" target="_blank" rel="noopener noreferrer"><strong>GitHub profile</strong><span>Kamalesh's other projects.</span></a>
-      <a class="card-link" href="https://cloudcompass-five.vercel.app/" target="_blank" rel="noopener noreferrer"><strong>CloudCompass demo</strong><span>A live demo of another project by Kamalesh.</span></a>
     </div>
   </section>
 
   <footer>
-    RLM Agent Skills 2.1.0 · MIT licence · <a href="https://github.com/kamalsoft/skill-pack" target="_blank" rel="noopener noreferrer">kamalsoft/skill-pack</a>
+    Agent Skills Hub 2.1.0 · MIT licence · Agent Skills Hub
   </footer>
   </main>
 </div>
@@ -866,7 +861,7 @@ body.embed .crumbs { display: none; }
    "goal": "How the skill pack works",
    "cat": "Overview",
    "on": true,
-   "use": "33 skills in 10 categories, graded A+ to D. The grade sets the tier: 11 premium, 15 pro, 7 essentials. The analysis skills share one pattern: scan, split into pieces, review each piece, merge, verify and report.",
+   "use": "33 skills in 10 categories, graded A+ to D. Grades run from A+ to D. The analysis skills share one pattern: scan, split into pieces, review each piece, merge, verify and report.",
    "prompt": "Use the rlm-security-audit skill on src/. Report findings with file and line.",
    "input": "Your request and a folder",
    "output": "A report with file and line references",
@@ -5952,7 +5947,7 @@ const COL = { todo: 0x64748b, ok: 0x1f9d6b, bad: 0xd6456a, warn: 0xd9962b, hit: 
 const BINS = [0x7c5ce0, 0x13a3a3, 0xe0702a, 0x2f6fd6, 0xd9962b, 0x1f9d6b];
 const CATS = ['Overview', 'Analysis', 'Engineering', 'Security', 'Web', 'Domain', 'Operations', 'Compliance', 'Memory', 'Efficiency', 'Installed'];
 const CAT_NAME = { Installed: 'Skills', Overview: 'Start here', Analysis: 'Analysis (chunked)', Engineering: 'Engineering review', Security: 'Security and risk', Web: 'Web platform', Domain: 'Domain review' };
-const TIERS = ['All tiers', 'premium', 'pro', 'essentials'];
+const TIERS = ['All grades', 'A', 'B', 'C'];
 const CRIT = ['Support strength', 'Importance', 'Severity', 'Usage', 'Presence'];
 const WEIGHT = [0.35, 0.2, 0.2, 0.15, 0.1];
 const $ = (s) => document.querySelector(s);
@@ -5994,9 +5989,16 @@ if (params.get('data')) {
 const SKILLS = DATA.skills;
 
 let current = (SKILLS.find((s) => s.id === params.get('skill')) || SKILLS[0]).id;
+// B1: a skill this page does not know gets a note, and its SKILL.md is still one tab away.
+if (params.get('skill') && !SKILLS.some((s) => s.id === params.get('skill'))) {
+  const note = document.createElement('p');
+  note.className = 'none';
+  note.textContent = 'The visualization for this skill is not available yet. Its SKILL.md is in the SKILL.md tab.';
+  document.querySelector('.dtabs').before(note);
+}
 let skill = SKILLS.find((s) => s.id === current);
 let frameGlass = [], flows3 = [];
-let tier = 'All tiers';
+let tier = 'All grades';
 let run = params.get('run') || 'example';
 let query = params.get('q') || '';
 let time = 0;
@@ -6359,7 +6361,8 @@ const stepTitle = (st) => st.note.split('.')[0];
 const GRADED = SKILLS.filter((s) => s.grade);
 // Skills with the five criteria scores (docs/skill-grade.md); the others show their grade only.
 const SCORED = GRADED.filter((s) => s.grade.scores);
-const tierOf = (s) => (s.grade ? s.grade.tier : s.tier);
+const bandLetter = (g) => (g ? g[0] : '');
+const tierOf = (s) => (s.grade ? bandLetter(s.grade.grade) : '');
 const tp = (s) => 'tp-' + (tierOf(s) || 'none');
 const AVG = CRIT.map((_, i) => SCORED.reduce((a, s) => a + s.grade.scores[i], 0) / Math.max(SCORED.length, 1));
 
@@ -6399,7 +6402,7 @@ let shown = 60;
 const SUGGESTIONS = ['code review', 'contract', 'payroll', 'incident', 'forecast', 'security', 'audit', 'onboarding'];
 function renderTabs() {
   const q = query.trim().toLowerCase();
-  const base = SKILLS.filter((s) => (tier === 'All tiers' || tierOf(s) === tier) &&
+  const base = SKILLS.filter((s) => (tier === 'All grades' || tierOf(s) === tier) &&
     (!q || (s.goal + ' ' + s.id + ' ' + s.use).toLowerCase().includes(q)));
   $('#fams').innerHTML = FAMILY_TABS.map(([id, name]) => {
     const n = id === 'all' ? base.length : base.filter((s) => groupOf(s) === id).length;
@@ -6437,7 +6440,7 @@ function renderTabs() {
 }
 
 function renderCats() {
-  $('#tiers').innerHTML = TIERS.map((c) => `<button type="button" data-tier="${c}" aria-pressed="${c === tier}">${c === 'All tiers' ? 'All' : c}</button>`).join('');
+  $('#tiers').innerHTML = TIERS.map((c) => `<button type="button" data-tier="${c}" aria-pressed="${c === tier}">${c === 'All grades' ? 'All' : c}</button>`).join('');
 }
 
 function renderKpis() {
@@ -6450,7 +6453,7 @@ function renderKpis() {
     <div class="kpi"><b>${cats}</b><span>categories</span></div>
     <div class="kpi"><b>${avg.toFixed(2)}</b><span>average score of 5 · top: ${esc(top.id)}</span></div>
     <div class="kpi"><span>Tier split</span>
-      <div class="split" role="img" aria-label="${n('premium')} premium, ${n('pro')} pro, ${n('essentials')} essentials">
+      <div class="split" role="img" aria-label="${n('A')} A range, ${n('B')} B range, ${n('C')} C range">
         ${TIERS.slice(1).map((t) => `<i class="tp-${t}" style="flex:${n(t)}"></i>`).join('')}
       </div>
       <div class="split-key">${TIERS.slice(1).map((t) => `<span class="tp-${t}">${n(t)} ${t}</span>`).join('')}</div>
@@ -6468,7 +6471,7 @@ function renderLand() {
   const lo = 2.5, hi = 5.0;
   const X = (v) => left + (v - lo) / (hi - lo) * (W - left - right);
   let h = '';
-  [[2.5, 3.1, 'C', 'essentials'], [3.1, 4.0, 'B', 'pro'], [4.0, 5.0, 'A', 'premium']].forEach(([a, b, g, t]) => {
+  [[2.5, 3.1, 'C', 'C'], [3.1, 4.0, 'B', 'B'], [4.0, 5.0, 'A', 'A']].forEach(([a, b, g, t]) => {
     h += `<g class="tp-${t}"><rect class="band" x="${X(a)}" y="${top - 6}" width="${X(b) - X(a)}" height="${cats.length * rowH + 6}" rx="8"/>
       <text class="band-l" x="${(X(a) + X(b)) / 2}" y="${top - 12}" text-anchor="middle">${W < 560 ? g : g + ' · ' + t}</text></g>`;
   });
@@ -6486,7 +6489,7 @@ function renderLand() {
       const dy = k ? (k % 2 ? -1 : 1) * Math.ceil(k / 2) * 13 : 0;
       const g = s.grade;
       h += `<g class="dot ${tp(s)}${s.id === current ? ' on' : ''}" tabindex="0" role="button" data-id="${esc(s.id)}"
-        aria-label="${esc(s.id)}, grade ${esc(g.grade)}, score ${esc(g.score)}, ${esc(g.tier)}"><circle cx="${x}" cy="${y + dy}" r="7"/></g>`;
+        aria-label="${esc(s.id)}, grade ${esc(g.grade)}, score ${esc(g.score)}, ${esc(bandLetter(g.grade))}"><circle cx="${x}" cy="${y + dy}" r="7"/></g>`;
     });
   });
   el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="group" aria-label="Skills by category and score">${h}</svg>`;
@@ -6496,7 +6499,7 @@ function landTip(id) {
   const s = SKILLS.find((x) => x.id === id);
   if (!s) return;
   const g = s.grade;
-  $('#landTip').innerHTML = `<b>${esc(s.id)}</b> · ${esc(g.grade)} · ${g.score ? esc(g.score) + ' · ' : ''}<span class="tier ${tp(s)}">${esc(g.tier)}</span> · ${esc(s.goal)}`;
+  $('#landTip').innerHTML = `<b>${esc(s.id)}</b> · ${esc(g.grade)} · ${g.score ? esc(g.score) + ' · ' : ''}<span class="tier ${tp(s)}">${esc(bandLetter(g.grade))}</span> · ${esc(s.goal)}`;
 }
 
 function ring(s) {
@@ -6548,7 +6551,7 @@ function renderGradePanel() {
         <div><b>${esc(g.grade)}</b><span>grade</span></div>
         ${g.score ? `<div><b>${esc(g.score)}</b><span>score of 5</span></div>` : ''}
         <div><b>${g.rank}<small> / ${GRADED.length}</small></b><span>rank</span></div>
-        <div><b><span class="tier ${tp(skill)}">${esc(g.tier)}</span></b><span>tier</span></div>
+        <div><b><span class="tier ${tp(skill)}">${esc(bandLetter(g.grade))}</span></b><span>grade band</span></div>
       </div>
       ${g.scores ? `<ul class="crit">${g.scores.map((v, i) => `<li><span>${CRIT[i]}</span>
         <span class="meter" role="img" aria-label="${CRIT[i]} ${v} of 5"><i style="width:${v * 20}%"></i></span><b>${v}</b>
@@ -6560,7 +6563,7 @@ function renderGradePanel() {
 
 const SORT = { key: 'rank', dir: 'asc' };
 function renderGrades() {
-  const val = (s, k) => k === 'rank' ? s.grade.rank : k === 'id' ? s.id : k === 'cat' ? s.cat : k === 'tier' ? TIERS.indexOf(s.grade.tier)
+  const val = (s, k) => k === 'rank' ? s.grade.rank : k === 'id' ? s.id : k === 'cat' ? s.cat : k === 'tier' ? TIERS.indexOf(bandLetter(s.grade.grade))
     : k === 'score' ? Number(s.grade.score) || -1 : (s.grade.scores || [])[Number(k)] ?? -1;
   const rows = [...GRADED].sort((a, b) => {
     const x = val(a, SORT.key), y = val(b, SORT.key);
@@ -6573,7 +6576,7 @@ function renderGrades() {
   $('#gradeRows').innerHTML = rows.map((s) => {
     const g = s.grade;
     return `<tr class="${tp(s)}"><td class="n">${g.rank}</td><td><button type="button" class="skill-link" data-id="${esc(s.id)}">${esc(s.id)}</button></td>
-      <td>${esc(CAT_NAME[s.cat] || s.cat)}</td><td><span class="tier ${tp(s)}">${esc(g.tier)}</span></td>
+      <td>${esc(CAT_NAME[s.cat] || s.cat)}</td><td><span class="tier ${tp(s)}">${esc(bandLetter(g.grade))}</span></td>
       ${(g.scores || [null, null, null, null, null]).map((v) => `<td class="n heat" style="--v:${v ?? 0}">${v ?? '—'}</td>`).join('')}<td class="n">${esc(g.score || '—')}</td><td class="n gr">${esc(g.grade)}</td></tr>`;
   }).join('');
 }
@@ -6604,7 +6607,7 @@ function renderInfo() {
     <div>
       <h4>Quick stats</h4>
       <dl class="facts">
-        <dt>Tier</dt><dd>${esc(tierOf(skill) || '—')}</dd>
+        <dt>Grade band</dt><dd>${esc(tierOf(skill) || '—')}</dd>
         <dt>Grade</dt><dd>${esc(skill.grade ? skill.grade.grade : '—')}${skill.grade && skill.grade.design ? ' (design grade)' : ''}</dd>
         <dt>Protocol steps</dt><dd>${steps}</dd>
         <dt>Helper scripts</dt><dd>${skill.helperScripts ?? 0}</dd>
@@ -6616,7 +6619,7 @@ function renderInfo() {
     </div></div>`;
   renderGradePanel();
   $('#t-grade').hidden = !skill.grade;
-  $('#t-out').hidden = !skill.outcome;
+  $('#t-out').hidden = false; // every skill has an Output tab; without a recorded outcome it shows the report step
 }
 
 // The SKILL.md file is published next to the page by scripts/build-downloads.py.
@@ -6926,7 +6929,16 @@ const TONE = { critical: 0xb4233f, high: 0xd6456a, medium: 0xd9962b, low: 0x2f6f
 
 function renderOutcome() {
   const o = skill.outcome, el = $('#outcome');
-  if (!o) { el.hidden = true; return; }
+  if (!o) {
+    // No illustrative outcome is recorded for this skill, so show the report step from its SKILL.md instead of an invented result.
+    const steps = skill.protocol || [];
+    const report = steps.find((st) => /report/i.test(st.title)) || steps[steps.length - 1];
+    el.hidden = false;
+    el.innerHTML = report
+      ? `<h4>Report format</h4><p>${esc(report.title)}. ${esc(report.text)}</p><p class="none">No illustrative outcome is recorded for this skill yet.</p>`
+      : '<p class="none">No illustrative outcome is recorded for this skill yet.</p>';
+    return;
+  }
   el.hidden = false;
   el.classList.remove('play');
   el.innerHTML = `

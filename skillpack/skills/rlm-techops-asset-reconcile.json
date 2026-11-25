@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 65
+  "rank": 200
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] asset-printer-2:12  Found on the network but not registered.\n       Fix: Register the device or remove it.\n[medium] asset-vm-204:19  Registered but not found on the network.\n       Fix: Confirm the asset is retired or find it.\n[low] asset-phone-88:26  Asset with no owner.\n       Fix: Assign an owner.\nNot checked: Assets not discovered by the scan.",
  "skillMd": "skill-md/rlm-techops-asset-reconcile.md",

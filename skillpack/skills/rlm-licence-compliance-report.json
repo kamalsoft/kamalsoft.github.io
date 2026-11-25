@@ -1,0 +1,119 @@
+{
+ "id": "rlm-licence-compliance-report",
+ "goal": "Licence compliance report: dependency licences against policy, with the attribution text the product needs.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Licence compliance report: dependency licences against policy, with the attribution text the product needs. Use when a product ships and its licence obligations must be shown.",
+ "prompt": "Use the rlm-licence-compliance-report skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the components and their licences."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check against policy. Mark permitted, review-required and forbidden licences.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check attribution. List the notices the distributed product must include.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check unknowns. Flag components with no licence recorded."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The compliance status, the notices and the decisions needed.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the components and their licences",
+   "text": ""
+  },
+  {
+   "title": "Check against policy",
+   "text": "Mark permitted, review-required and forbidden licences."
+  },
+  {
+   "title": "Check attribution",
+   "text": "List the notices the distributed product must include."
+  },
+  {
+   "title": "Check unknowns",
+   "text": "Flag components with no licence recorded."
+  },
+  {
+   "title": "Report",
+   "text": "The compliance status, the notices and the decisions needed."
+  }
+ ],
+ "path": ".github/skills/rlm-licence-compliance-report",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.65",
+  "scores": [
+   4,
+   4,
+   3,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 164
+ },
+ "skillMd": "skill-md/rlm-licence-compliance-report.md",
+ "zip": "downloads/rlm-licence-compliance-report.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-path-traversal-review",
+ "goal": "Path traversal review: file paths built from input and checked after normalisation.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Path traversal review: file paths built from input and checked after normalisation. Use when code opens, reads, writes or deletes files using a path from outside.",
+ "prompt": "Use the rlm-path-traversal-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the paths. List each file operation and where its path comes from."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check joins. Flag paths built by string concatenation with user input.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check normalisation. The resolved path must stay inside the allowed folder.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check symbolic links. Flag operations that follow links out of the folder."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each operation with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the paths",
+   "text": "List each file operation and where its path comes from."
+  },
+  {
+   "title": "Check joins",
+   "text": "Flag paths built by string concatenation with user input."
+  },
+  {
+   "title": "Check normalisation",
+   "text": "The resolved path must stay inside the allowed folder."
+  },
+  {
+   "title": "Check symbolic links",
+   "text": "Flag operations that follow links out of the folder."
+  },
+  {
+   "title": "Report",
+   "text": "Each operation with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-path-traversal-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.20",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 19
+ },
+ "skillMd": "skill-md/rlm-path-traversal-review.md",
+ "zip": "downloads/rlm-path-traversal-review.zip"
+}

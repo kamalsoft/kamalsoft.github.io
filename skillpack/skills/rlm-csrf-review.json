@@ -1,0 +1,119 @@
+{
+ "id": "rlm-csrf-review",
+ "goal": "CSRF review: state-changing requests protected by tokens, same-site cookies or origin checks.",
+ "cat": "Installed",
+ "on": false,
+ "use": "CSRF review: state-changing requests protected by tokens, same-site cookies or origin checks. Use when code accepts requests that change data from a browser session.",
+ "prompt": "Use the rlm-csrf-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the state changes. Find every POST, PUT, PATCH and DELETE that uses cookies."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check tokens. Each form and API call needs an anti-forgery token or equivalent.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check cookies. Session cookies need SameSite and Secure attributes.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check origin. Flag endpoints that accept requests from any origin."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each endpoint with its protection, the gap and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the state changes",
+   "text": "Find every POST, PUT, PATCH and DELETE that uses cookies."
+  },
+  {
+   "title": "Check tokens",
+   "text": "Each form and API call needs an anti-forgery token or equivalent."
+  },
+  {
+   "title": "Check cookies",
+   "text": "Session cookies need SameSite and Secure attributes."
+  },
+  {
+   "title": "Check origin",
+   "text": "Flag endpoints that accept requests from any origin."
+  },
+  {
+   "title": "Report",
+   "text": "Each endpoint with its protection, the gap and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-csrf-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 61
+ },
+ "skillMd": "skill-md/rlm-csrf-review.md",
+ "zip": "downloads/rlm-csrf-review.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-zero-day-response",
+ "goal": "Zero-day response: a plan for an unpatched vulnerability being actively exploited.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Zero-day response: a plan for an unpatched vulnerability being actively exploited. Use when a vulnerability is reported with no fix available.",
+ "prompt": "Use the rlm-zero-day-response skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Confirm the exposure. Which systems run the affected component."
+  },
+  {
+   "layout": "chunks",
+   "note": "Apply mitigations. List configuration or network steps that reduce exposure now.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Set the watch. Alerts for exploitation attempts on affected systems.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Plan the fix. Note the release that will patch it and the rollback."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The exposure, the mitigations in place, the watch and the owner.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Confirm the exposure",
+   "text": "Which systems run the affected component."
+  },
+  {
+   "title": "Apply mitigations",
+   "text": "List configuration or network steps that reduce exposure now."
+  },
+  {
+   "title": "Set the watch",
+   "text": "Alerts for exploitation attempts on affected systems."
+  },
+  {
+   "title": "Plan the fix",
+   "text": "Note the release that will patch it and the rollback."
+  },
+  {
+   "title": "Report",
+   "text": "The exposure, the mitigations in place, the watch and the owner."
+  }
+ ],
+ "path": ".github/skills/rlm-zero-day-response",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 26
+ },
+ "skillMd": "skill-md/rlm-zero-day-response.md",
+ "zip": "downloads/rlm-zero-day-response.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-gate-branch-protection",
+ "goal": "Branch protection gate: required reviews, passing checks and no direct pushes to main.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Branch protection gate: required reviews, passing checks and no direct pushes to main. Use when a repository's default or release branch is configured.",
+ "prompt": "Use the rlm-gate-branch-protection skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the protected branches and their settings."
+  },
+  {
+   "layout": "chunks",
+   "note": "Set the rule. At least one independent review and all required checks before merge.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check direct pushes. Flag branches that allow force pushes or deletion.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check administrators. Flag administrators who can bypass the rules."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each branch, its settings, the gaps and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the protected branches and their settings",
+   "text": ""
+  },
+  {
+   "title": "Set the rule",
+   "text": "At least one independent review and all required checks before merge."
+  },
+  {
+   "title": "Check direct pushes",
+   "text": "Flag branches that allow force pushes or deletion."
+  },
+  {
+   "title": "Check administrators",
+   "text": "Flag administrators who can bypass the rules."
+  },
+  {
+   "title": "Report",
+   "text": "Each branch, its settings, the gaps and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-gate-branch-protection",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 71
+ },
+ "skillMd": "skill-md/rlm-gate-branch-protection.md",
+ "zip": "downloads/rlm-gate-branch-protection.zip"
+}

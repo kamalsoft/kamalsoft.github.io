@@ -1,0 +1,119 @@
+{
+ "id": "rlm-dotnet-configuration-review",
+ "goal": "NET configuration review: options binding, validation at startup and secrets outside appsettings.",
+ "cat": "Installed",
+ "on": false,
+ "use": "NET configuration review: options binding, validation at startup and secrets outside appsettings. Use when a .NET service reads settings.",
+ "prompt": "Use the rlm-dotnet-configuration-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the options classes and where they are bound."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check validation. Each options class should be validated at startup.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check secrets. Flag secrets in appsettings or environment files committed to the repository.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check environments. Flag development settings reachable in production."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each setting with file and line, the problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the options classes and where they are bound",
+   "text": ""
+  },
+  {
+   "title": "Check validation",
+   "text": "Each options class should be validated at startup."
+  },
+  {
+   "title": "Check secrets",
+   "text": "Flag secrets in appsettings or environment files committed to the repository."
+  },
+  {
+   "title": "Check environments",
+   "text": "Flag development settings reachable in production."
+  },
+  {
+   "title": "Report",
+   "text": "Each setting with file and line, the problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-dotnet-configuration-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 63
+ },
+ "skillMd": "skill-md/rlm-dotnet-configuration-review.md",
+ "zip": "downloads/rlm-dotnet-configuration-review.zip"
+}

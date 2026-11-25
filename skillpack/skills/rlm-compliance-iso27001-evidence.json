@@ -1,0 +1,119 @@
+{
+ "id": "rlm-compliance-iso27001-evidence",
+ "goal": "ISO 27001 evidence review: which Annex A controls the code and pipeline can evidence, and the gaps.",
+ "cat": "Installed",
+ "on": false,
+ "use": "ISO 27001 evidence review: which Annex A controls the code and pipeline can evidence, and the gaps. Use when an ISO 27001 assessment or surveillance audit is due.",
+ "prompt": "Use the rlm-compliance-iso27001-evidence skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Confirm the scope. The controls in scope as the user states them."
+  },
+  {
+   "layout": "chunks",
+   "note": "Map evidence. List the code, configuration and pipeline evidence for each control.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the records. Each control needs dated, retrievable evidence.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Flag gaps. Controls with no evidence in the repository."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each control with its evidence status and what must be collected elsewhere.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Confirm the scope",
+   "text": "The controls in scope as the user states them."
+  },
+  {
+   "title": "Map evidence",
+   "text": "List the code, configuration and pipeline evidence for each control."
+  },
+  {
+   "title": "Check the records",
+   "text": "Each control needs dated, retrievable evidence."
+  },
+  {
+   "title": "Flag gaps",
+   "text": "Controls with no evidence in the repository."
+  },
+  {
+   "title": "Report",
+   "text": "Each control with its evidence status and what must be collected elsewhere."
+  }
+ ],
+ "path": ".github/skills/rlm-compliance-iso27001-evidence",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B+",
+  "score": "3.70",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   4
+  ],
+  "design": true,
+  "rank": 140
+ },
+ "skillMd": "skill-md/rlm-compliance-iso27001-evidence.md",
+ "zip": "downloads/rlm-compliance-iso27001-evidence.zip"
+}

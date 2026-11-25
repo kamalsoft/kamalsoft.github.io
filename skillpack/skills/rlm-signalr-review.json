@@ -1,0 +1,119 @@
+{
+ "id": "rlm-signalr-review",
+ "goal": "SignalR review: hub authorisation, group membership and message validation.",
+ "cat": "Installed",
+ "on": false,
+ "use": "SignalR review: hub authorisation, group membership and message validation. Use when a real-time hub is added or changed.",
+ "prompt": "Use the rlm-signalr-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the hubs and the methods clients can call."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check authorisation. Each hub method checks the caller's rights.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check groups. Membership must be checked before a client joins a group.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check messages. Incoming data must be validated like any request."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each hub method with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the hubs and the methods clients can call",
+   "text": ""
+  },
+  {
+   "title": "Check authorisation",
+   "text": "Each hub method checks the caller's rights."
+  },
+  {
+   "title": "Check groups",
+   "text": "Membership must be checked before a client joins a group."
+  },
+  {
+   "title": "Check messages",
+   "text": "Incoming data must be validated like any request."
+  },
+  {
+   "title": "Report",
+   "text": "Each hub method with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-signalr-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 135
+ },
+ "skillMd": "skill-md/rlm-signalr-review.md",
+ "zip": "downloads/rlm-signalr-review.zip"
+}

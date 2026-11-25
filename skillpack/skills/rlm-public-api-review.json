@@ -1,0 +1,119 @@
+{
+ "id": "rlm-public-api-review",
+ "goal": "Public API review: what a library or service exposes, and whether it can change safely.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Public API review: what a library or service exposes, and whether it can change safely. Use when a public type, function or endpoint is added or changed.",
+ "prompt": "Use the rlm-public-api-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the public surface. Exported types, functions and endpoints."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check minimality. Flag exposed members that callers do not need.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check stability. Flag changes to existing signatures, names or behaviour.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check documentation. Each public item needs a stated contract."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each item with file and line, the change, and whether it breaks callers.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the public surface",
+   "text": "Exported types, functions and endpoints."
+  },
+  {
+   "title": "Check minimality",
+   "text": "Flag exposed members that callers do not need."
+  },
+  {
+   "title": "Check stability",
+   "text": "Flag changes to existing signatures, names or behaviour."
+  },
+  {
+   "title": "Check documentation",
+   "text": "Each public item needs a stated contract."
+  },
+  {
+   "title": "Report",
+   "text": "Each item with file and line, the change, and whether it breaks callers."
+  }
+ ],
+ "path": ".github/skills/rlm-public-api-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 88
+ },
+ "skillMd": "skill-md/rlm-public-api-review.md",
+ "zip": "downloads/rlm-public-api-review.zip"
+}

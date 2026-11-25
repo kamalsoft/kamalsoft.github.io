@@ -1,0 +1,119 @@
+{
+ "id": "rlm-compliance-hipaa-safeguards",
+ "goal": "HIPAA safeguards check: access, audit and transmission safeguards for health information in code.",
+ "cat": "Installed",
+ "on": false,
+ "use": "HIPAA safeguards check: access, audit and transmission safeguards for health information in code. Use when code stores or sends health information.",
+ "prompt": "Use the rlm-compliance-hipaa-safeguards skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the health information. List the fields and records that hold it."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check access. Each access needs a role check and a record.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check audit. Access and changes to health records must be logged.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check transmission. Health information must be encrypted in transit and at rest."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, the safeguard it breaks and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the health information",
+   "text": "List the fields and records that hold it."
+  },
+  {
+   "title": "Check access",
+   "text": "Each access needs a role check and a record."
+  },
+  {
+   "title": "Check audit",
+   "text": "Access and changes to health records must be logged."
+  },
+  {
+   "title": "Check transmission",
+   "text": "Health information must be encrypted in transit and at rest."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, the safeguard it breaks and the fix. This is a technical aid, not a legal opinion."
+  }
+ ],
+ "path": ".github/skills/rlm-compliance-hipaa-safeguards",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.60",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   3
+  ],
+  "design": true,
+  "rank": 173
+ },
+ "skillMd": "skill-md/rlm-compliance-hipaa-safeguards.md",
+ "zip": "downloads/rlm-compliance-hipaa-safeguards.zip"
+}

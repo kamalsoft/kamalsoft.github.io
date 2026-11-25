@@ -1,0 +1,119 @@
+{
+ "id": "rlm-data-subject-request-check",
+ "goal": "Data subject request check: whether the code can find, export, correct and delete one person's data.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Data subject request check: whether the code can find, export, correct and delete one person's data. Use when a request to access, correct or delete personal data arrives.",
+ "prompt": "Use the rlm-data-subject-request-check skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the stores that hold personal data."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check find. Each store can be searched by the person's identifier.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check export. Each store can produce the person's data in a usable format.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check delete. Each store can delete or anonymise the person's data."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The stores, the gaps and the steps to complete a request.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the stores that hold personal data",
+   "text": ""
+  },
+  {
+   "title": "Check find",
+   "text": "Each store can be searched by the person's identifier."
+  },
+  {
+   "title": "Check export",
+   "text": "Each store can produce the person's data in a usable format."
+  },
+  {
+   "title": "Check delete",
+   "text": "Each store can delete or anonymise the person's data."
+  },
+  {
+   "title": "Report",
+   "text": "The stores, the gaps and the steps to complete a request."
+  }
+ ],
+ "path": ".github/skills/rlm-data-subject-request-check",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B+",
+  "score": "3.75",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 121
+ },
+ "skillMd": "skill-md/rlm-data-subject-request-check.md",
+ "zip": "downloads/rlm-data-subject-request-check.zip"
+}

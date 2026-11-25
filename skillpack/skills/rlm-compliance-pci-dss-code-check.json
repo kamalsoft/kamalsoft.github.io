@@ -1,0 +1,119 @@
+{
+ "id": "rlm-compliance-pci-dss-code-check",
+ "goal": "PCI DSS code check: card data handling, storage and logging rules checked in the code.",
+ "cat": "Installed",
+ "on": false,
+ "use": "PCI DSS code check: card data handling, storage and logging rules checked in the code. Use when code handles payment card data or payment flows.",
+ "prompt": "Use the rlm-compliance-pci-dss-code-check skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Find the card data. List where card numbers, CVV or expiry dates appear."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check storage. Flag card data stored after authorisation, or in logs.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check transmission. Flag card data sent without strong encryption.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the payment provider. Note whether card entry is kept off the team's servers."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, the requirement it breaks and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Find the card data",
+   "text": "List where card numbers, CVV or expiry dates appear."
+  },
+  {
+   "title": "Check storage",
+   "text": "Flag card data stored after authorisation, or in logs."
+  },
+  {
+   "title": "Check transmission",
+   "text": "Flag card data sent without strong encryption."
+  },
+  {
+   "title": "Check the payment provider",
+   "text": "Note whether card entry is kept off the team's servers."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, the requirement it breaks and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-compliance-pci-dss-code-check",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "compliance",
+ "grade": {
+  "grade": "B",
+  "score": "3.60",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   3
+  ],
+  "design": true,
+  "rank": 174
+ },
+ "skillMd": "skill-md/rlm-compliance-pci-dss-code-check.md",
+ "zip": "downloads/rlm-compliance-pci-dss-code-check.zip"
+}

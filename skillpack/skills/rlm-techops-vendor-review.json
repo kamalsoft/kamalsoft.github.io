@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 81
+  "rank": 213
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] vendor-sla-response:12  Service level missed with no credit claimed.\n       Fix: Claim the credit from the vendor.\n[medium] vendor-issue-14:19  Open issue past its due date.\n       Fix: Escalate the issue with the vendor.\n[low] vendor-invoice:26  Result with no source.\n       Fix: Attach the report the result came from.\nNot checked: Vendor processes.",
  "skillMd": "skill-md/rlm-techops-vendor-review.md",

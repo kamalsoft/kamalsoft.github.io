@@ -1,0 +1,119 @@
+{
+ "id": "rlm-gate-deployment-approval",
+ "goal": "Deployment approval gate: production deployments need an approval recorded before they run.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Deployment approval gate: production deployments need an approval recorded before they run. Use when a deployment to production is requested.",
+ "prompt": "Use the rlm-gate-deployment-approval skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Confirm production requires an environment approval in the pipeline."
+  },
+  {
+   "layout": "chunks",
+   "note": "Set the rule. The approver must differ from the change author.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the window. Deployments outside the agreed window need a second approval.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the record. Each approval links to the change and the test results."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each deployment, its approval status and any gap.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Confirm production requires an environment approval in the pipeline",
+   "text": ""
+  },
+  {
+   "title": "Set the rule",
+   "text": "The approver must differ from the change author."
+  },
+  {
+   "title": "Check the window",
+   "text": "Deployments outside the agreed window need a second approval."
+  },
+  {
+   "title": "Check the record",
+   "text": "Each approval links to the change and the test results."
+  },
+  {
+   "title": "Report",
+   "text": "Each deployment, its approval status and any gap."
+  }
+ ],
+ "path": ".github/skills/rlm-gate-deployment-approval",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 75
+ },
+ "skillMd": "skill-md/rlm-gate-deployment-approval.md",
+ "zip": "downloads/rlm-gate-deployment-approval.zip"
+}

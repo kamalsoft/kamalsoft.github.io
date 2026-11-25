@@ -1,0 +1,119 @@
+{
+ "id": "rlm-naming-review",
+ "goal": "Naming review: names that say what a value or function does, and match the domain.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Naming review: names that say what a value or function does, and match the domain. Use when code names are added or renamed.",
+ "prompt": "Use the rlm-naming-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List names. Collect the new variables, functions and types in the change."
+  },
+  {
+   "layout": "chunks",
+   "note": "Flag vague names. Data, tmp, info, handler, manager, flag.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Flag misleading names. A name that says one thing and does another.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check consistency. The same concept should keep one name across the change."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each name with file and line, the problem and a better name.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List names",
+   "text": "Collect the new variables, functions and types in the change."
+  },
+  {
+   "title": "Flag vague names",
+   "text": "Data, tmp, info, handler, manager, flag."
+  },
+  {
+   "title": "Flag misleading names",
+   "text": "A name that says one thing and does another."
+  },
+  {
+   "title": "Check consistency",
+   "text": "The same concept should keep one name across the change."
+  },
+  {
+   "title": "Report",
+   "text": "Each name with file and line, the problem and a better name."
+  }
+ ],
+ "path": ".github/skills/rlm-naming-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 115
+ },
+ "skillMd": "skill-md/rlm-naming-review.md",
+ "zip": "downloads/rlm-naming-review.zip"
+}

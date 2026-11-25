@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 77
+  "rank": 209
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] risk-migration.md:12  Risk with no mitigation.\n       Fix: Name a mitigation and its owner.\n[medium] benefit-uptime.md:19  Benefit with no basis.\n       Fix: Give the basis for the benefit.\n[medium] cost-training.csv:26  Cost line with no estimate source.\n       Fix: Attach the estimate.\nNot checked: The actual benefit.",
  "skillMd": "skill-md/rlm-techops-it-proposal.md",

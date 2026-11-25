@@ -1,0 +1,128 @@
+{
+ "id": "rlm-authz-review",
+ "goal": "Review authorization: who can do what, checked on every route, object and action, including access to other u…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review authorization: who can do what, checked on every route, object and action, including access to other users' data. Use when access control or multi-user data is changed.",
+ "prompt": "Use the rlm-authz-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the actions. List each route, command and background job that reads or changes data."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check each action has a check. Every action needs an authorization check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check object ownership. Flag lookups by ID that do not confirm the caller owns or may see the object (insecure direct object references).",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check roles and defaults. Flag default-allow rules, roles that grant more than they should, and admin checks that are bypassed."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the checks. Authorization decided in the client only, or trusted from request fields, is a finding.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding as route and file, with severity, the missing check and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the actions",
+   "text": "List each route, command and background job that reads or changes data."
+  },
+  {
+   "title": "Check each action has a check",
+   "text": "Every action needs an authorization check. Flag actions that have none."
+  },
+  {
+   "title": "Check object ownership",
+   "text": "Flag lookups by ID that do not confirm the caller owns or may see the object (insecure direct object references)."
+  },
+  {
+   "title": "Check roles and defaults",
+   "text": "Flag default-allow rules, roles that grant more than they should, and admin checks that are bypassed."
+  },
+  {
+   "title": "Check the checks",
+   "text": "Authorization decided in the client only, or trusted from request fields, is a finding."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as route and file, with severity, the missing check and the fix. Mark what you did not test."
+  }
+ ],
+ "path": ".github/skills/rlm-authz-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A",
+  "score": "4.40",
+  "scores": [
+   5,
+   5,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 8
+ },
+ "skillMd": "skill-md/rlm-authz-review.md",
+ "zip": "downloads/rlm-authz-review.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-gate-exceptions",
+ "goal": "Security exception gate: each accepted risk recorded with an owner, a reason and an expiry.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Security exception gate: each accepted risk recorded with an owner, a reason and an expiry. Use when a gate is bypassed or a finding is accepted.",
+ "prompt": "Use the rlm-gate-exceptions skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the exceptions. Each accepted finding, gate or rule."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the record. Each needs an owner, a reason and an expiry date.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the expiry. Flag exceptions past their date.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the approval. Each exception needs an approver above the team."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The exceptions, their status and those that need renewal or closure.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the exceptions",
+   "text": "Each accepted finding, gate or rule."
+  },
+  {
+   "title": "Check the record",
+   "text": "Each needs an owner, a reason and an expiry date."
+  },
+  {
+   "title": "Check the expiry",
+   "text": "Flag exceptions past their date."
+  },
+  {
+   "title": "Check the approval",
+   "text": "Each exception needs an approver above the team."
+  },
+  {
+   "title": "Report",
+   "text": "The exceptions, their status and those that need renewal or closure."
+  }
+ ],
+ "path": ".github/skills/rlm-gate-exceptions",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 113
+ },
+ "skillMd": "skill-md/rlm-gate-exceptions.md",
+ "zip": "downloads/rlm-gate-exceptions.zip"
+}

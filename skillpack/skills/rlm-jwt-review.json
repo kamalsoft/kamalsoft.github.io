@@ -1,0 +1,119 @@
+{
+ "id": "rlm-jwt-review",
+ "goal": "JWT review: algorithm choice, signature checks, expiry and claims that are trusted too much.",
+ "cat": "Installed",
+ "on": false,
+ "use": "JWT review: algorithm choice, signature checks, expiry and claims that are trusted too much. Use when code creates or validates JSON web tokens.",
+ "prompt": "Use the rlm-jwt-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Check the algorithm. Flag 'none', symmetric keys shared with clients, or an algorithm chosen from the token header."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check signatures. Every token must be verified before its claims are used.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check expiry and audience. Tokens need short lifetimes and an audience check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check claims. Flag authorisation decided from claims the client can set."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Check the algorithm",
+   "text": "Flag 'none', symmetric keys shared with clients, or an algorithm chosen from the token header."
+  },
+  {
+   "title": "Check signatures",
+   "text": "Every token must be verified before its claims are used."
+  },
+  {
+   "title": "Check expiry and audience",
+   "text": "Tokens need short lifetimes and an audience check."
+  },
+  {
+   "title": "Check claims",
+   "text": "Flag authorisation decided from claims the client can set."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-jwt-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 21
+ },
+ "skillMd": "skill-md/rlm-jwt-review.md",
+ "zip": "downloads/rlm-jwt-review.zip"
+}

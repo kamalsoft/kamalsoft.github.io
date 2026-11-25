@@ -1,0 +1,119 @@
+{
+ "id": "rlm-c-review",
+ "goal": "C review: buffer sizes, integer overflow, format strings and memory ownership.",
+ "cat": "Installed",
+ "on": false,
+ "use": "C review: buffer sizes, integer overflow, format strings and memory ownership. Use when asked to review a C project or module.",
+ "prompt": "Use the rlm-c-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. Build files and compiler warnings enabled."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check buffers. Flag copies with no length check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check integers. Flag arithmetic before allocation or indexing that can overflow.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check format strings. Flag printf-style calls with input as the format."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "Build files and compiler warnings enabled."
+  },
+  {
+   "title": "Check buffers",
+   "text": "Flag copies with no length check."
+  },
+  {
+   "title": "Check integers",
+   "text": "Flag arithmetic before allocation or indexing that can overflow."
+  },
+  {
+   "title": "Check format strings",
+   "text": "Flag printf-style calls with input as the format."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-c-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.95",
+  "scores": [
+   4,
+   4,
+   5,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 38
+ },
+ "skillMd": "skill-md/rlm-c-review.md",
+ "zip": "downloads/rlm-c-review.zip"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "rlm-configuration-review",
+ "goal": "Configuration review: settings with safe defaults, validation and no secrets.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Configuration review: settings with safe defaults, validation and no secrets. Use when configuration keys or defaults are added or changed.",
+ "prompt": "Use the rlm-configuration-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the settings. Find each key, its default and where it is read."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check defaults. Flag defaults that are unsafe in production.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check validation. Flag settings used without a range or format check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check secrets. Flag keys with values that look like credentials."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each setting with file and line, the problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the settings",
+   "text": "Find each key, its default and where it is read."
+  },
+  {
+   "title": "Check defaults",
+   "text": "Flag defaults that are unsafe in production."
+  },
+  {
+   "title": "Check validation",
+   "text": "Flag settings used without a range or format check."
+  },
+  {
+   "title": "Check secrets",
+   "text": "Flag keys with values that look like credentials."
+  },
+  {
+   "title": "Report",
+   "text": "Each setting with file and line, the problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-configuration-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 56
+ },
+ "skillMd": "skill-md/rlm-configuration-review.md",
+ "zip": "downloads/rlm-configuration-review.zip"
+}

@@ -116,10 +116,16 @@
  "group": "compliance",
  "grade": {
   "grade": "B+",
-  "score": null,
-  "scores": null,
+  "score": "3.70",
+  "scores": [
+   4,
+   4,
+   4,
+   2,
+   4
+  ],
   "design": true,
-  "rank": 26
+  "rank": 139
  },
  "skillMd": "skill-md/rlm-audit-compliance.md",
  "zip": "downloads/rlm-audit-compliance.zip"

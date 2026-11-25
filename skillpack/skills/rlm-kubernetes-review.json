@@ -1,0 +1,128 @@
+{
+ "id": "rlm-kubernetes-review",
+ "goal": "Review Kubernetes manifests and Helm charts for resource limits, security context, probes, rollouts and secre…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review Kubernetes manifests and Helm charts for resource limits, security context, probes, rollouts and secrets handling. Use when workloads are added or changed.",
+ "prompt": "Use the rlm-kubernetes-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the manifests. Open the Deployments, Services, Ingress, RBAC and Helm values, and list each workload."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check resources. Each container needs CPU and memory requests and limits.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check security context. Flag containers that run as root, allow privilege escalation, or mount the host filesystem.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check probes and rollouts. Each workload needs readiness and liveness probes, and a rollout strategy that does not stop all replicas."
+  },
+  {
+   "layout": "gate",
+   "note": "Check secrets and RBAC. Flag secrets in plain manifests, and roles with wildcard permissions.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding as file and resource, with severity and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the manifests",
+   "text": "Open the Deployments, Services, Ingress, RBAC and Helm values, and list each workload."
+  },
+  {
+   "title": "Check resources",
+   "text": "Each container needs CPU and memory requests and limits. Flag containers with none."
+  },
+  {
+   "title": "Check security context",
+   "text": "Flag containers that run as root, allow privilege escalation, or mount the host filesystem."
+  },
+  {
+   "title": "Check probes and rollouts",
+   "text": "Each workload needs readiness and liveness probes, and a rollout strategy that does not stop all replicas."
+  },
+  {
+   "title": "Check secrets and RBAC",
+   "text": "Flag secrets in plain manifests, and roles with wildcard permissions."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding as file and resource, with severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-kubernetes-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "ops",
+ "grade": {
+  "grade": "A-",
+  "score": "4.10",
+  "scores": [
+   5,
+   4,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 22
+ },
+ "skillMd": "skill-md/rlm-kubernetes-review.md",
+ "zip": "downloads/rlm-kubernetes-review.zip"
+}

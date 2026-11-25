@@ -1,0 +1,128 @@
+{
+ "id": "rlm-entity-framework-review",
+ "goal": "Review Entity Framework Core code for query shape, change tracking, migrations, transactions and raw SQL.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review Entity Framework Core code for query shape, change tracking, migrations, transactions and raw SQL. Use when data access code or migrations change.",
+ "prompt": "Use the rlm-entity-framework-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the data access. Open the DbContext, the entity configuration and the migration history."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check query shape. Flag queries that load whole tables, lazy loading inside loops, and client-side evaluation that should run in the database.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check tracking. Read-only queries should use no-tracking.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check migrations. Flag migrations that drop columns, change types or lock large tables without a plan."
+  },
+  {
+   "layout": "gate",
+   "note": "Check transactions and raw SQL. Multi-step changes need a transaction.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding with its file and line, severity and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the data access",
+   "text": "Open the DbContext, the entity configuration and the migration history."
+  },
+  {
+   "title": "Check query shape",
+   "text": "Flag queries that load whole tables, lazy loading inside loops, and client-side evaluation that should run in the database."
+  },
+  {
+   "title": "Check tracking",
+   "text": "Read-only queries should use no-tracking. Flag tracked entities returned to clients."
+  },
+  {
+   "title": "Check migrations",
+   "text": "Flag migrations that drop columns, change types or lock large tables without a plan."
+  },
+  {
+   "title": "Check transactions and raw SQL",
+   "text": "Multi-step changes need a transaction. Flag raw SQL built from strings."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding with its file and line, severity and the fix. Mark which findings need the query plan to confirm."
+  }
+ ],
+ "path": ".github/skills/rlm-entity-framework-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.95",
+  "scores": [
+   4,
+   4,
+   5,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 42
+ },
+ "skillMd": "skill-md/rlm-entity-framework-review.md",
+ "zip": "downloads/rlm-entity-framework-review.zip"
+}

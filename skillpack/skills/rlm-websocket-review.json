@@ -1,0 +1,128 @@
+{
+ "id": "rlm-websocket-review",
+ "goal": "Review WebSocket code for origin checks, authentication, message size limits, reconnection and cleanup.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review WebSocket code for origin checks, authentication, message size limits, reconnection and cleanup. Use when realtime features are added or changed.",
+ "prompt": "Use the rlm-websocket-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the connection code. Open the handshake, the message handler and the close handler."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check the origin. The server must check the Origin header.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check authentication. Authenticate at the handshake and again for sensitive messages.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check limits. Flag missing limits on message size and message rate."
+  },
+  {
+   "layout": "gate",
+   "note": "Check reconnection and cleanup. Clients should reconnect with a back-off, and the server should release state for closed connections.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List each finding with its file and line, severity and the fix.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the connection code",
+   "text": "Open the handshake, the message handler and the close handler."
+  },
+  {
+   "title": "Check the origin",
+   "text": "The server must check the Origin header. Flag servers that accept any origin."
+  },
+  {
+   "title": "Check authentication",
+   "text": "Authenticate at the handshake and again for sensitive messages. Flag connections that trust the client's identity claims."
+  },
+  {
+   "title": "Check limits",
+   "text": "Flag missing limits on message size and message rate."
+  },
+  {
+   "title": "Check reconnection and cleanup",
+   "text": "Clients should reconnect with a back-off, and the server should release state for closed connections."
+  },
+  {
+   "title": "Report",
+   "text": "List each finding with its file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-websocket-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "web",
+ "grade": {
+  "grade": "B",
+  "score": "3.55",
+  "scores": [
+   4,
+   3,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 182
+ },
+ "skillMd": "skill-md/rlm-websocket-review.md",
+ "zip": "downloads/rlm-websocket-review.zip"
+}

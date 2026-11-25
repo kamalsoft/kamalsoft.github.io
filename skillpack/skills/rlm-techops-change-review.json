@@ -174,7 +174,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 45
+  "rank": 154
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] chg-wk2-app.md:12  High-risk change with no approver.\n       Fix: Get an approver before the change runs.\n[medium] chg-wk2-sec.md:19  Failed change with no review.\n       Fix: Review the failure and record the cause.\n[low] chg-wk2-dns.md:26  Change with no rollback.\n       Fix: Add a rollback step.\nNot checked: Whether the change worked as intended.",
  "skillMd": "skill-md/rlm-techops-change-review.md",

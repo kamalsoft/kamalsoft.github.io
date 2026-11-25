@@ -167,7 +167,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 14
+  "rank": 33
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (2 high, 1 medium).\n[high] migrations/0042.sql:12  Migration with no rollback note.\n       Fix: Write the reverse migration and its note.\n[medium] package.json:19  Version 2.3.0 in the package, 2.2.0 in the notes.\n       Fix: Make the two versions match.\n[high] signoff.md:26  Security gate has no sign-off.\n       Fix: Record the sign-off before release.\nNot checked: Whether the gates were run; the runtime behaviour.",
  "skillMd": "skill-md/rlm-devops-release-checklist.md",

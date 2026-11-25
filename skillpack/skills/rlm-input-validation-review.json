@@ -1,0 +1,119 @@
+{
+ "id": "rlm-input-validation-review",
+ "goal": "Input validation review: untrusted input checked for type, length, range and format at the boundary.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Input validation review: untrusted input checked for type, length, range and format at the boundary. Use when code reads request, file, queue or user input.",
+ "prompt": "Use the rlm-input-validation-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the entry points. Routes, handlers, queue consumers and file readers."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check each input. Flag inputs used without a type, length or range check.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check placement. Validation should sit at the boundary, not deep in the code.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check allow-lists. Flag deny-lists used where allow-lists are possible."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each entry point with its gap, file and line, and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the entry points",
+   "text": "Routes, handlers, queue consumers and file readers."
+  },
+  {
+   "title": "Check each input",
+   "text": "Flag inputs used without a type, length or range check."
+  },
+  {
+   "title": "Check placement",
+   "text": "Validation should sit at the boundary, not deep in the code."
+  },
+  {
+   "title": "Check allow-lists",
+   "text": "Flag deny-lists used where allow-lists are possible."
+  },
+  {
+   "title": "Report",
+   "text": "Each entry point with its gap, file and line, and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-input-validation-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "security",
+ "grade": {
+  "grade": "A-",
+  "score": "4.05",
+  "scores": [
+   5,
+   4,
+   4,
+   2,
+   4
+  ],
+  "design": true,
+  "rank": 28
+ },
+ "skillMd": "skill-md/rlm-input-validation-review.md",
+ "zip": "downloads/rlm-input-validation-review.zip"
+}

@@ -179,7 +179,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 46
+  "rank": 155
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] group-kiosks.csv:12  Host outside policy with no exception.\n       Fix: Patch the host or record an exception.\n[medium] group-lab.csv:19  Group below the policy share.\n       Fix: Set a date to reach the policy share.\n[low] group-sales.csv:26  Exception recorded without an expiry.\n       Fix: Set an expiry for the exception.\nNot checked: Whether the patches work.",
  "skillMd": "skill-md/rlm-techops-patch-compliance.md",

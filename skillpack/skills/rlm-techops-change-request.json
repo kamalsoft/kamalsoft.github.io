@@ -174,7 +174,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 44
+  "rank": 153
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 1 medium, 1 low).\n[high] chg-442.md:12  Approver missing for the risk level.\n       Fix: Name the approver before the change.\n[medium] chg-445.md:19  Impact names no affected service.\n       Fix: Name the services affected.\n[low] chg-443.md:26  No rollback described.\n       Fix: Write the rollback steps.\nNot checked: Whether the change works.",
  "skillMd": "skill-md/rlm-techops-change-request.md",

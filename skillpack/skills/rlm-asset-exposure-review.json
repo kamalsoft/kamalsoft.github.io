@@ -1,0 +1,119 @@
+{
+ "id": "rlm-asset-exposure-review",
+ "goal": "Asset exposure review: which systems are reachable from outside and which hold sensitive data.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Asset exposure review: which systems are reachable from outside and which hold sensitive data. Use when findings need priorities that reflect where systems sit.",
+ "prompt": "Use the rlm-asset-exposure-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the assets. Each system, its owner and its data class."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check reachability. Note which assets are reachable from the internet.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check data. Note which assets hold regulated or sensitive data.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Combine. Rank exposure by reachability and data class."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. The assets, their exposure and the priority each finding should get.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the assets",
+   "text": "Each system, its owner and its data class."
+  },
+  {
+   "title": "Check reachability",
+   "text": "Note which assets are reachable from the internet."
+  },
+  {
+   "title": "Check data",
+   "text": "Note which assets hold regulated or sensitive data."
+  },
+  {
+   "title": "Combine",
+   "text": "Rank exposure by reachability and data class."
+  },
+  {
+   "title": "Report",
+   "text": "The assets, their exposure and the priority each finding should get."
+  }
+ ],
+ "path": ".github/skills/rlm-asset-exposure-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "vulnerability",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 52
+ },
+ "skillMd": "skill-md/rlm-asset-exposure-review.md",
+ "zip": "downloads/rlm-asset-exposure-review.zip"
+}

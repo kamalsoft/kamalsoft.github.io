@@ -1,0 +1,128 @@
+{
+ "id": "rlm-pipeline-gate",
+ "goal": "Define and check the pipeline gate: the checks a CI pipeline must pass before a merge, with each rule and its…",
+ "cat": "Installed",
+ "on": false,
+ "use": "Define and check the pipeline gate: the checks a CI pipeline must pass before a merge, with each rule and its owner written out. Use when a team sets up or changes CI checks.",
+ "prompt": "Use the rlm-pipeline-gate skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the pipeline. Open the CI configuration and list every job, its trigger, and which ones block the merge."
+  },
+  {
+   "layout": "chunks",
+   "note": "List the required checks. Build, test, lint, static analysis and dependency checks should all be required.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check the bypasses. Flag steps marked allowed-to-fail, skipped branches and manual overrides with no recorded owner.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check the timing. Slow gates get skipped."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the records. Each run should keep its result, commit and tool version.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. A table of gates: check, blocking or not, owner, and the gap found.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the pipeline",
+   "text": "Open the CI configuration and list every job, its trigger, and which ones block the merge."
+  },
+  {
+   "title": "List the required checks",
+   "text": "Build, test, lint, static analysis and dependency checks should all be required. Flag any that are optional."
+  },
+  {
+   "title": "Check the bypasses",
+   "text": "Flag steps marked allowed-to-fail, skipped branches and manual overrides with no recorded owner."
+  },
+  {
+   "title": "Check the timing",
+   "text": "Slow gates get skipped. Note the run time of each job and the order they run in."
+  },
+  {
+   "title": "Check the records",
+   "text": "Each run should keep its result, commit and tool version."
+  },
+  {
+   "title": "Report",
+   "text": "A table of gates: check, blocking or not, owner, and the gap found."
+  }
+ ],
+ "path": ".github/skills/rlm-pipeline-gate",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "gates",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 87
+ },
+ "skillMd": "skill-md/rlm-pipeline-gate.md",
+ "zip": "downloads/rlm-pipeline-gate.zip"
+}

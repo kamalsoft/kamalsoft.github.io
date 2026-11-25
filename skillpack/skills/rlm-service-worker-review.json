@@ -1,0 +1,119 @@
+{
+ "id": "rlm-service-worker-review",
+ "goal": "Service worker review: cached responses, update flow and scope.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Service worker review: cached responses, update flow and scope. Use when a service worker is added or changed.",
+ "prompt": "Use the rlm-service-worker-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the registration. Check the scope and the script location."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check caching. Flag caching of private or authenticated responses.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check updates. Confirm a new version takes over without leaving users on stale code.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check failure. The offline fallback must not hide errors."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the registration",
+   "text": "Check the scope and the script location."
+  },
+  {
+   "title": "Check caching",
+   "text": "Flag caching of private or authenticated responses."
+  },
+  {
+   "title": "Check updates",
+   "text": "Confirm a new version takes over without leaving users on stale code."
+  },
+  {
+   "title": "Check failure",
+   "text": "The offline fallback must not hide errors."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-service-worker-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "web",
+ "grade": {
+  "grade": "B",
+  "score": "3.55",
+  "scores": [
+   4,
+   3,
+   4,
+   3,
+   3
+  ],
+  "design": true,
+  "rank": 181
+ },
+ "skillMd": "skill-md/rlm-service-worker-review.md",
+ "zip": "downloads/rlm-service-worker-review.zip"
+}

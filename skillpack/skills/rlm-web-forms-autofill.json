@@ -178,7 +178,7 @@
    4
   ],
   "design": true,
-  "rank": 7
+  "rank": 9
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 3 findings (1 high, 2 medium).\n[high] checkout.html:12  Payment fields with no autocomplete token.\n       Fix: Add the autocomplete tokens for card fields.\n[medium] login.html:19  Password field with no autocomplete.\n       Fix: Add autocomplete set to current-password.\n[medium] otp.html:26  One-time code not marked.\n       Fix: Add autocomplete one-time-code.\nNot checked: Behaviour in specific password managers and browsers, server-side validation outside the scope, and SMS delivery for one-time codes.",
  "skillMd": "skill-md/rlm-web-forms-autofill.md",

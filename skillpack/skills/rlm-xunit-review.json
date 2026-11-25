@@ -1,0 +1,119 @@
+{
+ "id": "rlm-xunit-review",
+ "goal": "xUnit review: fact and theory use, shared fixtures and assertions that can fail.",
+ "cat": "Installed",
+ "on": false,
+ "use": "xUnit review: fact and theory use, shared fixtures and assertions that can fail. Use when xUnit tests are added or changed.",
+ "prompt": "Use the rlm-xunit-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "List the test classes and their fixtures."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check theories. Flag theories with one data row or duplicated facts.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check fixtures. Flag shared mutable fixtures that couple tests.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check assertions. Flag tests that assert nothing or only that no exception occurred."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, the problem and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "List the test classes and their fixtures",
+   "text": ""
+  },
+  {
+   "title": "Check theories",
+   "text": "Flag theories with one data row or duplicated facts."
+  },
+  {
+   "title": "Check fixtures",
+   "text": "Flag shared mutable fixtures that couple tests."
+  },
+  {
+   "title": "Check assertions",
+   "text": "Flag tests that assert nothing or only that no exception occurred."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, the problem and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-xunit-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "dotnet",
+ "grade": {
+  "grade": "B+",
+  "score": "3.80",
+  "scores": [
+   4,
+   4,
+   3,
+   4,
+   4
+  ],
+  "design": true,
+  "rank": 119
+ },
+ "skillMd": "skill-md/rlm-xunit-review.md",
+ "zip": "downloads/rlm-xunit-review.zip"
+}

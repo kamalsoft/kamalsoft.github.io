@@ -1,0 +1,128 @@
+{
+ "id": "rlm-pull-request-review",
+ "goal": "Review a pull request for scope, tests, risk, and whether a reviewer can understand and check it.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Review a pull request for scope, tests, risk, and whether a reviewer can understand and check it. Use when a pull request is ready for review.",
+ "prompt": "Use the rlm-pull-request-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the description. Check that the description says what changed, why, and how it was tested."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check scope. Flag unrelated edits, and a change that mixes a refactor with a behaviour change.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check tests. Each behaviour change needs a test.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check risk. Note what could break: data, public interfaces, configuration and deployment order."
+  },
+  {
+   "layout": "gate",
+   "note": "Check the size. Flag changes too large to review in one sitting, and say how they could be split.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "layout": "doc",
+   "note": "Report. List the findings in order of risk, each with file and line.",
+   "docLabel": "report"
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the description",
+   "text": "Check that the description says what changed, why, and how it was tested."
+  },
+  {
+   "title": "Check scope",
+   "text": "Flag unrelated edits, and a change that mixes a refactor with a behaviour change."
+  },
+  {
+   "title": "Check tests",
+   "text": "Each behaviour change needs a test. Flag changes that only touch tests, or tests that were deleted."
+  },
+  {
+   "title": "Check risk",
+   "text": "Note what could break: data, public interfaces, configuration and deployment order."
+  },
+  {
+   "title": "Check the size",
+   "text": "Flag changes too large to review in one sitting, and say how they could be split."
+  },
+  {
+   "title": "Report",
+   "text": "List the findings in order of risk, each with file and line. End with a verdict: ready, needs changes, or split first."
+  }
+ ],
+ "path": ".github/skills/rlm-pull-request-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "review",
+ "grade": {
+  "grade": "B+",
+  "score": "3.90",
+  "scores": [
+   4,
+   4,
+   4,
+   4,
+   3
+  ],
+  "design": true,
+  "rank": 48
+ },
+ "skillMd": "skill-md/rlm-pull-request-review.md",
+ "zip": "downloads/rlm-pull-request-review.zip"
+}

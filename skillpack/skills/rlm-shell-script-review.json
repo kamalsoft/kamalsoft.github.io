@@ -1,0 +1,119 @@
+{
+ "id": "rlm-shell-script-review",
+ "goal": "Shell script review: quoting, error handling, temporary files and command injection.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Shell script review: quoting, error handling, temporary files and command injection. Use when asked to review a shell script or pipeline step.",
+ "prompt": "Use the rlm-shell-script-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the script. Its shell, its arguments and the commands it calls."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check quoting. Flag unquoted variables that can split or expand.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check errors. Flag scripts without strict mode or error checks.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check temporary files. Flag predictable temporary names."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the script",
+   "text": "Its shell, its arguments and the commands it calls."
+  },
+  {
+   "title": "Check quoting",
+   "text": "Flag unquoted variables that can split or expand."
+  },
+  {
+   "title": "Check errors",
+   "text": "Flag scripts without strict mode or error checks."
+  },
+  {
+   "title": "Check temporary files",
+   "text": "Flag predictable temporary names."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-shell-script-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 95
+ },
+ "skillMd": "skill-md/rlm-shell-script-review.md",
+ "zip": "downloads/rlm-shell-script-review.zip"
+}

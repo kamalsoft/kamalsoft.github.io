@@ -1,0 +1,119 @@
+{
+ "id": "rlm-swift-review",
+ "goal": "Swift review: optionals, memory cycles, concurrency and secure storage.",
+ "cat": "Installed",
+ "on": false,
+ "use": "Swift review: optionals, memory cycles, concurrency and secure storage. Use when asked to review a Swift project or module.",
+ "prompt": "Use the rlm-swift-review skill.",
+ "input": "",
+ "output": "",
+ "pros": [],
+ "cons": [],
+ "items": [
+  "input-1",
+  "input-2",
+  "input-3",
+  "input-4",
+  "input-5",
+  "input-6"
+ ],
+ "steps": [
+  {
+   "layout": "row",
+   "note": "Read the project setup. The package file, the Swift version and the lint configuration."
+  },
+  {
+   "layout": "chunks",
+   "note": "Check optionals. Flag force unwraps on external data.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  {
+   "layout": "parallel",
+   "note": "Check memory. Flag closures that capture self strongly and create cycles.",
+   "groups": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "state": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "layout": "funnel",
+   "note": "Check concurrency. Flag shared state accessed off the main actor without care."
+  },
+  {
+   "layout": "gate",
+   "note": "Report. Each finding with file and line, severity and the fix.",
+   "pass": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "outcome": null,
+ "idea": "",
+ "why": "",
+ "protocol": [
+  {
+   "title": "Read the project setup",
+   "text": "The package file, the Swift version and the lint configuration."
+  },
+  {
+   "title": "Check optionals",
+   "text": "Flag force unwraps on external data."
+  },
+  {
+   "title": "Check memory",
+   "text": "Flag closures that capture self strongly and create cycles."
+  },
+  {
+   "title": "Check concurrency",
+   "text": "Flag shared state accessed off the main actor without care."
+  },
+  {
+   "title": "Report",
+   "text": "Each finding with file and line, severity and the fix."
+  }
+ ],
+ "path": ".github/skills/rlm-swift-review",
+ "files": [],
+ "helperScripts": 0,
+ "notChecked": true,
+ "group": "languages",
+ "grade": {
+  "grade": "B+",
+  "score": "3.85",
+  "scores": [
+   4,
+   4,
+   4,
+   3,
+   4
+  ],
+  "design": true,
+  "rank": 97
+ },
+ "skillMd": "skill-md/rlm-swift-review.md",
+ "zip": "downloads/rlm-swift-review.zip"
+}

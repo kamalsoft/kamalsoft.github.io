@@ -163,7 +163,7 @@
   "score": null,
   "scores": null,
   "design": true,
-  "rank": 91
+  "rank": 220
  },
  "example": "Illustrative example: the items and results are made up, not real output.\nSummary: 2 findings (1 medium, 1 low).\n[medium] month-04.csv:12  Month missing from the year-to-date sum.\n       Fix: Add the month's records.\n[low] month-06.csv:19  Year-to-date differs from the sum of months.\n       Fix: Recompute from the monthly rows.\nNot checked: Results after the report date.",
  "skillMd": "skill-md/rlm-techops-ytd-report.md",
